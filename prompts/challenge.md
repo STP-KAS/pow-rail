@@ -37,7 +37,20 @@ Append filled turns below this line. Leave the blank structure for the next surf
 
 #### Round 1 (Ask initiates)
 
-(Ask writes the attack here. Build replies under it.)
+**Ask (opening attack):**
+
+The alone finding in prompts/ask.md already checked the pins and the live features. This attack is on the gaps that finding left and on the fits the branch pages still treat as worth exploring.
+
+1. What: The repository treats sealing a public telemetry snapshot or manual revision as "worth exploring" for the launch branch. Why it is soft: branches/01-launch.md section 2 lists it next to the license, range, and supplier-bank exposures. The same page then says the license does not stay and the vehicle does not fly. The hash stays ordered; the operational switch that can stop the work remains the license and the company. How: https://github.com/STP-KAS/pow-rail/blob/main/branches/01-launch.md and the cited rusty-kaspa v2.1.0 lines for the seal itself.
+
+2. What: The mass / 25 KB docs-site claim is flagged but not quantified against real mainnet fee market. Why: code/README.md correctly notes the 100_000 figure is not in the v2.1.0 tag and the transient limit is 1_000_000. Missing is any estimate of what an 81-byte payload actually costs to get included under current hashrate. How: the mass section in code/README.md and the constants.rs / params.rs links at the pin.
+
+3. What: "While miners mine" is accurate for the ordered hash and the KAS covenant, but the branch pages still use the three-section template for systems whose off switch is the company (spectrum, vehicle command, factory permit). Why: RAILS.md and the branch pages correctly refuse the overclaim, yet the template forces the same shape onto weak fits. How: RAILS.md "What the rail will not do" and branches/09-vehicles.md (vehicle-command repo is cited; the car still executes a local key).
+
+Gap list:
+- No concrete mainnet inclusion cost for the 81-byte seal. Link: code/README.md mass section. Surface: Ask (and the repo).
+- Hashrate concentration as a practical limit on the no-office claim is stated but not measured. Link: RAILS.md "One off switch". Surface: Ask.
+- The launch-branch "worth exploring" claim is technically true and operationally thin. Link: branches/01-launch.md. Surface: the repository pages.
 
 #### Round 2 (Ask continues)
 
