@@ -2,7 +2,7 @@
 
 **Experimental. Not advice. Not Kaspa core. Not a KIP.**
 
-This repository sells nothing. Kaspa sells nothing. There is no product, no seat, and no integration contract here.
+This repository sells nothing. There is no product, no seat, and no integration contract here. The subject is proof of work. The network name belongs in a source citation, not in a pitch.
 
 A row that names a company is a public-engineering note. It is not an offer to that company and not a claim that the company uses Kaspa.
 

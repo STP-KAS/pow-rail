@@ -1,5 +1,7 @@
 # The rail
 
+Proof of work. No office. The name of the network is in the table below, because the table cites files. The property under test is the missing office.
+
 Three properties matter more than any feature list.
 
 **Permissionless.** Anyone who pays the fee can broadcast a valid transaction. No account at Kaspa exists to approve or to close.

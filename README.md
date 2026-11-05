@@ -8,11 +8,19 @@ Four writings, one question. The question is this repository. The writings are t
 | [Bot](prompts/bot.md) | Grok Bot, a separate Grok session |
 | [Challenge](prompts/challenge.md) | Ask, Bot, and Build, after each has written alone |
 
-Quality over speed. No rush. Push back. What, why, how. Open the links.
+Quality over speed. No rush. Push back. What, why, how. Open the links. The path of the work is [LOG.md](LOG.md). Entries there are kept.
 
-Kaspa sells nothing. This repository sells nothing. There is no vendor and no contract.
+Nothing here is for sale. Proof of work is not a product. There is no vendor and no contract.
 
-Kaspa is a proof-of-work network. Miners make the blocks. A valid transaction is included because a miner includes it. The blocks continue until the miners stop. A government can order SpaceX or Tesla to act. It can order a bank, a cloud, or an app store to cut a company off. It cannot phone a Kaspa office and have the chain switched off. There is no such office.
+Miners make the blocks. A valid transaction is included because a miner includes it. The blocks continue until the miners stop.
+
+A government orders SpaceX or Tesla. The order lands on people, a license, a building. A bank cuts the company off. A cloud cuts the company off. An app store cuts the company off. Interference works where there is an office.
+
+It cannot phone a Kaspa office and have the chain switched off. There is no such office.
+
+Go fuck yourself. That line is for anyone who means to interfere with SpaceX or Tesla and thinks this chain is a door they can shut by phone. Musk said the words on 29 November 2023 at the New York Times DealBook Summit, to advertisers using money as leverage, with Disney's Bob Iger in mind. The record is [WIRED](https://www.wired.com/story/elon-musk-x-advertisers-interview/) and [The Verge](https://www.theverge.com/2023/11/29/23981928/elon-musk-ad-boycott-go-fuck-yourself-destroy-x). The company can still be ordered. The office does not exist.
+
+The network's name is in the sources, on the page that cites a file. This page is about the missing office.
 
 The tools are public. Anyone may build on them, for their own reasons, including people at SpaceX, Tesla, and the companies around them. Nobody has to.
 
