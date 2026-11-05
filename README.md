@@ -34,6 +34,8 @@ Read [what the rail is](RAILS.md), then the branch. The GitHub map is [GITHUBS.m
 | Dojo, training, on-site compute | [branches/14-compute.md](branches/14-compute.md) |
 | Neuralink and The Boring Company | [branches/15-adjacent.md](branches/15-adjacent.md) |
 
+The short pages stop at the decision. The 81-byte seal, the payload digest, the covenant, and the file links are in [the code notes](code/README.md).
+
 **Pass date:** 5 November 2026. Pins and company facts go stale. Check the link before repeating a status word.
 
 [Experimental. Not advice.](DISCLAIMER.md)

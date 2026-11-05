@@ -1,0 +1,10 @@
+[package]
+name = "kaspa-seal"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+description = "Seal bytes and the Kaspa v1 payload digest. Experimental. Not Kaspa core."
+
+[dependencies]
+blake3 = "=1.8.2"

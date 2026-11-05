@@ -25,3 +25,21 @@ Starshield's service does not. Its resilience is spacecraft, spectrum, and a con
 ## What this rail does not do
 
 It does not carry classified traffic, keys, or tasking. It does not give a state a chain it can halt, and it does not give an outsider a chain that can retask the satellites.
+
+## Detail
+
+The only kind this branch uses is `UnclassifiedDelivery`.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Starshield,
+    kaspa_seal::Kind::UnclassifiedDelivery,
+    unclassified_record,
+);
+```
+
+`unclassified_record` is a software version, a public interface spec, or an acceptance signature the contract already allows to be public. The function hashes it with unkeyed BLAKE3 and places that hash at payload bytes 17..49. A reader of the chain sees the hash. A reader who can guess a short input can test the guess. Classified tasking is not hashed "to keep it safe." It is not hashed.
+
+There is no user lane for material inside the classified boundary, because that material is not an application on this rail. [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) lanes are subsets of accepted transactions. They are not access control. The header commitment is public. `OpTxPayloadSubstr` in the node (`0xb8` at v2.1.0) reads the payload of the spending transaction onto the script stack, which is the opposite of a confidential channel.
+
+A government customer who needs to halt a service has the operator. `PayloadDigest` has no admin key. That is why the classified network itself does not move here, and why an unclassified delivery digest, if the contract allows one, has no vendor who can quietly replace it. The mechanism is the same text as the other branches: [code notes](../code/README.md).

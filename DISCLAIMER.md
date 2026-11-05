@@ -11,3 +11,5 @@ A GitHub release, an open pull, and a fundraiser are different facts. Open the l
 Laws still apply to SpaceX, Tesla, and anyone who builds on this rail. A public chain does not cancel a license, a sanction, an export rule, or a court order served on a company. Do not put export-controlled data, medical data, or vehicle traces on a public network.
 
 Pay with a QR code, a `kaspa:` URI, or a pasted txid. Never a seed.
+
+The code under `code/` builds an 81-byte payload and the version-1 payload digest. It is not a node and not a wallet. The hash tests compare published vectors from rusty-kaspa v2.1.0. They do not submit a transaction. The SilverScript file was compiled with the v1.0.0 tag of `silverc`. That compile is not a mainnet inclusion.

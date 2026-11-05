@@ -31,3 +31,25 @@ The manufacturer can still be ordered to stop shipping, to recall, or to hand ov
 ## What this rail does not do
 
 It does not replace a regulatory database, certify a mineral as conflict-free, or clear a sanctioned counterparty. It makes a hash hard to quietly withdraw.
+
+## Detail
+
+The kind is `PassportExtract` so a fungible layout is not what the bytes claim to be.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Supply,
+    kaspa_seal::Kind::PassportExtract,
+    passport_extract,
+);
+```
+
+The extract stays with the parties the law already names. Bytes 17..49 are its unkeyed BLAKE3. A changed extract is a new payload and a new `payload_digest`. The old transaction stays in the lane it was accepted into. [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) commits lane tips. It does not provide an edit.
+
+A serial at ship time is the same call. A service center recomputes the hash. It does not need the manufacturer to run a node for it. Reading a header is permissionless. That part is [the rail](../RAILS.md).
+
+[KCC-20](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) was Final. Its title is a fungible token covenant. A serialised pack is one object. Representing it as a fungible balance would make two packs interchangeable, which is the failure mode a passport exists to prevent. [Kasplex](https://wiki.kaspa.org/en/Kasplex_KRC_20) is a third-party data-insertion protocol, indexer, and API, and KRC-20 is that project's token convention. The [wiki FAQ](https://wiki.kaspa.org/faq) treats it as outside the core team. This encoder does not produce a KRC-20 body.
+
+A lawful supplier and a buyer who both want KAS can point [`seal_escrow.sil`](../code/covenant/seal_escrow.sil) at the packing-list hash. A sanction or an export denial is not a missing opcode. Miners including the transaction do not clear the shipment. Customs and the company's compliance duty are unchanged.
+
+The mass story, including the tag's own disagreement between a 125_000-byte comment and a 250 KB mainnet transient limit, is written down in [the code notes](../code/README.md) so this page does not invent a third number.

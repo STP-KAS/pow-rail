@@ -1,0 +1,47 @@
+pragma silverscript ^0.1.0;
+
+// KAS escrow bound to one document hash.
+//
+// Compiler pin: SilverScript v1.0.0
+// (commit 3ed973335b59269293564805cc2c58a14595ec03).
+// Spend shape follows silverscript-lang/tests/examples/covenant_escrow.sil
+// in that tag: one input, an explicit amount, buyer or seller lockscript,
+// arbiter key checked as blake2b(pubkey).
+//
+// Payload checks use opcodes the same tag compiles:
+// OpTxPayloadLen and OpTxPayloadSubstr(start, end). In rusty-kaspa v2.1.0
+// OpTxPayloadSubstr is opcode 0xb8 and the end index is exclusive
+// (crypto/txscript/src/opcodes/mod.rs, the payload substr test uses
+// payload[1..4] for arguments 1 and 4).
+//
+// This script reads only this.activeInputIndex for the coin amount.
+// It does not call readInputState. It does not move a beam, a contactor,
+// or a vehicle.
+//
+// The 1000 sompi fee is the figure in the upstream example. It is not the
+// mempool relay constant. That constant, in v2.1.0 mining/src/mempool/config.rs,
+// is 100_000 sompi.
+
+contract SealEscrow(byte[32] arbiter, pubkey buyer, pubkey seller, byte[32] document) {
+    entry release(pubkey pk, sig s) {
+        require(blake2b(byte[](pk)) == arbiter);
+        require(checkSig(s, pk));
+
+        // "pow-rail/seal" is 13 bytes. End indexes are exclusive.
+        require(OpTxPayloadLen() == 81);
+        require(OpTxPayloadSubstr(0, 13) == byte[]("pow-rail/seal"));
+        require(OpTxPayloadSubstr(13, 14) == byte[](0x01));
+        require(OpTxPayloadSubstr(17, 49) == byte[](document));
+
+        int minerFee = 1000;
+        require(tx.inputs[this.activeInputIndex].value > minerFee);
+        int amount = tx.inputs[this.activeInputIndex].value - minerFee;
+        require(tx.outputs[0].value == amount);
+
+        byte[36] buyerLock = new ScriptPubKeyP2PK(buyer);
+        byte[36] sellerLock = new ScriptPubKeyP2PK(seller);
+        bool sendsToBuyer = tx.outputs[0].scriptPubKey == byte[](buyerLock);
+        bool sendsToSeller = tx.outputs[0].scriptPubKey == byte[](sellerLock);
+        require(sendsToBuyer || sendsToSeller);
+    }
+}

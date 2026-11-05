@@ -25,3 +25,23 @@ The stall can still refuse the session. The operator can still open the breaker.
 ## What this rail does not do
 
 It does not energize a cable, replace Plug&Charge certificates, or let a driver skip payment. It does not move Tesla's membership ledger onto a public chain.
+
+## Detail
+
+The session receipt the driver already sees is the hash. The contactor is not in the script.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Charging,
+    kaspa_seal::Kind::Receipt,
+    session_receipt,
+);
+```
+
+A deposit, where a stall operator and a driver both want KAS, is [`seal_escrow.sil`](../code/covenant/seal_escrow.sil) constructed with `document_hash(session_receipt)`. The compiled script requires `OpTxPayloadLen() == 81`, the magic at bytes 0..13, the version byte `0x01` at offset 13, and bytes 17..49 equal to that document hash. `OpTxPayloadSubstr` is opcode `0xb8` and the end index is exclusive, which the v2.1.0 node tests with `payload[1..4]`. The coins then move from this input to the buyer's or the seller's 36-byte pay-to-pubkey script. SilverScript v1.0.0 compiled this file. The artifact and the dummy constructor arguments are in [`code/covenant`](../code/covenant/README.md).
+
+The script names a 1000 sompi fee because that is the upstream example. The mempool constant in v2.1.0 is 100_000 sompi. A spend still has to clear the fee the network is actually requiring. The script's own requirement is the output amount.
+
+Ten blocks a second, the figure in the lane-limit comment at [`config/constants.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/constants.rs#L97-L98), is the wrong loop for a contactor. The stall decides locally. The receipt and the payment are after the session, or they are a deposit checked when the receipt exists. They are not the authorization bit in the charger.
+
+Tesla's membership ledger, idle-fee policy, and abuse control stay in Tesla's account system. Third-party and workplace chargers are the place the escrow matches the easy page. The hash tests are in [the code notes](../code/README.md).

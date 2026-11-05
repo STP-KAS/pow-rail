@@ -29,3 +29,32 @@ The hosted Grok product still has an off switch, and that switch is in the compa
 ## What this rail does not do
 
 It does not train Grok, serve the API, or smuggle a banned customer's traffic back into the hosted product. It does not make a later, unpublished model into an open model.
+
+## Detail
+
+`grok-1` is a public file. Anyone who downloaded it can hash what they downloaded.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Xai,
+    kaspa_seal::Kind::WeightOrImage,
+    downloaded_weight_bytes,
+);
+```
+
+The seal commits to those bytes. If the tag moves or the repository disappears, `payload_digest` of this payload is still the half a version-1 id committed to, for anyone who kept the payload or the transaction. It does not prove that a hosted endpoint loaded the same bytes. A hosted model is the company's process. The hash is the file the sealer had.
+
+A published eval uses `Kind::Eval`. Two files, the transcript and a table, use `aux`:
+
+```rust
+let payload = kaspa_seal::encode_seal(&kaspa_seal::Seal {
+    branch: kaspa_seal::Branch::Xai,
+    kind: kaspa_seal::Kind::Eval,
+    primary: kaspa_seal::document_hash(transcript),
+    aux: Some(kaspa_seal::document_hash(table)),
+});
+```
+
+Prompts, completions, and API keys are not those arguments. A public payload is a permanent log. `OpTxPayloadSubstr` (`0xb8`) exists so a script can read the payload. It is not a secrecy feature.
+
+The September 2026 pin board's x402 release candidate is not a Grok checkout. This crate does not speak HTTP and does not call an API. Self-hosted parties who want to pay each other in KAS can use the escrow against a result hash. The hosted account switch remains the company's. [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) verifies two proof tags. It does not serve the model. The encoder notes are [here](../code/README.md).

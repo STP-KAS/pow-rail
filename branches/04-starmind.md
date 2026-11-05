@@ -29,3 +29,24 @@ The satellite still needs a license, a launch, and a radio. A government that ca
 ## What this rail does not do
 
 It does not train models, cool chips in vacuum, or move bits over inter-satellite lasers. It does not put customer prompts on a public ledger.
+
+## Detail
+
+A published weight file and a job receipt are different kinds. The weight file is `WeightOrImage`. The receipt can name two hashes: the acceptance record, and the result digest.
+
+```rust
+let payload = kaspa_seal::encode_seal(&kaspa_seal::Seal {
+    branch: kaspa_seal::Branch::Starmind,
+    kind: kaspa_seal::Kind::Receipt,
+    primary: kaspa_seal::document_hash(acceptance_record),
+    aux: Some(kaspa_seal::document_hash(result_record)),
+});
+```
+
+`document_hash` is unkeyed BLAKE3. `payload_digest(&payload)` is the keyed hash the version-1 id commits to. The prompt and the completion are neither argument. The result record is a digest the customer was going to publish, not the tokens.
+
+[KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) is the lane mechanism, and it is Active. Its own text says future KIPs may add vProg-based lanes without replacing the outer commitment. [kaspanet/vprogs](https://github.com/kaspanet/vprogs) had no release on this pass (master `f9b84a863a`, 28 July 2026, is the pin already recorded in [the rail](../RAILS.md)). Until a tag exists, the receipt is the hash above, on the native subnetwork unless a prover is actually following a Starmind lane. `user_lane_id` will build the 20 bytes. It will not make the program real.
+
+[KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) does not run inference. `OpZkPrecompile` (`0xa6`) verifies a Groth16 proof or a RISC0 succinct receipt, tags `0x20` and `0x21` only ([`tags.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/zk_precompiles/tags.rs) at v2.1.0). A proof of that form can bind a program id and a public journal. It does not cool a chip and it does not see a prompt that was never a public input.
+
+The orbital problems on the critical path are unchanged by any of these hashes. The code path is [the encoder](../code/README.md).

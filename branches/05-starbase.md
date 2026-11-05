@@ -29,3 +29,21 @@ The factory can still be fined, permitted, or closed. The rail does not employ t
 ## What this rail does not do
 
 It does not move the crate, stamp the passport of an employee, or store drawings that are export-controlled. Hash in, file stays home.
+
+## Detail
+
+The common object is one inspection hash.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Starbase,
+    kaspa_seal::Kind::Inspection,
+    inspection_pack,
+);
+```
+
+Each company keeps the PDF. Any of them can broadcast the 81-byte payload. The bytes 17..49 are the unkeyed BLAKE3 of the pack. A later pack is a later hash. Both can sit in the accepted sequence. Deleting one requires a history the header commitment does not offer an admin key for. The commitment is [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) `SeqCommit`, stored in `accepted_id_merkle_root`, over lane tips plus miner payloads. A factory does not need its own lane until someone proves that lane. The native subnetwork already orders the transaction. Mainnet's cap is 50 lanes per block, so a lane per building would be the wrong reading of [`DEFAULT_LANES_PER_BLOCK_LIMIT`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/constants.rs#L97-L100).
+
+A small supplier who already wants KAS can use [`seal_escrow.sil`](../code/covenant/seal_escrow.sil). The constructed document hash is the packing-list hash. The script will not release the coins onto a payload that carries a different hash. The amount is this input's value minus the fee written in the script. A purchase order priced in dollars is not rewritten into that script. The script's 1000 sompi fee is the upstream example's number, not the mempool floor of 100_000 sompi in v2.1.0 `mining/src/mempool/config.rs`.
+
+Drawings that are export-controlled are not `inspection_pack`. The layout is too small for them on purpose. The rest of the arithmetic is in [the code notes](../code/README.md).

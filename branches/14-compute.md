@@ -29,3 +29,23 @@ There is still no company to call to have the old digest removed. That is the pr
 ## What this rail does not do
 
 It does not replace Dojo, TTPoE, or a data-center power contract. It does not smuggle restricted accelerators. It does not prove that a private training run matches a public card, unless a real proof system for that statement exists and the publisher runs it. The live piece is the seal of the card they chose to publish.
+
+## Detail
+
+The live piece, in code:
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Compute,
+    kaspa_seal::Kind::Eval,
+    system_card_pdf,
+);
+```
+
+A replacement PDF hashes differently, so it does not inherit `payload_digest` of this payload. Researchers who are handed the PDF can check bytes 17..49. Researchers who are not handed the PDF learn only the hash. That is the publication the lab chose when it sealed the card.
+
+[TTPoE](https://github.com/teslamotors/ttpoe) is a layer-2 Ethernet fabric. [liblithium](https://github.com/teslamotors/liblithium) is a small cryptography library. Neither import belongs in this crate. Time on that fabric is the wire's time. A block hash is a later receipt.
+
+A training proof would be a [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) precompile only if the statement matched tag `0x20` or `0x21` and the node verified it. v2.1.0's `verify_zk` path charges the tag's script units and pushes true on success ([`opcodes/mod.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/opcodes/mod.rs#L758-L771)). The tests in `tags.rs` expect room for 3 Groth16 verifications or 2 succinct verifications in one block's compute mass. That is a few proofs per block, not a gradient step. The public inputs would be whatever the proof journal commits to. A private dataset that never enters the journal is not proved. Shipping that proof is future work with a tagged prover. The PDF hash is the call above.
+
+Gradients, datasets, and TTPoE frames are not seal inputs. The transient limit that is actually in the mainnet struct is a quarter of a megabyte of body per block at the factor of 4. The code notes record the arithmetic and the open pull that would restate it: [code/README.md](../code/README.md).

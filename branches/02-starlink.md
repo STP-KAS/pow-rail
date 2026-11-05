@@ -31,3 +31,21 @@ The phased array does not. If SpaceX or a regulator turns a cell off, the chain 
 ## What this rail does not do
 
 It does not bypass geofencing, account suspension, or an export hold on a terminal. It does not put subscriber traffic, locations, or payment card numbers on a public ledger. The GPL router code does not need a consensus protocol.
+
+## Detail
+
+Two seals, two kinds. A public manifest uses `Kind::PublicFile`. A public status page, or an already-public notice that a region was turned off or on, uses `Kind::PublicStatus`.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Starlink,
+    kaspa_seal::Kind::PublicFile,
+    manifest_bytes,
+);
+```
+
+Anyone can run that on a file SpaceX already published. SpaceX does not have to call it. The same pattern is what [Kira-Ryan/ephemera](https://github.com/Kira-Ryan/ephemera) does into Bitcoin with OpenTimestamps. Kaspa's difference is the commitment the node already computes: version-1 `payload_digest` inside `id_v1` ([`hashing/tx.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/hashing/tx.rs#L207-L223) at v2.1.0). [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) then folds that accepted transaction into the lane of its `subnetwork_id`, and the header stores one `SeqCommit`. A researcher who only wants a clock can stay on the native lane, twenty zero bytes, `native_lane_id()`. A prover who wants the manifest stream without the rest of the DAG builds a user lane with `user_lane_id`. The namespace rule is KIP-21 section 2.1: 4 bytes, 16 zero bytes, and a non-zero byte in `namespace[1..=3]`. Mainnet allows 50 such lanes in one block ([`config/constants.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/constants.rs#L97-L100)).
+
+A KAS payment beside cards is the escrow, not a second copy of the manifest. [`seal_escrow.sil`](../code/covenant/seal_escrow.sil) releases coins when the payload's document hash matches the hash the covenant was built with. The entitlement to the radio is still SpaceX's. Nothing in `OpZkPrecompile` addresses a phased array. The only tags in v2.1.0 are Groth16 `0x20` and RISC0-Succinct `0x21`.
+
+Subscriber traffic, terminal locations, and card numbers are not inputs to `document_hash`. The payload is 81 bytes of magic, version, branch, kind, flag, and hashes. [The code notes](../code/README.md) record why the docs-site "about 25 KB" mass cap was not treated as a constant of this tag, and why 81 bytes is inside the transient limit the mainnet struct does name.

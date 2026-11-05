@@ -29,3 +29,25 @@ A qualification seal survives a falling-out between the partners and survives an
 ## What this rail does not do
 
 It does not run the process tools, store the recipe, move $16.8 billion, or substitute for an export license.
+
+## Detail
+
+The traveler is an inspection seal. The recipe is not in the function's argument list.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Terafab,
+    kaspa_seal::Kind::Inspection,
+    traveler_or_qualification,
+);
+```
+
+Counterparties who hold the file recompute `document_hash` and compare bytes 17..49. The version-1 transaction id commits to the whole 81-byte payload through `PayloadDigest`, then `TransactionV1Id` ([`hashing/tx.rs` `id_v1`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/hashing/tx.rs#L207-L218) at v2.1.0). A partner who closes a cloud tenant does not hold the key to that hash. There is no key.
+
+One program lane is optional and only useful once a prover follows it. [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) section 2.1 is the byte rule `user_lane_id` enforces. The fab's manufacturing execution system stays in the building. The lane is a sequencing commitment, not a process tool.
+
+[KCC-20](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) Final is a fungible-token covenant: state, transfer entrypoints, borrowed receive. A wafer lot is not fungible in that sense. [Kasplex](https://wiki.kaspa.org/en/Kasplex_KRC_20) is a third-party insertion protocol and indexer. Its KRC-20 convention is not KCC-20 and not a KIP. The [wiki FAQ](https://wiki.kaspa.org/faq) places that work outside the core team. Neither layout is a traveler.
+
+A phase-one budget is not a covenant input. The only asset this escrow script moves is KAS, and only the coins on the input it spends. Collateral for a construction loan is a different conversation, and [Kaspa Dollar](../RAILS.md) was not a KIP and not code on this pass.
+
+Recipes stay off both the hash input and the payload. [The code notes](../code/README.md) keep the mass and opcode citations in one place.

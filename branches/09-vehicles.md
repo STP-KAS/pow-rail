@@ -31,3 +31,24 @@ The car does not keep receiving Tesla's live services. Autopilot and FSD behavio
 ## What this rail does not do
 
 It does not drive, steer, or authenticate a door command. It does not store dashcam video or location history. It does not jailbreak a vehicle. [vehicle-command](https://github.com/teslamotors/vehicle-command) already solved command authentication without miners.
+
+## Detail
+
+An OTA seal names the image and the release notes. The car keeps trusting Tesla's signature. The chain is the clock.
+
+```rust
+let payload = kaspa_seal::encode_seal(&kaspa_seal::Seal {
+    branch: kaspa_seal::Branch::Vehicles,
+    kind: kaspa_seal::Kind::WeightOrImage,
+    primary: kaspa_seal::document_hash(image_bytes_owners_can_verify),
+    aux: Some(kaspa_seal::document_hash(release_notes)),
+});
+```
+
+A robotaxi receipt the rider already holds is `Kind::Receipt` over that receipt, with the GPS trace left out of the hashed bytes. If the trace is inside the file, the hash is a commitment to the trace, and a later leak of the file plus the public hash confirms it. Hash the receipt the rider can show. Do not hash the trace to "anchor" it.
+
+The precompile is the wrong tool for a command. `OpZkPrecompile` is `0xa6`. The tag match in v2.1.0 [`tags.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/zk_precompiles/tags.rs) is `0x20` Groth16 and `0x21` RISC0-Succinct. Every other byte is `UnknownTag`. There is no tag whose success path unlocks a door, an immobilizer, or a paid feature. [vehicle-command](https://github.com/teslamotors/vehicle-command) checks a key in the vehicle. A block round trip would publish the command and miss the deadline.
+
+[KIP-17](https://github.com/kaspanet/kips/blob/master/kip-0017.md) introspection can require a payload hash, which is what the escrow does for a KAS deposit. It cannot sign a firmware image. Service bulletins use the same `WeightOrImage` or `PublicFile` call as the OTA notes.
+
+Dashcam bytes and location history do not enter `document_hash`. The layout is 81 bytes so they cannot enter the payload either. Citations for the id split and the mass limits are in [the code notes](../code/README.md).

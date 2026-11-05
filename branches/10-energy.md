@@ -31,3 +31,21 @@ The site can still be switched off at the breaker and at the interconnect. The m
 ## What this rail does not do
 
 It does not bid into a market, operate Autobidder, or keep a battery online in defiance of the grid operator. It does not turn a research model of the NEM into a second NEM.
+
+## Detail
+
+A meter seal hashes the row the parties already store: site id, interval, import, export. The row is not the payload. The payload is the seal of the row.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Energy,
+    kaspa_seal::Kind::Receipt,
+    interval_row_bytes,
+);
+```
+
+A dispatch instruction that is already allowed to be public uses `Kind::PublicStatus` or `Kind::PublicFile` on that text. The instruction itself moves on the utility's channel. The seal answers a later dispute about which text was issued. [nempy](https://github.com/teslamotors/nempy) stays a model of the Australian market. It is not linked into this crate and it is not a lane.
+
+[KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) orders the seal with every other accepted transaction in its subnetwork. That is a sequencing commitment. It is not AEMO, ERCOT, or a TSO. The mainnet transient limit in v2.1.0 is 1_000_000 mass units at 4 per byte ([`params.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/params.rs#L623-L626) and [`constants.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/constants.rs#L28-L31)), which is a quarter of a megabyte of transaction body per block, shared by the whole network. A national meter fleet does not stream through that. An interval hash the parties agreed to publish does.
+
+ISO settlement stays in the ISO's unit. A side agreement in KAS uses the escrow against the row hash, and only between parties who want KAS. The breaker and the interconnect are not outputs. The script pays a pubkey. [The code notes](../code/README.md) separate that from compute mass, storage mass, and the relay-fee constant.

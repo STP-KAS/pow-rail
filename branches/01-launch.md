@@ -27,3 +27,28 @@ The license does not stay. The vehicle does not fly because a miner included a h
 ## What this rail does not do
 
 It does not store guidance software, ITAR packages, or range-safety keys. It does not replace a flight termination system. It does not pay a supplier who does not want KAS.
+
+## Detail
+
+The public file stays where it was published. The chain takes 81 bytes.
+
+```rust
+let payload = kaspa_seal::seal_file(
+    kaspa_seal::Branch::Launch,
+    kaspa_seal::Kind::PublicFile,
+    public_note,
+);
+let payload_half = kaspa_seal::payload_digest(&payload);
+```
+
+`public_note` is the telemetry snapshot, the mishap update, or the manual revision the sealer is willing to show a verifier. `payload_half` is the payload half of a version-1 transaction id, not the id itself. The node builds that half as `PayloadDigest`: BLAKE3 keyed with the 13-byte domain `PayloadDigest` and 19 zero bytes. `id_v1` then hashes that digest and the rest-of-transaction digest under the domain `TransactionV1Id`. Both steps are in `consensus/core/src/hashing/tx.rs` at [rusty-kaspa v2.1.0](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/hashing/tx.rs#L207-L223). The payload field they cover is `Transaction.payload` in [`tx.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/tx.rs#L254-L261).
+
+The file hash inside the seal is unkeyed BLAKE3, at bytes 17..49. Passing the note through `PayloadDigest` directly would commit to different bytes than the seal the verifier recomputes. The crate tests that the two functions differ.
+
+A supplier payment in KAS, when both sides want KAS, is the escrow in [`code/covenant/seal_escrow.sil`](../code/covenant/seal_escrow.sil). The script requires the spending payload to be a version-1 seal of the document hash it was constructed with, then sends this input's value, minus the fee the script names, to the buyer or the seller. It reads `this.activeInputIndex` only. A launch contract written in dollars stays in dollars. [KCC-20](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) being Final does not create a dollar.
+
+Guidance bytes are not an argument to `seal_file`. An 81-byte payload has no room for them, and a hash of a short controlled file is searchable. The license and the flight termination system are not opcodes. [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) `OpZkPrecompile` (`0xa6`) accepts tag `0x20` or `0x21` and rejects every other tag ([`tags.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/zk_precompiles/tags.rs)). Neither tag is a vehicle.
+
+The native subnetwork is enough. A user lane, [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) section 2.1, is for a prover who will follow this stream alone. The encoder for that 20-byte id is `user_lane_id`. Forming the id does not submit it.
+
+The full layout, the mass arithmetic, and the vector tests are in [the code notes](../code/README.md).
