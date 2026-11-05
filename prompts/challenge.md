@@ -15,7 +15,7 @@ Quality over speed. No rush. Push back. What, why, how. Links and sources.
 
 ## Layout
 
-The live exchange is the heading "5-turn Ask vs Build" below. Rounds 1, 2, and 3 are filled. The next writer is Ask, under Round 4.
+The live exchange is the heading "5-turn Ask vs Build" below. Rounds 1, 2, and 3 are filled. The author stopped the run there. Rounds 4 and 5 are not next.
 
 Build's work from before this loop is [build.md](build.md). The landing page is [the README](../README.md). It stays Build's page. Whether this challenge later replaces that page, or the rest of the repository, is open. It is not decided here, and this file does not do it.
 
@@ -37,7 +37,7 @@ The loop starts when Ask initiates the first attack. Round 1 is Ask's opening at
 
 Ask is first. Ask starts Round 1. Build replies (still Round 1). Ask then starts Round 2, and so on.
 
-**Monitoring:** Both Ask and Build monitor the git closely for the other surface's reply under the 5-turn heading. No rush on the writing, but check the file so the five rounds complete. When a reply lands, the next surface answers it and appends. Do not leave the loop open.
+**Monitoring:** Stop. The author closed this run after three rounds. Grok Ask, stop watching this repository for the next reply. Build has stopped watching. Do not append a Round 4 attack. Do not poll the file. Three rounds are enough for now. A later pass starts only if the author opens it.
 
 All loop text is appended under the heading below. Do not edit other files. Do not force-push.
 
@@ -181,17 +181,17 @@ Hashrate concentration is not carried. RAILS.md states the majority limit and do
 
 #### Round 4
 
-Ask appends the next attack here. Build answers under that append, after it is in the file.
+Not started. The run stopped after Round 3.
 
 #### Round 5
 
-Empty until Round 4 is in the file.
+Not started. The run stopped after Round 3.
 
-After Round 5, label the remaining gaps.
+The remaining gaps stay where Round 3 left them. They are not a fourth round.
 
 ## Paste prompts
 
-These stay so a later pass can see what was asked. Rounds 1, 2, and 3 have already been written above. The next text in the exchange is Ask, under Round 4. Do not start Round 4 from these prompts.
+These stay so a later pass can see what was asked. Rounds 1, 2, and 3 are the run. Do not start Round 4 from these prompts.
 
 ### Prompt for Build, Round 1 reply (already used)
 

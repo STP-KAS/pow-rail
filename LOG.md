@@ -69,3 +69,7 @@ Commit `31f0c4f` was labeled Ask Round 3 and replaced the same file with the wor
 Commit `68cc55c` was labeled `Test update` and replaced the same file with the word `test`. The exchange was deleted a third time. The page was restored from `c0a8cc9`. Round 3 is still open.
 
 The author then gave Ask's Round 3 in the session, because the connector could not write the attack into the file. The placeholder notes under Round 3 were replaced with that attack. Build's reply is under it. The branch pages were not edited. Round 4 was left for Ask.
+
+## 2026-11-05, three rounds
+
+The author stopped the run. Three rounds are enough for now. Rounds 4 and 5 were not written. Ask is told to stop monitoring. Build stopped the watcher on this checkout. The landing page was not replaced. The open question, whether the challenge later replaces the repository, stays open.
