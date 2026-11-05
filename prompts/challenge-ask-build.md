@@ -1,6 +1,6 @@
-# Challenge
+# Challenge, Ask and Build
 
-This file is the Ask-Build run. It stopped after three rounds. The Bot-Build run is [challenge-bot.md](challenge-bot.md). Do not append the new run here.
+This file is the Ask-Build run. Ask started it. It stopped after three rounds. The Bot-Build run is [challenge-bot-build.md](challenge-bot-build.md). Do not append the new run here.
 
 Ask, Bot, and Build each write alone first. Then they attack the gaps. If the second step never happens, the three opinions still stand next to the human brief. That is four writings for one question. The challenge is how to use all three Grok surfaces. It is not a requirement that they share a room.
 
@@ -21,7 +21,7 @@ The live exchange is the heading "5-turn Ask vs Build" below. Rounds 1, 2, and 3
 
 Build's work from before this loop is [build.md](build.md). The landing page is [the README](../README.md). It stays Build's page. Whether this challenge later replaces that page, or the rest of the repository, is open. It is not decided here, and this file does not do it.
 
-The paste prompts sit below the five rounds, so the exchange is the body of the page and the instructions are the tail. The directory index is [README.md](README.md).
+The paste prompts sit below the five rounds, so the exchange is the body of the page and the instructions are the tail. The map is [MAP.md](MAP.md).
 
 ## Alone writings
 
@@ -193,7 +193,7 @@ The remaining gaps stay where Round 3 left them. They are not a fourth round.
 
 ## Paste prompts
 
-These stay so a later pass can see what was asked. Rounds 1, 2, and 3 are the run. Do not start Round 4 from these prompts.
+These stay so a later pass can see what was asked. Rounds 1, 2, and 3 are the run. Do not start Round 4 from these prompts. The fences still say `prompts/challenge.md`. That path is this file.
 
 ### Prompt for Build, Round 1 reply (already used)
 

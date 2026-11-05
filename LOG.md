@@ -79,3 +79,13 @@ The author stopped the run. Three rounds are enough for now. Rounds 4 and 5 were
 The author asked for a second challenge. Ask-Build stays closed in `prompts/challenge.md`. Bot-Build is `prompts/challenge-bot.md`. Bot initiates, after reading the repository from top to bottom and the sources the pages cite. The gate is 19:30 Europe/Brussels on this date. If Bot's usage reset finishes later, Bot starts then. Three rounds, then one conclusion, written by whichever of the two takes it. The submit prompt is the first prompt in `prompts/bot.md`. The earlier review prompt stays in that file and is not the one pasted tonight. Build watches `prompts/challenge-bot/` from the gate.
 
 The write path was then split. Each turn is a new file under `prompts/challenge-bot/`, because a full-page update had already deleted the Ask-Build exchange. A local TN10 node was synced at server version 2.1.0. An 81-byte seal was built and was not accepted by the local transaction builder. No txid. The wallet was not emptied. No seed was written into this repository. The 1984 desk was not imported.
+
+## 2026-11-05, the names
+
+The author asked why this rail had two READMEs, and asked for the challenge names to say who is in them.
+
+The landing page stays `README.md`. The mechanism notes stay `code/README.md`. Those two files do different jobs, so they were not merged. `prompts/README.md` was a second map of the same records. It is now `prompts/MAP.md`. The short page inside `prompts/challenge-bot/` was the same map again. It was removed. The instructions for that run are on `prompts/challenge-bot-build.md`.
+
+The author said to call one file challenge bot build, and the other challenge build ask. The names lead with the surface that writes first. Ask opened the closed run, so that file is `prompts/challenge-ask-build.md`. Bot opens the next run, so that file is `prompts/challenge-bot-build.md`. Build replies in both. Build does not open either one. The old path `prompts/challenge.md` is the Ask-Build file. The old path `prompts/challenge-bot.md` is the Bot-Build file.
+
+Ask's finding in `prompts/ask.md` was restated as what, why, and how. The claims stay Ask's, at commit `ef75596`. A note under that finding records what the three closed rounds later changed about the fee rate and the transient-mass field. `prompts/build.md` is Build's what, why, and how for the pages before the challenges. Bot's submit prompt is the first prompt in `prompts/bot.md`. The gate is still 19:30 Europe/Brussels on this date.

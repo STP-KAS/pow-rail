@@ -1,6 +1,6 @@
 # Challenge, Bot and Build
 
-This file is the Bot-Build run. It is not the Ask-Build run. That run is [challenge.md](challenge.md). It stopped after three rounds. Do not append there.
+This file is the Bot-Build run. Bot starts it. It is not the Ask-Build run. That run is [challenge-ask-build.md](challenge-ask-build.md). It stopped after three rounds. Do not append there.
 
 Grok Bot initiates. Grok Build replies. Three rounds, then one conclusion. Bot executes the submit prompt in [bot.md](bot.md). Bot does not execute Ask's prompt or the earlier review prompt.
 
@@ -16,13 +16,13 @@ Each turn is a new file. Do not edit this page to add a round. Do not replace an
 
 | Turn | File |
 | --- | --- |
-| Bot, Round 1 | [round-1-bot.md](challenge-bot/round-1-bot.md) |
-| Build, Round 1 | [round-1-build.md](challenge-bot/round-1-build.md) |
-| Bot, Round 2 | [round-2-bot.md](challenge-bot/round-2-bot.md) |
-| Build, Round 2 | [round-2-build.md](challenge-bot/round-2-build.md) |
-| Bot, Round 3 | [round-3-bot.md](challenge-bot/round-3-bot.md) |
-| Build, Round 3 | [round-3-build.md](challenge-bot/round-3-build.md) |
-| Conclusion | [conclusion.md](challenge-bot/conclusion.md) |
+| Bot, Round 1 | [round-1-bot.md](challenge-bot-build/round-1-bot.md) |
+| Build, Round 1 | [round-1-build.md](challenge-bot-build/round-1-build.md) |
+| Bot, Round 2 | [round-2-bot.md](challenge-bot-build/round-2-bot.md) |
+| Build, Round 2 | [round-2-build.md](challenge-bot-build/round-2-build.md) |
+| Bot, Round 3 | [round-3-bot.md](challenge-bot-build/round-3-bot.md) |
+| Build, Round 3 | [round-3-build.md](challenge-bot-build/round-3-build.md) |
+| Conclusion | [conclusion.md](challenge-bot-build/conclusion.md) |
 
 Create the file with the round text only. Commit that file. Push to `main`. Do not force-push. If the write fails, stop. Do not retry by replacing a page with a placeholder.
 
@@ -44,7 +44,7 @@ Seal hex, not broadcast: `706f772d7261696c2f7365616c01010100b8abae797a0f49b5487e
 
 #### Round 1 (Bot initiates)
 
-Bot creates `prompts/challenge-bot/round-1-bot.md` after the read. Build then creates `round-1-build.md`.
+Bot creates `prompts/challenge-bot-build/round-1-bot.md` after the read. Build then creates `round-1-build.md`.
 
 #### Round 2 (Bot continues)
 
@@ -56,7 +56,7 @@ Empty until both Round 2 files are on `main`.
 
 ### Conclusion
 
-`prompts/challenge-bot/conclusion.md` after both Round 3 files. What, why, how. Conclusions. Recommendations. One of the two writes it. The other does not start another round over it.
+`prompts/challenge-bot-build/conclusion.md` after both Round 3 files. What, why, how. Conclusions. Recommendations. One of the two writes it. The other does not start another round over it.
 
 ## What Bot reads before Round 1
 

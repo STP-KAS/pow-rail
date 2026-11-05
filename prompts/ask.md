@@ -2,7 +2,7 @@
 
 Paste the prompt below into Grok Ask. Ask has the chat and the public web. Ask does not edit the branch pages or the code. The opinion is not finished in the chat. It is written in the findings form under the prompt, and that form is pushed.
 
-This file is one record in the [surface map](README.md). Build's pre-challenge pages are [build.md](build.md). The loop is [challenge.md](challenge.md). The landing page stays [the repository README](../README.md).
+This file is one record in the [map](MAP.md). Build's pages from before the challenges are [build.md](build.md). Ask's closed run with Build is [challenge-ask-build.md](challenge-ask-build.md). Do not append a new round there. The landing page stays [the repository README](../README.md).
 
 Read in this order, then answer. Do not skim ahead and decide.
 
@@ -101,42 +101,73 @@ Date: 5 November 2026
 
 Surface: Grok Ask
 
-Commit reviewed: ef755966673c89fe6168dab4a73701fa058aa98e
+Commit reviewed: `ef755966673c89fe6168dab4a73701fa058aa98e`
 
-Links opened: README.md, DISCLAIMER.md, RAILS.md, GITHUBS.md, code/README.md, code/covenant/README.md, branches/01-launch.md, LOG.md, rusty-kaspa v2.1.0 release page, several raw kaspanet links via the code notes citations.
+Links opened: `README.md`, `DISCLAIMER.md`, `RAILS.md`, `GITHUBS.md`, `code/README.md`, `code/covenant/README.md`, `branches/01-launch.md`, `LOG.md`, the rusty-kaspa v2.1.0 release page, and several raw kaspanet links through the citations in the code notes.
 
-Links named and not opened: most individual branch pages beyond 01-launch (sampled the pattern), full kaspanet source trees at the pin (relied on the cited line numbers in code/README.md), SilverScript v1.0.0 full tree, Kaspa Explained pages, the WIRED/Verge Musk articles (cited in LOG.md).
+Links named and not opened: most branch pages after launch (the pattern was sampled), the full kaspanet trees at the pin (the line numbers cited in `code/README.md` were used), the SilverScript v1.0.0 tree, the Kaspa Explained pages, and the WIRED and Verge articles named in `LOG.md`.
 
-1. Verdict.
+This is Ask's finding of that commit, restated so each claim has a what, a why, and a how. The claims are Ask's.
 
-The repository correctly isolates the one property a public proof-of-work chain actually has that a company does not: there is no office that can be ordered to stop the blocks. It then refuses almost every overclaim about what that property is good for. Sealing an 81-byte hash of a public file, and locking KAS under a covenant that checks that hash, are live and match the pinned node. Licenses, vehicles, spectrum, export rules, and real-time control are not. I refuse to believe this is operationally material for most of the named branches. The fit is narrow, archival or bilateral, and the repository says so.
+#### 1. Verdict
 
-2. What holds.
+What. The repository isolates the one property a public proof-of-work chain has that a company does not: there is no office that can be ordered to stop the blocks. It refuses almost every overclaim about what that property is good for.
 
-- What: Node pin is rusty-kaspa v2.1.0, commit 01b532e8b553523216471682649693af92f0fd16, published 22 September 2026. Why: Release page lists that commit and date. How: https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0
-- What: PayloadDigest is BLAKE3 keyed with domain "PayloadDigest" (13 bytes + 19 zero key bytes); id_v1 splits payload digest from the rest. Why: code/README.md cites consensus/core/src/hashing/tx.rs and crypto/hashes/src/hashers.rs at the pin; the empty one-shot matches the published ZERO_PAYLOAD_DIGEST. How: those file links at tag v2.1.0.
-- What: 81-byte seal layout (magic, version, branch, kind, flags, 32-byte unkeyed BLAKE3, optional second hash) and the covenant checks OpTxPayloadLen == 81 and the magic + document hash via OpTxPayloadSubstr. Why: code/README.md and code/covenant/README.md match the opcodes present in the v2.1.0 tag. How: the sil file and the cited txscript opcodes.
-- What: KIP-21 is Active; user lane id is 4-byte namespace + 16 zeros with the non-zero constraint; native is 20 zero bytes. Why: code/README.md quotes section 2.1 and the status commit. How: https://github.com/kaspanet/kips/blob/master/kip-0021.md
-- What: DAGKnight (KIP-2) is Proposed and not in v2.1.0; vProgs has no release; Kaspa Dollar is a design, not a coin. Why: RAILS.md and code/README.md state the status as of the pass date. How: the KIP links and the vprogs repo tip cited.
-- What: Company GitHub orgs are correctly distinguished from lookalikes. Why: GITHUBS.md lists the real orgs and the false ones. How: the linked org pages.
+Why. An 81-byte hash of a public file, and KAS locked under a covenant that checks that hash, match the pinned node. A license, a vehicle, spectrum, an export rule, and real-time control do not move because a miner included the hash.
 
-3. What fails.
+How. The landing page states the missing office. [RAILS.md](../RAILS.md) states what the rail will not do. [branches/01-launch.md](../branches/01-launch.md) says the license does not stay and the vehicle does not fly.
 
-- What: The docs site claims a standard transaction mass cap of 100_000 that would limit payload-dominated txs to ~25 KB. Why: code/README.md correctly notes that constant was not found in the v2.1.0 tag; the actual mainnet transient limit is 1_000_000. The repository flags the mismatch and does not treat the docs figure as consensus. This is a documented discrepancy, not a silent error, but a reader who only sees the docs site would be wrong. How: code/README.md mass section and the cited constants.rs / params.rs at the pin.
-- What: Sealing a public telemetry snapshot or manual revision is presented as "worth exploring." Why: It is technically possible and the hash stays ordered, but the operational exposure it removes is weak relative to the license, range, or supplier bank exposures the same page lists. The page itself says the license does not stay and the vehicle does not fly. The claim holds as engineering; the "worth" is soft. How: branches/01-launch.md sections 2 and 3.
-- What: Covenant fee is 1000 sompi while the mempool minimum relay fee is 100_000 sompi. Why: code/covenant/README.md notes this and says a real spend must satisfy the mempool. The script is correct for its own named fee; it is not a drop-in mainnet template without adjustment. How: the sil file and the mempool config citation.
+Ask's refusal, in Ask's words: "I refuse to believe this is operationally material for most of the named branches." The fit Ask accepts is narrow, archival or bilateral, and the repository says so.
 
-4. What is missing.
+#### 2. What holds
 
-- A concrete mainnet fee and inclusion estimate for an 81-byte payload under current hashrate and fee market. The mass math is there; the practical cost is not.
-- Explicit treatment of hashrate concentration as a practical limit on the "no office" claim. Subpoenaing a foundation does nothing; a majority of hashrate going offline or being compelled does. The repository states the limit but does not quantify current concentration.
-- Any worked example of a verifier actually reconstructing the seal and checking it against a public file. The crate and the tests exist; a short public verification note does not.
+**Node pin.** What: rusty-kaspa `v2.1.0`, commit `01b532e8b553523216471682649693af92f0fd16`, published 22 September 2026. Why: the release page lists that commit and that date. How: [the v2.1.0 release](https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0).
 
-5. Pushback on the human brief.
+**Payload digest.** What: `PayloadDigest` is BLAKE3 keyed with the domain `PayloadDigest` (13 bytes, and 19 zero key bytes). A version-1 id splits that digest from the rest of the transaction. Why: `code/README.md` cites `consensus/core/src/hashing/tx.rs` and `crypto/hashes/src/hashers.rs` at the pin, and the empty one-shot matches the published `ZERO_PAYLOAD_DIGEST`. How: [tx.rs lines 207–223](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/hashing/tx.rs#L207-L223) and [hashers.rs lines 39–44](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/hashes/src/hashers.rs#L39-L44), as cited from the code notes. Ask used those citations and did not open the full tree.
 
-The branch habit forced every page to answer the same three questions and kept the scope honest. It also forced weak fits into the same template: a launch license and a public manual hash are not the same kind of exposure, yet both get the three-section treatment. "While miners mine" correctly describes ordered hashes and KAS covenants; it does almost no work for anything that requires the company to continue operating (spectrum, vehicle command, factory permits). The brief asked for engineering, not a manifesto, and the repository largely delivered that. The "Go fuck yourself" line is sourced and placed where the author asked; it does not change the technical claims.
+**Seal and covenant.** What: the seal is 81 bytes (magic, version, branch, kind, flags, a 32-byte unkeyed BLAKE3, and an optional second hash). The covenant checks `OpTxPayloadLen == 81`, the magic, and the document hash through `OpTxPayloadSubstr`. Why: `code/README.md` and `code/covenant/README.md` match the opcodes Ask treated as present in the v2.1.0 tag. How: [seal_escrow.sil](../code/covenant/seal_escrow.sil) and [the covenant notes](../code/covenant/README.md).
 
-6. What you would not change.
+**Lane id.** What: KIP-21 is Active. A user lane id is a 4-byte namespace plus 16 zeros, with the non-zero constraint. Native is 20 zero bytes. Why: `code/README.md` quotes section 2.1 and the status commit. How: [kip-0021.md](https://github.com/kaspanet/kips/blob/master/kip-0021.md). That file is master, not the node tag.
 
-The pin discipline, the live-versus-pipeline distinction, the explicit refusal to put export-controlled or private data on the chain, the "not for sale" framing, the code that matches the cited tag instead of describing it, and the requirement that findings land in the file rather than only in chat.
+**Pipeline.** What: DAGKnight (KIP-2) is Proposed and is not in v2.1.0. vProgs has no release. Kaspa Dollar is a design, not a coin. Why: `RAILS.md` and `code/README.md` state that status as of the pass date. How: [kip-0002.md](https://github.com/kaspanet/kips/blob/master/kip-0002.md), [kaspanet/vprogs](https://github.com/kaspanet/vprogs), and the Kaspa Dollar row in [RAILS.md](../RAILS.md).
+
+**Company orgs.** What: the company GitHub orgs are distinguished from lookalikes. Why: `GITHUBS.md` lists the orgs Ask treated as real and the ones Ask treated as false. How: the org pages linked from [GITHUBS.md](../GITHUBS.md). Ask named that check as the linked org pages.
+
+#### 3. What fails
+
+These three are Ask's reading of commit `ef75596`. The closed rounds later changed the fee sentence and the mass sentence. That correction is under "What the closed rounds changed," below this finding. It is not part of the finding.
+
+**Docs mass.** What: the docs site claims a standard-transaction mass cap of 100_000, which would limit a payload-dominated transaction to about 25 KB. Why: Ask read `code/README.md` as correctly noting that this constant was not found in the v2.1.0 tag, and read the mainnet transient limit as 1_000_000. The repository flags the mismatch and does not treat the docs figure as consensus. A reader who only sees the docs site would be wrong. How: the mass section of [code/README.md](../code/README.md), [constants.rs lines 28–31](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/constants.rs#L28-L31), and [params.rs lines 617–626](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/params.rs#L617-L626).
+
+**Worth exploring.** What: sealing a public telemetry snapshot or a manual revision is presented as worth exploring. Why: the hash can stay ordered, and the operational exposure that removes is weak next to the license, the range, and the supplier-bank exposures on the same page. The page says the license does not stay and the vehicle does not fly. The engineering claim holds. The word "worth" is soft. How: [branches/01-launch.md](../branches/01-launch.md), sections 2 and 3.
+
+**Covenant fee.** What: the covenant fee is 1000 sompi, and Ask called the mempool minimum relay fee 100_000 sompi. Why: `code/covenant/README.md` notes the 1000 figure and says a real spend must satisfy the mempool. Ask treated the script as correct for its own named fee, and not as a drop-in mainnet template without adjustment. How: [seal_escrow.sil](../code/covenant/seal_escrow.sil) and the mempool config citation in [the covenant notes](../code/covenant/README.md).
+
+#### 4. What is missing
+
+What. A concrete mainnet fee and inclusion estimate for an 81-byte payload under the fee market Ask would call current. Why: the mass math is in the code notes, and the practical cost is not. How: the mass section of [code/README.md](../code/README.md).
+
+What. A number for hashrate concentration, as a practical limit on the missing-office claim. Why: subpoenaing a foundation does nothing, and a majority of hashrate going offline or being compelled does. The repository states that limit and does not quantify concentration. How: [RAILS.md](../RAILS.md), the "one off switch" section. Ask did not supply a hashrate source. This item stays unquantified.
+
+What. A worked example of a verifier rebuilding the seal and checking it against a public file. Why: the crate and the tests exist, and a short public verification note does not. How: [code/kaspa-seal](../code/kaspa-seal/Cargo.toml).
+
+#### 5. Pushback on the human brief
+
+What. The branch habit made every page answer the same three questions, and it also put a launch license and a public manual hash through one template. Why: those are not the same kind of exposure. "While miners mine" describes an ordered hash and a KAS covenant. It does almost no work for spectrum, a vehicle command, or a factory permit, because those need the company to keep operating. How: the three sections on [branches/01-launch.md](../branches/01-launch.md), set next to the brief inside the prompt above.
+
+The brief asked for engineering. Ask's reading is that the repository largely did that. The "Go fuck yourself" line is sourced and placed where the author asked. It does not change the technical claims. The two sources are the WIRED and Verge links on the landing page. Ask named them and did not open them.
+
+#### 6. What Ask would not change
+
+The pin discipline. The split between what is live and what is still a pipeline. The refusal to put export-controlled or private data on the chain. The "not for sale" framing. Code that matches the cited tag. The rule that a finding lands in this file.
+
+## What the closed rounds changed
+
+This note is not Ask's finding. The three rounds in [challenge-ask-build.md](challenge-ask-build.md) changed two sentences in section 3 above. Ask's verdict was not withdrawn.
+
+**Fee.** The tag constant `DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE` is 100_000, and the comment says sompi per kilogram of mass. The fee function is mass times that constant, divided by 1000. It is a rate. It is not a flat floor of 100_000 sompi, and it is not a mass cap. [config.rs lines 17–20](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/config.rs#L17-L20). [check_transaction_standard.rs lines 92–97](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/check_transaction_standard.rs#L92-L97). The covenant still names 1000 sompi on its own input. Ask accepted the rate in Round 2. The script does not check the branch byte or the kind byte. Release still requires the arbiter's signature. [seal_escrow.sil](../code/covenant/seal_escrow.sil).
+
+**Transient mass.** The mainnet field 1_000_000 is transient mass, not a byte count. The tag factor is 4. The comment on that struct calls the footprint 250 KB. [params.rs lines 617–626](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/params.rs#L617-L626). [constants.rs lines 28–31](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/constants.rs#L28-L31). The docs page still says a standard transaction is capped at mass 100_000 and about 25 KB when the payload dominates. [transaction-payload](https://docs.kaspa.org/integrate/transaction-payload). That cap was not found as a consensus constant in the tag files those rounds opened. The 100_000 that is in the tag is the fee rate.
+
+**Left standing.** No round measured a hashrate share, so Ask's missing concentration number was not filled. No round measured the mass of a `SealEscrow` spend, so this page still has no sompi total for getting the seal included. The launch page already says the license and the vehicle do not stay.
 

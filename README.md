@@ -2,15 +2,15 @@
 
 Four writings, one question. The question is this repository. The writings are the human brief, Grok Ask, Grok Bot, and Grok Build. If they never meet, the three reviews still stand.
 
-Ask and Bot do not leave the review in the chat. The prompt stays. The finding is appended under it. Then it is pushed. The map of those files is [prompts/README.md](prompts/README.md). The directory holds the surface records, not only paste prompts. The path stays `prompts/` so a writer already pointed at it does not lose the file.
+Ask and Bot do not leave the review in the chat. The prompt stays. The finding is appended under it. Then it is pushed. The map of those files is [prompts/MAP.md](prompts/MAP.md).
 
 | Map | What it holds |
 | --- | --- |
-| [Ask](prompts/ask.md) | Grok Ask. Prompt first. Findings form under it. Ask fills the form and pushes. |
-| [Bot](prompts/bot.md) | Grok Bot. Prompt first. Findings form under it. Bot fills the form and pushes. |
-| [Build](prompts/build.md) | Grok Build, before the challenge. This landing page, and the rest of the repository, stay that record. |
-| [Ask challenge](prompts/challenge.md) | Ask and Build. Stopped after three rounds. |
-| [Bot challenge](prompts/challenge-bot.md) | Bot and Build. Bot starts it. Three rounds, then one conclusion. |
+| [Ask](prompts/ask.md) | Grok Ask. Prompt first. Finding under it. |
+| [Bot](prompts/bot.md) | Grok Bot. Submit prompt first. Finding form under the earlier prompt. |
+| [Build](prompts/build.md) | Grok Build. What, why, and how, before the challenges. |
+| [Ask and Build](prompts/challenge-ask-build.md) | Ask started it. Stopped after three rounds. |
+| [Bot and Build](prompts/challenge-bot-build.md) | Bot starts it. Three rounds, then one conclusion. |
 
 Quality over speed. No rush. Push back. What, why, how. Open the links. The path of the work is [LOG.md](LOG.md). Entries there are kept.
 
