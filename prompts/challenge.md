@@ -15,7 +15,7 @@ Quality over speed. No rush. Push back. What, why, how. Links and sources.
 
 ## Layout
 
-The live exchange is the heading "5-turn Ask vs Build" below. Round 1 is filled. Ask's Round 2 is filled, and Build's reply is under it. The next writer is Ask, under Round 3.
+The live exchange is the heading "5-turn Ask vs Build" below. Rounds 1, 2, and 3 are filled. The next writer is Ask, under Round 4.
 
 Build's work from before this loop is [build.md](build.md). The landing page is [the README](../README.md). It stays Build's page. Whether this challenge later replaces that page, or the rest of the repository, is open. It is not decided here, and this file does not do it.
 
@@ -139,17 +139,49 @@ Hashrate concentration is not carried. RAILS.md states the majority limit and do
 
 #### Round 3
 
-Commit `84347b6` replaced this file with the single token `PLACEHOLDER_CONTENT` and deleted the exchange. That commit is not an attack. The rounds above were restored from `5c6f963`.
+**Ask (Round 3):**
 
-Commit `31f0c4f` replaced this file again, with the words `See local staging`. That commit is not an attack either. No other branch, stash, or local file on this checkout held a Round 3 text. The exchange was restored from `150f8d5`.
+Accepted on the fee-sentence gap. The launch detail says the script subtracts the fee it names, and the script names 1000 sompi. The mempool rule is the mass rate. Round 2 accepted the rate and did not cite that sentence. A reader can treat 1000 sompi as the fee that gets the spend included. That is incomplete. Link: branches/01-launch.md detail and seal_escrow.sil.
 
-Commit `68cc55c` replaced this file a third time, with the word `test`. The message was `Test update`. That is not an attack. The exchange is restored from `c0a8cc9`. There is no claim in these commits to accept, and no link in them to open.
+Accepted on the heading hazard. "## 2. Worth exploring" is claim-shaped. Section 3 is the withdrawal. A reader who stops at the heading has not read the withdrawal. That is real. Replacing the three sections with a single "not material" line would hide the weak fit the brief wanted left visible. The template keeps it visible. It also keeps the thin fit looking like a fit until the reader reaches the next section.
 
-Ask appends the Round 3 attack here. Build answers under that append, after it is in the file.
+Pushback on ranking. Round 2 called the Starlink beam a clearer company off-switch than the launch-manual hash. The brief asked the three questions of each branch. It did not ask which company switch is the better example. That ranking was extra. The beam is still SpaceX's switch. The manual hash is still ordered after the site is gone. Both can be true without a ranking.
+
+The supplier-milestone hash remains the brief's third question. The bytes that do it are the 81-byte seal on the native lane. The license still stops the flight. The clock is the seal. Calling the heading a costume is a reading hazard, not a claim that the clock is undone.
+
+Gap list (updated):
+- The launch detail's "minus the fee the script names" can be read as the inclusion fee. The script names 1000 sompi; the relay rule is the mass rate. Surface: the repository pages. Link: branches/01-launch.md and seal_escrow.sil.
+- The "Worth exploring" heading is claim-shaped; the withdrawal is the next section. Surface: the branch pages. Link: branches/01-launch.md.
+- Docs site still states a 100_000 mass cap that the checked tag files do not use as a cap. Surface: docs site vs tag. Link: docs.kaspa.org/integrate/transaction-payload.
+- No measured hashrate concentration. Surface: Ask and the repo. Link: RAILS.md.
+
+**Build (Round 3 reply):**
+
+Bias stands. This surface wrote the pages. This turn re-opened [branches/01-launch.md](https://github.com/STP-KAS/pow-rail/blob/4d4b32c4e90ac48fef0c35c2e4dfa4ddc686c0ce/branches/01-launch.md) and [seal_escrow.sil](https://github.com/STP-KAS/pow-rail/blob/4d4b32c4e90ac48fef0c35c2e4dfa4ddc686c0ce/code/covenant/seal_escrow.sil). The fee function and the transient-mass field were opened earlier in this session at rusty-kaspa `01b532e8b553523216471682649693af92f0fd16`. They were not re-downloaded today. SilverScript `3ed973335b59269293564805cc2c58a14595ec03` was not opened. No hashrate table was opened.
+
+Re-opened and accepted. The fee sentence is on the page. The detail says the script sends this input's value, minus the fee the script names, to the buyer or the seller. The script sets `minerFee` to 1000 and requires output 0 to equal this input minus that 1000. The mempool rule opened earlier is `mass * 100_000 / 1000` sompi. A reader can take 1000 sompi as the fee that gets the spend included. The heading hazard is also on the page: section 2 is "Worth exploring," and section 3 is where the license and the vehicle are given back. The ranking in Round 2 was extra. The beam stays under SpaceX. The manual hash stays ordered after the site is gone. The brief did not ask for a winner between them. The supplier-milestone clock is the 81-byte seal. The license still stops the flight.
+
+Link that does not say what is claimed. The hashrate item cites RAILS.md again. That page says a majority of hashrate can stop the blocks. It does not give a pool share, a miner count, or a date. [RAILS.md](https://github.com/STP-KAS/pow-rail/blob/4d4b32c4e90ac48fef0c35c2e4dfa4ddc686c0ce/RAILS.md). A missing number is not a figure the link contains.
+
+Too kind. The release. Ask's payment gap is the 1000 sompi reading. The script does not release on that arithmetic alone. `release` requires `blake2b` of the signing pubkey to equal the arbiter, and then `checkSig`. That signature is an office. The company system is the supplier milestone: the same page says a launch contract is written in dollars, and the escrow fits only a milestone both sides denominate in KAS. The KAS, if it is locked here, waits on the arbiter. Ask's Round 3 does not name that check.
+
+Too harsh. Nothing in this round says the clock is undone. The 81-byte seal, with the file hash at bytes 17..49, still does the ordering job on the native lane. The harsh item is the hashrate line treated as a hole in the no-office claim. The page already states the limit. No opcode in the pin measures a pool.
+
+Where the brief was smoothed. This round puts the three questions back. The beam and the ordered hash are allowed to stand together. The heading note is a reading order inside those questions: the positive label comes first, the withdrawal comes next. That is not a different question. Replacing the sections would hide the weak fit. Leaving the heading claim-shaped makes a skim look like a recommendation. Both of those sentences can stay.
+
+Gap list:
+
+1. The release entry requires the arbiter's signature before the 1000 sompi arithmetic runs. Ask's Round 3 fee gap does not name that check. [seal_escrow.sil](https://github.com/STP-KAS/pow-rail/blob/4d4b32c4e90ac48fef0c35c2e4dfa4ddc686c0ce/code/covenant/seal_escrow.sil).
+
+2. The launch detail still says the script subtracts the fee it names, and the script still names 1000 sompi. The relay rule is the mass rate. Both rounds now see the sentence. The page still publishes it. [branches/01-launch.md](https://github.com/STP-KAS/pow-rail/blob/4d4b32c4e90ac48fef0c35c2e4dfa4ddc686c0ce/branches/01-launch.md).
+
+3. The docs page still says a standard transaction is capped at mass 100_000. The tag files opened in Round 1 do not use 100_000 as that cap. This turn did not search the rest of the tree. [Transaction payload](https://docs.kaspa.org/integrate/transaction-payload).
+
+Hashrate concentration is not carried. RAILS.md states the majority limit and does not measure it.
 
 #### Round 4
 
-Empty until Round 3 is in the file.
+Ask appends the next attack here. Build answers under that append, after it is in the file.
 
 #### Round 5
 
@@ -159,7 +191,7 @@ After Round 5, label the remaining gaps.
 
 ## Paste prompts
 
-These stay so a later pass can see what was asked. Rounds 1 and 2 have already been written above. The next text in the exchange is Ask, under Round 3. Do not start Round 3 from these prompts.
+These stay so a later pass can see what was asked. Rounds 1, 2, and 3 have already been written above. The next text in the exchange is Ask, under Round 4. Do not start Round 4 from these prompts.
 
 ### Prompt for Build, Round 1 reply (already used)
 

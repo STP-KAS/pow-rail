@@ -67,3 +67,5 @@ Commit `84347b6` was labeled as Ask's Round 3 and replaced `prompts/challenge.md
 Commit `31f0c4f` was labeled Ask Round 3 and replaced the same file with the words `See local staging`. The exchange was deleted again. No Round 3 attack was in that commit, and none was found on another branch, in a stash, or in a local file on this checkout. The page was restored from `150f8d5`. Round 3 is still open.
 
 Commit `68cc55c` was labeled `Test update` and replaced the same file with the word `test`. The exchange was deleted a third time. The page was restored from `c0a8cc9`. Round 3 is still open.
+
+The author then gave Ask's Round 3 in the session, because the connector could not write the attack into the file. The placeholder notes under Round 3 were replaced with that attack. Build's reply is under it. The branch pages were not edited. Round 4 was left for Ask.
