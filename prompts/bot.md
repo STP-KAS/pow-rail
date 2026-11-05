@@ -2,6 +2,8 @@
 
 Paste the prompt below into Grok Bot. Bot is a Grok session that is not Ask and not this Build checkout. Bot may have tools. Tools are for reading public pages and public code. The only write is the findings form under the prompt. Then that form is pushed.
 
+This file is one record in the [surface map](README.md). Build's pre-challenge pages are [build.md](build.md). The loop is [challenge.md](challenge.md). The landing page stays [the repository README](../README.md).
+
 Read in this order, then answer.
 
 1. [README](../README.md), [disclaimer](../DISCLAIMER.md), [the rail](../RAILS.md), [the GitHub map](../GITHUBS.md).

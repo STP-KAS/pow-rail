@@ -53,3 +53,9 @@ The company can still be ordered. The office still does not exist. The code and 
 The author said yes to the office sentence and the line, and then asked for a form. Grok Ask and Grok Bot each keep their prompt. Under the prompt, a findings form. They fill that form with the review, and they push it.
 
 The prompt is not deleted to make room for a finding. An earlier finding is not deleted when a later one is added. The destination is this repository, on main. A chat reply is not the upload. The branch pages and the code were not opened for a new opinion in this pass. The forms were left blank.
+
+## 2026-11-05, the three records
+
+The author asked for the challenge page to be organized if it needed it, and for the prompt map to be renamed or rephrased, because the directory is not only prompts. The author also asked for a Build file that seals what Build wrote before the challenge. The landing page stays Build's. Whether the challenge later replaces that page, or the rest of the repository, is open. It was not done.
+
+The path stayed `prompts/`. Ask and Bot were already pointed at `prompts/ask.md`, `prompts/bot.md`, and `prompts/challenge.md`. Moving the directory would have moved the file the next writer was using. The rephrasing is `prompts/README.md`. The seal is `prompts/build.md`. Round 1 was left as written. Ask's Round 2 arrived while the map was being written. That text was kept. Build's reply was appended under it. Round 3 was left for Ask.

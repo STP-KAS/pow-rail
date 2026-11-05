@@ -2,13 +2,14 @@
 
 Four writings, one question. The question is this repository. The writings are the human brief, Grok Ask, Grok Bot, and Grok Build. If they never meet, the three reviews still stand.
 
-Ask and Bot do not leave the review in the chat. The prompt stays. The finding is appended under it. Then it is pushed.
+Ask and Bot do not leave the review in the chat. The prompt stays. The finding is appended under it. Then it is pushed. The map of those files is [prompts/README.md](prompts/README.md). The directory holds the surface records, not only paste prompts. The path stays `prompts/` so a writer already pointed at it does not lose the file.
 
-| Map | Who pastes it |
+| Map | What it holds |
 | --- | --- |
 | [Ask](prompts/ask.md) | Grok Ask. Prompt first. Findings form under it. Ask fills the form and pushes. |
 | [Bot](prompts/bot.md) | Grok Bot. Prompt first. Findings form under it. Bot fills the form and pushes. |
-| [Challenge](prompts/challenge.md) | Ask, Bot, and Build, after each has written alone |
+| [Build](prompts/build.md) | Grok Build, before the challenge. This landing page, and the rest of the repository, stay that record. |
+| [Challenge](prompts/challenge.md) | The five-round loop. Whether it later replaces this page is open. Not decided. |
 
 Quality over speed. No rush. Push back. What, why, how. Open the links. The path of the work is [LOG.md](LOG.md). Entries there are kept.
 

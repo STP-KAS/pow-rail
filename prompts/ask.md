@@ -2,6 +2,8 @@
 
 Paste the prompt below into Grok Ask. Ask has the chat and the public web. Ask does not edit the branch pages or the code. The opinion is not finished in the chat. It is written in the findings form under the prompt, and that form is pushed.
 
+This file is one record in the [surface map](README.md). Build's pre-challenge pages are [build.md](build.md). The loop is [challenge.md](challenge.md). The landing page stays [the repository README](../README.md).
+
 Read in this order, then answer. Do not skim ahead and decide.
 
 1. [README](../README.md), [disclaimer](../DISCLAIMER.md), [the rail](../RAILS.md), [the GitHub map](../GITHUBS.md).

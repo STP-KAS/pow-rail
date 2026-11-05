@@ -7,11 +7,19 @@ Ask, Bot, and Build each write alone first. Then they attack the gaps. If the se
 | 1. Human brief | Already inside each prompt. Do not rewrite it into a cleaner question. | The brief in [Ask](ask.md), [Bot](bot.md), and below |
 | 2. Ask | Grok Ask, the chat | [ask.md](ask.md) |
 | 3. Bot | Grok Bot, a different session | [bot.md](bot.md) |
-| 4. Build | Grok Build, this kind of checkout | The Build prompt below |
+| 4. Build | Grok Build. Prior work is [build.md](build.md). The landing page stays the repository README. | The alone prompt at the bottom of this file |
 
 Public copy: <https://github.com/STP-KAS/pow-rail>
 
 Quality over speed. No rush. Push back. What, why, how. Links and sources.
+
+## Layout
+
+The live exchange is the heading "5-turn Ask vs Build" below. Round 1 is filled. Ask's Round 2 is filled, and Build's reply is under it. The next writer is Ask, under Round 3.
+
+Build's work from before this loop is [build.md](build.md). The landing page is [the README](../README.md). It stays Build's page. Whether this challenge later replaces that page, or the rest of the repository, is open. It is not decided here, and this file does not do it.
+
+The paste prompts sit below the five rounds, so the exchange is the body of the page and the instructions are the tail. The directory index is [README.md](README.md).
 
 ## Alone writings
 
@@ -105,17 +113,51 @@ Gap list (updated):
 - Covenant does not constrain branch or kind. The signer does. Surface: the repository (code/covenant and the alone finding). Link: seal_escrow.sil.
 - No measured hashrate concentration. Surface: Ask and the repo. Link: RAILS.md.
 
+**Build (Round 2 reply):**
+
+Bias stands. This surface wrote the pages. The tag files for the fee rate and the transient mass were opened earlier in this session, at rusty-kaspa `01b532e8b553523216471682649693af92f0fd16`. They were not re-downloaded for this reply. SilverScript `3ed97333` was not opened. No hashrate table was opened.
+
+Re-opened and accepted. The four corrections stand. The fee constant is a rate, the transient field is mass with a factor of 4, the Starlink beam was outside Round 1's citations, and the covenant does not check the branch byte or the kind byte. The launch detail's payment sentence claims a narrower job than "the whole seal." It says the script requires a version-1 seal of the document hash it was constructed with, then sends this input's value, minus the fee the script names, to the buyer or the seller. https://github.com/STP-KAS/pow-rail/blob/6ffd20c811f9678643b21e5436c29437bbad1037/branches/01-launch.md The script checks the magic, the version byte `0x01`, and bytes 17..49. That is the document-hash job the sentence names. Branch and kind sit outside that sentence. Ask's narrowing is the one the page supports.
+
+Link that does not say what is claimed. The updated hashrate gap cites RAILS.md as the measurement. That page says a majority of hashrate can stop the blocks. It does not give a pool share, a count of miners, or a date for a concentration figure. https://github.com/STP-KAS/pow-rail/blob/6ffd20c811f9678643b21e5436c29437bbad1037/RAILS.md A missing number is not a number the link contains.
+
+Too kind. The launch detail's phrase "minus the fee the script names." The script names 1000 sompi on this input. The mempool rule opened earlier is `mass * 100_000 / 1000` sompi. Ask accepted the rate and left the page sentence standing. A reader of that sentence can take 1000 sompi as the fee that gets the spend included. The company system beside it is the supplier bank and the dollar launch contract: the same section says a launch contract is written in dollars, and the escrow fits only a milestone both sides denominate in KAS. The 1000 sompi line does not close that contract.
+
+Too harsh. The supplier-milestone hash on the same page. "Each party keeps the PDF. Any of them can seal the hash. None of them is then the only clock." That is the brief's third question, and the bytes that do it are the 81-byte `PublicFile` seal, payload bytes 17..49, ordered on the native lane. Calling the heading a costume for a thin fit is fair as a reading hazard. It is harsh as a claim that the clock job is undone. The license still stops the flight. The clock is the seal.
+
+Where the brief was smoothed. "A clearer company off-switch than the launch-manual hash" ranks the beam against the manual. The brief asked the three questions of each branch. It did not ask which company switch is the better example. The heading "## 2. Worth exploring" is a positive label, and section 3 is where the page gives the flight back. https://github.com/STP-KAS/pow-rail/blob/6ffd20c811f9678643b21e5436c29437bbad1037/branches/01-launch.md A reader who stops at the heading has not read the withdrawal. That hazard is real. Replacing the three sections with a single "not material" line would hide the weak fit the brief wanted left visible.
+
+Gap list:
+
+1. The launch detail says the script subtracts the fee it names, and the script names 1000 sompi. The relay rule is a mass rate. Ask's Round 2 accepted the rate and did not cite this sentence. https://github.com/STP-KAS/pow-rail/blob/6ffd20c811f9678643b21e5436c29437bbad1037/branches/01-launch.md and https://github.com/STP-KAS/pow-rail/blob/6ffd20c811f9678643b21e5436c29437bbad1037/code/covenant/seal_escrow.sil
+
+2. The heading "Worth exploring" is claim-shaped, and the withdrawal is the next section. Ask named the costume. The page is the source. https://github.com/STP-KAS/pow-rail/blob/6ffd20c811f9678643b21e5436c29437bbad1037/branches/01-launch.md
+
+3. The docs page still says a standard transaction is capped at mass 100_000. The tag files opened in Round 1 do not use 100_000 as that cap. This reply did not search the rest of the tree. https://docs.kaspa.org/integrate/transaction-payload
+
+Hashrate concentration is not carried. RAILS.md states the majority limit and does not measure it.
+
 #### Round 3
+
+Ask appends the next attack here. Build answers under that append, after it is in the file.
 
 #### Round 4
 
+Empty until Round 3 is in the file.
+
 #### Round 5
+
+Empty until Round 4 is in the file.
 
 After Round 5, label the remaining gaps.
 
-### Prompt for Build, Round 1 reply
+## Paste prompts
 
-Paste this into Build after Ask has written the opening attack under Round 1 above.
+These stay so a later pass can see what was asked. Rounds 1 and 2 have already been written above. The next text in the exchange is Ask, under Round 3. Do not start Round 3 from these prompts.
+
+### Prompt for Build, Round 1 reply (already used)
+
+Paste this into Build after Ask has written the opening attack under Round 1 above. Round 1 now contains that reply. Kept.
 
 ```text
 You are Grok Build. You wrote the repository. Treat that as a bias. This is your reply in Round 1 of the Ask-vs-Build loop. Bot is not in this loop yet.
