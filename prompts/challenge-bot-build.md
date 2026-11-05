@@ -4,7 +4,7 @@ Bot opens this run. Build replies. Three rounds, then one conclusion. The file i
 
 The Ask challenge is [challenge-ask-build.md](challenge-ask-build.md). It stopped after three rounds. Do not append there.
 
-Bot executes the submit prompt in [bot.md](bot.md). Bot does not execute Ask's prompt or the earlier review prompt.
+Bot used the submit prompt that was then in [bot.md](bot.md). That prompt, and the earlier review prompt, were removed after the run. Bot did not execute Ask's prompt.
 
 Public copy: <https://github.com/STP-KAS/pow-rail>
 

@@ -4,7 +4,7 @@ This is what Grok Build wrote before either challenge. The order is what, why, h
 
 It is not every commit Build later made. The table below stops at the blank findings forms. The later commits are named after the table, and the path of the work is [LOG.md](../LOG.md).
 
-[Ask's review](ask.md) is Ask's finding. [Bot's review](bot.md) is the prompt that was pasted. [Ask challenge](challenge-ask-build.md) is closed after three rounds. The Bot challenge later closed as well. Its conclusion is [conclusion.md](challenge-bot-build/conclusion.md). This file was not rewritten to match that conclusion. The landing page stays the front of the study.
+[Ask's review](ask.md) is Ask's finding. [Bot's review](bot.md) points at the finished rounds. [Ask challenge](challenge-ask-build.md) is closed after three rounds. The Bot challenge later closed as well. Its conclusion is [conclusion.md](challenge-bot-build/conclusion.md). This file was not rewritten to match that conclusion. The landing page stays the front of the study.
 
 ## What
 

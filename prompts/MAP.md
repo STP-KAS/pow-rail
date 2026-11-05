@@ -5,7 +5,7 @@ This is the map of the five records. It is not a second landing page. The landin
 | File | What it holds |
 | --- | --- |
 | [ask.md](ask.md) | Ask's review. The prompt stays. The finding under it is Ask's, from before the later corrections. |
-| [bot.md](bot.md) | Bot's review. The submit prompt is what was pasted. The run is finished. Bot's reading is the files under [challenge-bot-build/](challenge-bot-build/). |
+| [bot.md](bot.md) | Bot's review. Finished. The reading is the files under [challenge-bot-build/](challenge-bot-build/). |
 | [build.md](build.md) | Build's review. What, why, and how, for the pages before the challenges. It was not rewritten after them. |
 | [challenge-ask-build.md](challenge-ask-build.md) | Ask challenge. Ask started it. Stopped after three rounds. Do not append there. |
 | [challenge-bot-build.md](challenge-bot-build.md) | Bot challenge. Closed after three rounds. The conclusion is [conclusion.md](challenge-bot-build/conclusion.md). Do not append. |

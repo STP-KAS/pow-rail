@@ -12,12 +12,12 @@ Go fuck yourself. That is for anyone who thinks this chain is a door they can sh
 
 ## Where the reading is
 
-The branch pages are the study, after the sentences the challenges showed were wrong. Ask's finding stays Ask's, from before those corrections. Build's review is what Build wrote before either challenge. Bot's file is the prompt that was pasted. Bot's reading is the round files. Both challenges are closed. They do not replace this page.
+The branch pages are the study, after the sentences the challenges showed were wrong. Ask's finding stays Ask's, from before those corrections. Build's review is what Build wrote before either challenge. Bot's reading is the round files. Both challenges are closed. They do not replace this page.
 
 | Record | What it is |
 | --- | --- |
 | [Ask's review](prompts/ask.md) | Ask's finding. The closed rounds corrected it. The finding was not rewritten. |
-| [Bot's review](prompts/bot.md) | The prompt. The run is finished. |
+| [Bot's review](prompts/bot.md) | Finished. The reading is the round files. |
 | [Build's review](prompts/build.md) | What Build wrote before the challenges. |
 | [Ask challenge](prompts/challenge-ask-build.md) | Closed after three rounds. |
 | [Bot challenge](prompts/challenge-bot-build.md) | Closed after three rounds. |

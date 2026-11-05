@@ -121,3 +121,9 @@ The landing page stays the front. It says this is a study. The branch pages stay
 The author asked whether the rounds, especially with Bot, were worth carrying forward, and asked for a humble place to start from if the study continues. Not a claim.
 
 `FROM-HERE.md` is that place. It keeps the sentences both sides left smaller: the 81-byte seal, the pruning window, the fee rate, the arbiter lock on coins that entered the script, and the difference between a pool leaving a transaction out and the chain stopping. It names the sentences not to pick back up. It does not promise the work that was left undone. The landing page points at it. The conclusion stays the long record. The branch pages stay the study.
+
+## 2026-11-05, Bot's page
+
+The author asked to take the prompts off `prompts/bot.md`. The challenge is finished. The point lists were hard to use, and the separate review was not needed.
+
+The page now points at the three rounds and the conclusion. The paste prompt, the earlier review prompt, and the blank findings form are off the page. The text remains in the history of that file. The landing page, the map, and Build's review no longer call that page a prompt.
