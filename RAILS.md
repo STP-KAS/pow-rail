@@ -57,4 +57,4 @@ If DAGKnight lands, clients can accept a seal sooner, tracking real delay instea
 - It will not hide data. A public chain is a poor place for export-controlled designs, customer prompts, neural recordings, and vehicle traces. Seal a hash. Keep the file elsewhere.
 - It will not clear a national power market, route Starlink, or authenticate a command the car must execute in milliseconds. Those systems already have a faster, private mechanism. See [teslamotors/vehicle-command](https://github.com/teslamotors/vehicle-command) and [teslamotors/ttpoe](https://github.com/teslamotors/ttpoe).
 
-The encoder, the vector tests, and the covenant are in [the code notes](code/README.md).
+The encoder, the vector tests, and the covenant are in [the code notes](code/BYTES.md).

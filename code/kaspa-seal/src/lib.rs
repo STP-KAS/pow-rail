@@ -5,7 +5,7 @@
 //! This crate does not broadcast, does not open a socket, and does not take a key.
 //!
 //! The digest matches rusty-kaspa tag `v2.1.0` (`01b532e8b553523216471682649693af92f0fd16`).
-//! The reasoning and the file links are in `code/README.md` at the root of this repository.
+//! The reasoning and the file links are in `code/BYTES.md` at the root of this repository.
 
 mod digest;
 mod lane;
@@ -21,7 +21,7 @@ pub use seal::{
 /// wallet puts these exact bytes in `Transaction.payload`.
 ///
 /// The returned digest is not the transaction id. `id_v1` hashes this digest together
-/// with a second digest of the transaction body. See `code/README.md`.
+/// with a second digest of the transaction body. See `code/BYTES.md`.
 pub fn committed_payload_digest(branch: Branch, kind: Kind, file: &[u8]) -> [u8; 32] {
     payload_digest(&seal_file(branch, kind, file))
 }

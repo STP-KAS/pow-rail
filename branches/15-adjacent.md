@@ -44,4 +44,4 @@ DICOM files, spike trains, and participant records are not a kind. They are not 
 
 The Boring Company's inspection case, if a project is actually producing packs and one portal is the only copy, uses `Kind::Inspection` on this same branch id. The 2019 repository is not that project. The permit is not `encode_seal`.
 
-Everyone else's use of the encoder is the same 81 bytes and the same `PayloadDigest`. The fee is whatever KAS the transaction pays. The crate does not invoice it. Tests recompute the node's published vectors. They do not submit. The write-up of those vectors, of KIP-21's 20-byte lane id, and of the two precompile tags is [the code notes](../code/README.md).
+Everyone else's use of the encoder is the same 81 bytes and the same `PayloadDigest`. The fee is whatever KAS the transaction pays. The crate does not invoice it. Tests recompute the node's published vectors. They do not submit. The write-up of those vectors, of KIP-21's 20-byte lane id, and of the two precompile tags is [the code notes](../code/BYTES.md).

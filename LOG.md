@@ -93,3 +93,15 @@ Ask's finding in `prompts/ask.md` was restated as what, why, and how. The claims
 ## 2026-11-05, the landing page
 
 The author corrected the opening. Proof of work is a product. There is no vendor and no contract. Miners make the blocks. Developers maintain the software. Anyone may use the infrastructure. Nothing in this repository is for sale. Whether that use has value is for a person or a company to decide. The office sentence stays. The DealBook line stays. The review table now says what Ask's review, Bot's review, Build's review, the Ask challenge, and the Bot challenge are. The branch list stays. The rail and the GitHub map stay as references under that list. The disclaimer and Build's review use the same opening, so the kit does not say the infrastructure is not a product.
+
+## 2026-11-05, one README
+
+The author asked again why there were two READMEs, and asked for less noise on the landing page.
+
+The two files do different jobs, so the byte notes were not merged into the landing page. `code/README.md` is now `code/BYTES.md`. The landing page is the only README. `code/covenant/README.md` stays. It is the note for the script in that folder.
+
+The office sentence stays. The product sentence says there is no vendor and no contract, that miners and developers maintain the infrastructure, that anyone may use it, and that nothing here is for sale. The no-issuer sentence stays, shorter. The DealBook paragraph is one sentence, with the same two sources. The longer wording remains in the log entry that first recorded it. The review table says what Ask's review, Bot's review, Build's review, the Ask challenge, and the Bot challenge are. The branch list stays. The rail is a link under that list.
+
+`prompts/ask.md` is ordered as the prompt, then the finding, then the closed-round corrections. The claims stay Ask's, at commit `ef75596`. `prompts/build.md` says its commit table stops at the blank findings forms. Later Build commits are in this log. The challenge filenames stay `challenge-ask-build.md` and `challenge-bot-build.md`, because the name leads with who writes first. Ask opened the closed run. Bot opens the next one.
+
+Bot's submit prompt has the same job. The path inside it now says `code/BYTES.md`. Bot was not started.

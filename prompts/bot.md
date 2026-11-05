@@ -26,7 +26,7 @@ Clock. Europe/Brussels, 5 November 2026. Do not start before 19:30. If your usag
 Order. Care, from top to bottom. Do not skim and decide.
 
 1. Kaspa, most of all. Open the pins the pages name. rusty-kaspa v2.1.0 is commit 01b532e8b553523216471682649693af92f0fd16. SilverScript v1.0.0 is commit 3ed973335b59269293564805cc2c58a14595ec03. A KIP is the file on the day you read it. Master is not the node pin. If you did not open a file, say so.
-2. Then this repository, the whole of it. README.md, DISCLAIMER.md, RAILS.md, GITHUBS.md, LOG.md, prompts/MAP.md, prompts/ask.md, prompts/bot.md, prompts/build.md, prompts/challenge-ask-build.md, prompts/challenge-bot-build.md, every file in branches/, code/README.md, code/kaspa-seal, code/covenant. Easy half of a branch first, Detail second.
+2. Then this repository, the whole of it. README.md, DISCLAIMER.md, RAILS.md, GITHUBS.md, LOG.md, prompts/MAP.md, prompts/ask.md, prompts/bot.md, prompts/build.md, prompts/challenge-ask-build.md, prompts/challenge-bot-build.md, every file in branches/, code/BYTES.md, code/kaspa-seal, code/covenant. Easy half of a branch first, Detail second.
 3. Then every upstream source those pages cite. A private path is not a source. Do not ask for a seed.
 4. Read prompts/challenge-ask-build.md as a finished Ask-Build record. Do not continue it. Do not treat it as your script.
 
@@ -64,7 +64,7 @@ Do not paste this tonight. It is the review prompt from before the Bot-Build run
 Read in this order, then answer.
 
 1. [README](../README.md), [disclaimer](../DISCLAIMER.md), [the rail](../RAILS.md), [the GitHub map](../GITHUBS.md).
-2. [The code notes](../code/README.md), then `code/kaspa-seal`, then [the covenant](../code/covenant/README.md).
+2. [The code notes](../code/BYTES.md), then `code/kaspa-seal`, then [the covenant](../code/covenant/README.md).
 3. Every page in `branches/`, the short half first and the Detail half second.
 4. The kaspanet files the claims cite, at the named tag. rusty-kaspa `v2.1.0` is commit `01b532e8b553523216471682649693af92f0fd16`. SilverScript `v1.0.0` is commit `3ed973335b59269293564805cc2c58a14595ec03`.
 

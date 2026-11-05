@@ -50,4 +50,4 @@ One program lane is optional and only useful once a prover follows it. [KIP-21](
 
 A phase-one budget is not a covenant input. The only asset this escrow script moves is KAS, and only the coins on the input it spends. Collateral for a construction loan is a different conversation, and [Kaspa Dollar](../RAILS.md) was not a KIP and not code on this pass.
 
-Recipes stay off both the hash input and the payload. [The code notes](../code/README.md) keep the mass and opcode citations in one place.
+Recipes stay off both the hash input and the payload. [The code notes](../code/BYTES.md) keep the mass and opcode citations in one place.

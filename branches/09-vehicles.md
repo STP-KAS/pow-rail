@@ -51,4 +51,4 @@ The precompile is the wrong tool for a command. `OpZkPrecompile` is `0xa6`. The 
 
 [KIP-17](https://github.com/kaspanet/kips/blob/master/kip-0017.md) introspection can require a payload hash, which is what the escrow does for a KAS deposit. It cannot sign a firmware image. Service bulletins use the same `WeightOrImage` or `PublicFile` call as the OTA notes.
 
-Dashcam bytes and location history do not enter `document_hash`. The layout is 81 bytes so they cannot enter the payload either. Citations for the id split and the mass limits are in [the code notes](../code/README.md).
+Dashcam bytes and location history do not enter `document_hash`. The layout is 81 bytes so they cannot enter the payload either. Citations for the id split and the mass limits are in [the code notes](../code/BYTES.md).

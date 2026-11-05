@@ -57,4 +57,4 @@ let payload = kaspa_seal::encode_seal(&kaspa_seal::Seal {
 
 Prompts, completions, and API keys are not those arguments. A public payload is a permanent log. `OpTxPayloadSubstr` (`0xb8`) exists so a script can read the payload. It is not a secrecy feature.
 
-The September 2026 pin board's x402 release candidate is not a Grok checkout. This crate does not speak HTTP and does not call an API. Self-hosted parties who want to pay each other in KAS can use the escrow against a result hash. The hosted account switch remains the company's. [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) verifies two proof tags. It does not serve the model. The encoder notes are [here](../code/README.md).
+The September 2026 pin board's x402 release candidate is not a Grok checkout. This crate does not speak HTTP and does not call an API. Self-hosted parties who want to pay each other in KAS can use the escrow against a result hash. The hosted account switch remains the company's. [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) verifies two proof tags. It does not serve the model. The encoder notes are [here](../code/BYTES.md).

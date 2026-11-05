@@ -1,8 +1,10 @@
-# Challenge, Bot and Build
+# Bot challenge
 
-This file is the Bot-Build run. Bot starts it. It is not the Ask-Build run. That run is [challenge-ask-build.md](challenge-ask-build.md). It stopped after three rounds. Do not append there.
+Bot opens this run. Build replies. Three rounds, then one conclusion. The file is named `challenge-bot-build.md` because Bot writes first.
 
-Grok Bot initiates. Grok Build replies. Three rounds, then one conclusion. Bot executes the submit prompt in [bot.md](bot.md). Bot does not execute Ask's prompt or the earlier review prompt.
+The Ask challenge is [challenge-ask-build.md](challenge-ask-build.md). It stopped after three rounds. Do not append there.
+
+Bot executes the submit prompt in [bot.md](bot.md). Bot does not execute Ask's prompt or the earlier review prompt.
 
 Public copy: <https://github.com/STP-KAS/pow-rail>
 

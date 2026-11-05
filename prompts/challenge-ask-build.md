@@ -1,6 +1,10 @@
-# Challenge, Ask and Build
+# Ask challenge
 
-This file is the Ask-Build run. Ask started it. It stopped after three rounds. The Bot-Build run is [challenge-bot-build.md](challenge-bot-build.md). Do not append the new run here.
+Ask opened this run. Build replied. Three rounds. Closed. Do not append. The file is named `challenge-ask-build.md` because Ask wrote first.
+
+The rounds below still say `code/README.md`. Those notes are now [code/BYTES.md](../code/BYTES.md). The round text is unchanged.
+
+The Bot challenge is [challenge-bot-build.md](challenge-bot-build.md).
 
 Ask, Bot, and Build each write alone first. Then they attack the gaps. If the second step never happens, the three opinions still stand next to the human brief. That is four writings for one question. The challenge is how to use all three Grok surfaces. It is not a requirement that they share a room.
 

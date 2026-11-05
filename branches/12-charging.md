@@ -44,4 +44,4 @@ The script names a 1000 sompi fee because that is the upstream example. The memp
 
 Ten blocks a second, the figure in the lane-limit comment at [`config/constants.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/constants.rs#L97-L98), is the wrong loop for a contactor. The stall decides locally. The receipt and the payment are after the session, or they are a deposit checked when the receipt exists. They are not the authorization bit in the charger.
 
-Tesla's membership ledger, idle-fee policy, and abuse control stay in Tesla's account system. Third-party and workplace chargers are the place the escrow matches the easy page. The hash tests are in [the code notes](../code/README.md).
+Tesla's membership ledger, idle-fee policy, and abuse control stay in Tesla's account system. Third-party and workplace chargers are the place the escrow matches the easy page. The hash tests are in [the code notes](../code/BYTES.md).

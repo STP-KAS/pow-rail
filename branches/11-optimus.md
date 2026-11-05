@@ -49,4 +49,4 @@ Hashing the pack commits to it. Hand the pack to the insurer or the safety board
 
 Tasking is not a kind in this crate. There is no `Kind` for a command. [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) would still only check a predefined proof tag, and v2.1.0 implements two. A proof tag is not a torque command. The robot runs the image it has, under the key that signed the update.
 
-The digest function and the tests against the node's incremental `PayloadDigest` vectors are in [the code notes](../code/README.md).
+The digest function and the tests against the node's incremental `PayloadDigest` vectors are in [the code notes](../code/BYTES.md).

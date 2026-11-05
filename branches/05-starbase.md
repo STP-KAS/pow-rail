@@ -46,4 +46,4 @@ Each company keeps the PDF. Any of them can broadcast the 81-byte payload. The b
 
 A small supplier who already wants KAS can use [`seal_escrow.sil`](../code/covenant/seal_escrow.sil). The constructed document hash is the packing-list hash. The script will not release the coins onto a payload that carries a different hash. The amount is this input's value minus the fee written in the script. A purchase order priced in dollars is not rewritten into that script. The script's 1000 sompi fee is the upstream example's number, not the mempool floor of 100_000 sompi in v2.1.0 `mining/src/mempool/config.rs`.
 
-Drawings that are export-controlled are not `inspection_pack`. The layout is too small for them on purpose. The rest of the arithmetic is in [the code notes](../code/README.md).
+Drawings that are export-controlled are not `inspection_pack`. The layout is too small for them on purpose. The rest of the arithmetic is in [the code notes](../code/BYTES.md).

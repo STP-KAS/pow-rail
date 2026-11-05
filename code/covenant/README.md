@@ -45,4 +45,4 @@ cargo run -p silverscript-lang --bin silverc -- \
   seal_escrow.sil --constructor-args example-args.json -o seal_escrow.artifact.json
 ```
 
-The encoder that builds the 81 payload bytes is [`../kaspa-seal`](../kaspa-seal). The reasoning is in [`../README.md`](../README.md).
+The encoder that builds the 81 payload bytes is [`../kaspa-seal`](../kaspa-seal). The reasoning is in [`../BYTES.md`](../BYTES.md).

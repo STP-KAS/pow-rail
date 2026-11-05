@@ -51,4 +51,4 @@ Guidance bytes are not an argument to `seal_file`. An 81-byte payload has no roo
 
 The native subnetwork is enough. A user lane, [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) section 2.1, is for a prover who will follow this stream alone. The encoder for that 20-byte id is `user_lane_id`. Forming the id does not submit it.
 
-The full layout, the mass arithmetic, and the vector tests are in [the code notes](../code/README.md).
+The full layout, the mass arithmetic, and the vector tests are in [the code notes](../code/BYTES.md).

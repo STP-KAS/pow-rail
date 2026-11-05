@@ -49,4 +49,4 @@ let payload = kaspa_seal::encode_seal(&kaspa_seal::Seal {
 
 [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) does not run inference. `OpZkPrecompile` (`0xa6`) verifies a Groth16 proof or a RISC0 succinct receipt, tags `0x20` and `0x21` only ([`tags.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/zk_precompiles/tags.rs) at v2.1.0). A proof of that form can bind a program id and a public journal. It does not cool a chip and it does not see a prompt that was never a public input.
 
-The orbital problems on the critical path are unchanged by any of these hashes. The code path is [the encoder](../code/README.md).
+The orbital problems on the critical path are unchanged by any of these hashes. The code path is [the encoder](../code/BYTES.md).

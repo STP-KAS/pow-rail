@@ -52,4 +52,4 @@ A serial at ship time is the same call. A service center recomputes the hash. It
 
 A lawful supplier and a buyer who both want KAS can point [`seal_escrow.sil`](../code/covenant/seal_escrow.sil) at the packing-list hash. A sanction or an export denial is not a missing opcode. Miners including the transaction do not clear the shipment. Customs and the company's compliance duty are unchanged.
 
-The mass story, including the tag's own disagreement between a 125_000-byte comment and a 250 KB mainnet transient limit, is written down in [the code notes](../code/README.md) so this page does not invent a third number.
+The mass story, including the tag's own disagreement between a 125_000-byte comment and a 250 KB mainnet transient limit, is written down in [the code notes](../code/BYTES.md) so this page does not invent a third number.

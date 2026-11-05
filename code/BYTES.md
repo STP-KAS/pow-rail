@@ -1,5 +1,7 @@
 # The bytes
 
+These are the mechanism notes. They were `code/README.md`. They were renamed so the landing page is the only README. They were not merged into that page.
+
 The short branch pages say what to seal. This page says how a Kaspa node commits to those bytes, and the crate next to it builds them.
 
 Experimental. Not advice. Not Kaspa core. Not a wallet. `cargo test` in `kaspa-seal` checks the hash against vectors published in the node. It does not broadcast a transaction and it does not take a key.
