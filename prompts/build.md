@@ -6,7 +6,7 @@ The two challenges are separate. [Ask and Build](challenge-ask-build.md) is clos
 
 ## What
 
-Proof of work. No product, no vendor, and no contract. Miners make the blocks. A hash can stay ordered, a covenant can stay closed, and a KAS payment can stay settled after a compelled vendor switches off. A license, a beam, a contactor, and a vehicle command do not.
+Proof of work is the infrastructure. Miners make the blocks. Developers maintain the software. There is no vendor and no contract. A hash can stay ordered, a covenant can stay closed, and a KAS payment can stay settled after a compelled vendor switches off. A license, a beam, a contactor, and a vehicle command do not.
 
 The sentence on the landing page stays there: it cannot phone a Kaspa office and have the chain switched off. There is no such office. The DealBook line is on that same page, with the two sources for 29 November 2023. This page does not copy them out.
 
