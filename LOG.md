@@ -47,3 +47,9 @@ The author then instructed a sign, aimed at anyone who means to interfere with S
 The occasion, checked rather than remembered: 29 November 2023, New York Times DealBook Summit. Musk was answering Andrew Ross Sorkin about advertisers who had stopped spending on X. He said, in substance, that if someone tries to blackmail him with advertising, blackmail him with money, go fuck yourself. He aimed it at the room, including Disney's Bob Iger. [WIRED](https://www.wired.com/story/elon-musk-x-advertisers-interview/). [The Verge](https://www.theverge.com/2023/11/29/23981928/elon-musk-ad-boycott-go-fuck-yourself-destroy-x). He said it about advertiser leverage on X. This repository, on the author's instruction, puts the same words on a different door: interference with SpaceX or Tesla that pretends the chain can be switched off by phone.
 
 The company can still be ordered. The office still does not exist. The code and the branch pages were not deleted to make room for the line.
+
+## 2026-11-05, the form
+
+The author said yes to the office sentence and the line, and then asked for a form. Grok Ask and Grok Bot each keep their prompt. Under the prompt, a findings form. They fill that form with the review, and they push it.
+
+The prompt is not deleted to make room for a finding. An earlier finding is not deleted when a later one is added. The destination is this repository, on main. A chat reply is not the upload. The branch pages and the code were not opened for a new opinion in this pass. The forms were left blank.

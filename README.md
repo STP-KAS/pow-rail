@@ -2,10 +2,12 @@
 
 Four writings, one question. The question is this repository. The writings are the human brief, Grok Ask, Grok Bot, and Grok Build. If they never meet, the three reviews still stand.
 
+Ask and Bot do not leave the review in the chat. The prompt stays. The finding is appended under it. Then it is pushed.
+
 | Map | Who pastes it |
 | --- | --- |
-| [Ask](prompts/ask.md) | Grok Ask, the chat |
-| [Bot](prompts/bot.md) | Grok Bot, a separate Grok session |
+| [Ask](prompts/ask.md) | Grok Ask. Prompt first. Findings form under it. Ask fills the form and pushes. |
+| [Bot](prompts/bot.md) | Grok Bot. Prompt first. Findings form under it. Bot fills the form and pushes. |
 | [Challenge](prompts/challenge.md) | Ask, Bot, and Build, after each has written alone |
 
 Quality over speed. No rush. Push back. What, why, how. Open the links. The path of the work is [LOG.md](LOG.md). Entries there are kept.

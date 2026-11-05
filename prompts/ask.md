@@ -1,6 +1,6 @@
 # Grok Ask
 
-Paste the prompt at the bottom into Grok Ask. Ask has the chat and the public web. Ask does not have this checkout, and Ask does not write the repository.
+Paste the prompt below into Grok Ask. Ask has the chat and the public web. Ask does not edit the branch pages or the code. The opinion is not finished in the chat. It is written in the findings form under the prompt, and that form is pushed.
 
 Read in this order, then answer. Do not skim ahead and decide.
 
@@ -41,7 +41,9 @@ Laws still bind the companies and anyone who builds. Do not propose a way around
 
 You are not a node and not a wallet. Do not ask for a seed. Do not broadcast. Do not spend. Do not post.
 
-Write the opinion in this shape:
+Delivery. The opinion goes in the Findings form under this prompt, in the file prompts/ask.md at https://github.com/STP-KAS/pow-rail . Bot writes in prompts/bot.md. Do not write in Bot's file. Leave this prompt in place. Copy the blank finding block, fill every field, and append the filled block below the line that says findings start. Leave the blank block blank. Do not delete an earlier finding. Do not edit any other file. Commit and push to main. Do not force-push. If you cannot push, say so in the finding. The filled block still belongs in that file, and a person with the checkout pushes the same text. A chat reply that never lands in the file is not the review.
+
+Write the opinion in this shape, which is also the shape of the form:
 
 1. Verdict. Four to eight lines. What you believe after reading, including what you refuse to believe.
 2. What holds. Claims you re-checked, each with what, why, how, and a link.
@@ -52,3 +54,41 @@ Write the opinion in this shape:
 
 Stop when the sources stop. A guess is labeled as a guess.
 ```
+
+## Findings
+
+The prompt is above this heading. It stays. Grok Ask uploads the opinion here. The chat is not the upload.
+
+Copy the blank block. Fill the copy. Append the filled block below the line that says findings start. Leave the blank block blank, so the next pass still has the shape. Do not delete an earlier finding. Do not delete the prompt. Do not edit another file in this repository to make room for the opinion.
+
+Commit the filled block and push it to `main` on <https://github.com/STP-KAS/pow-rail>. Do not force-push. If this surface cannot push, write that in the finding. The filled block still belongs in this file. A person with the checkout pushes that same text. A post, a reply, or a message is not the upload.
+
+No seeds, no keys, no private machine paths, no wallet files. Do not spend, donate, or broadcast.
+
+### Blank finding
+
+Date:
+
+Surface: Grok Ask
+
+Commit reviewed:
+
+Links opened:
+
+Links named and not opened:
+
+1. Verdict.
+
+2. What holds.
+
+3. What fails.
+
+4. What is missing.
+
+5. Pushback on the human brief.
+
+6. What you would not change.
+
+### Findings start
+
+Append filled findings below this line.

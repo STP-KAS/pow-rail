@@ -17,11 +17,13 @@ Quality over speed. No rush. Push back. What, why, how. Links and sources.
 
 Run Ask, Bot, and Build separately. None of them receives another model's answer. Each uses the shape in its prompt: verdict, what holds, what fails, what is missing, pushback on the human brief, what not to change.
 
+Ask writes that answer in the findings form under the prompt in [ask.md](ask.md), then pushes. Bot writes that answer in the findings form under the prompt in [bot.md](bot.md), then pushes. Build writes in the session until the human asks for a file. Do not put one surface's finding in the other file.
+
 Keep the three answers. Do not merge them in this round. A merge this early deletes the reason they are separate.
 
 ## Round 2, the attack
 
-Give each surface the other two answers, and this instruction:
+Give each surface the other two answers. Ask's answer is the latest finding appended in [ask.md](ask.md). Bot's answer is the latest finding appended in [bot.md](bot.md). Then this instruction:
 
 ```text
 You have two reviews you did not write. Find the gaps they left and the gaps they invented.
