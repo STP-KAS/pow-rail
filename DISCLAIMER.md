@@ -1,0 +1,13 @@
+# Disclaimer
+
+**Experimental. Not advice. Not Kaspa core. Not a KIP.**
+
+This repository sells nothing. Kaspa sells nothing. There is no product, no seat, and no integration contract here.
+
+A row that names a company is a public-engineering note. It is not an offer to that company and not a claim that the company uses Kaspa.
+
+A GitHub release, an open pull, and a fundraiser are different facts. Open the link. The live rule is a merged Active KIP, or a KCC file whose header says Final. DAGKnight, vProgs, and Kaspa Dollar are not live.
+
+Laws still apply to SpaceX, Tesla, and anyone who builds on this rail. A public chain does not cancel a license, a sanction, an export rule, or a court order served on a company. Do not put export-controlled data, medical data, or vehicle traces on a public network.
+
+Pay with a QR code, a `kaspa:` URI, or a pasted txid. Never a seed.
