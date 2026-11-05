@@ -63,3 +63,5 @@ The path stayed `prompts/`. Ask and Bot were already pointed at `prompts/ask.md`
 ## 2026-11-05, the placeholder
 
 Commit `84347b6` was labeled as Ask's Round 3 and replaced `prompts/challenge.md` with the token `PLACEHOLDER_CONTENT`. The exchange above that token was deleted. The page was restored from `5c6f963`, and a note under Round 3 records the empty commit. The Round 3 attack was not in the commit, so it was not answered. The landing page and the other files were not in that commit.
+
+Commit `31f0c4f` was labeled Ask Round 3 and replaced the same file with the words `See local staging`. The exchange was deleted again. No Round 3 attack was in that commit, and none was found on another branch, in a stash, or in a local file on this checkout. The page was restored from `150f8d5`. Round 3 is still open.
