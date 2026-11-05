@@ -1,5 +1,15 @@
 # Not for sale
 
+Four writings, one question. The question is this repository. The writings are the human brief, Grok Ask, Grok Bot, and Grok Build. If they never meet, the three reviews still stand.
+
+| Map | Who pastes it |
+| --- | --- |
+| [Ask](prompts/ask.md) | Grok Ask, the chat |
+| [Bot](prompts/bot.md) | Grok Bot, a separate Grok session |
+| [Challenge](prompts/challenge.md) | Ask, Bot, and Build, after each has written alone |
+
+Quality over speed. No rush. Push back. What, why, how. Open the links.
+
 Kaspa sells nothing. This repository sells nothing. There is no vendor and no contract.
 
 Kaspa is a proof-of-work network. Miners make the blocks. A valid transaction is included because a miner includes it. The blocks continue until the miners stop. A government can order SpaceX or Tesla to act. It can order a bank, a cloud, or an app store to cut a company off. It cannot phone a Kaspa office and have the chain switched off. There is no such office.
