@@ -54,6 +54,38 @@ Gap list:
 - Hashrate concentration as a practical limit on the no-office claim is stated but not measured. Link: RAILS.md "One off switch". Surface: Ask.
 - The launch-branch "worth exploring" claim is technically true and operationally thin. Link: branches/01-launch.md. Surface: the repository pages.
 
+**Build (reply):**
+
+Bias stands: this surface wrote the repository. Pins used from this session: rusty-kaspa `01b532e8b553523216471682649693af92f0fd16`. SilverScript `3ed973335b59269293564805cc2c58a14595ec03` was not opened. `cargo test` was not run. No hashrate table and no live mempool were opened, so no inclusion price and no pool share appear below.
+
+Re-opened and accepted. The launch page already gives the license and the vehicle back to the company. Ask claimed that sealing a public telemetry snapshot is worth exploring on the page, and that the same page says the license does not stay and the vehicle does not fly. That reading matches the file. Section 2 names the snapshot, the mishap note, and the manual. Section 3 says the license does not stay, the vehicle does not fly because a miner included a hash, and an order served on SpaceX still binds SpaceX. https://github.com/STP-KAS/pow-rail/blob/761f2b857392833b92927a9898daad12b9582905/branches/01-launch.md
+
+The same pass accepts the vehicle point Ask aimed at vehicle-command. The page says the car executes a command that matches a key in its keychain, and that the car does not ask a chain what to do. https://github.com/STP-KAS/pow-rail/blob/761f2b857392833b92927a9898daad12b9582905/branches/09-vehicles.md
+
+Link does not say what is claimed. Ask's second point says code/README.md correctly notes that the 100_000 figure is not in the v2.1.0 tag, and that the transient limit is 1_000_000. The number 100_000 is in the tag. DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE is 100_000, and the comment says sompi per kilogram of mass, 100 sompi per gram. https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/config.rs#L17-L20 The fee function is mass times 100_000 divided by 1000. https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/check_transaction_standard.rs#L92-L97 That is a rate. It does not take hashrate.
+
+1_000_000 is the mainnet block transient-mass field. The comment on that struct says the transient footprint is 250 KB. https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/params.rs#L617-L626 TRANSIENT_BYTE_TO_MASS_FACTOR is 4, and the older comment above it still says 125_000 bytes. https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/constants.rs#L28-L31
+
+The docs page does say a standard transaction is capped at mass 100_000 and about 25 KB when the payload dominates. https://docs.kaspa.org/integrate/transaction-payload That mass cap was not in the two tag files named above. Build's code/README.md is the text that narrowed 100_000 to "not found as a mass cap," and the same page then called the relay constant 0.001 KAS and a fee floor. Ask widened the first sentence into "not in the tag" and kept the transient field as a bare 1_000_000.
+
+Too kind. The Starlink beam, and the account that entitles a terminal to it. Ask's third point says the branch pages correctly refuse systems whose off switch is the company, and cites the vehicle page. branches/02-starlink.md is not in that point. Section 1 names the beam and the geofence. Section 2 still offers a KAS payment beside the card bill. Section 3 says the phased array does not radiate because a miner included a transaction. A payment between two parties who already hold KAS can settle. The cell stays under SpaceX. https://github.com/STP-KAS/pow-rail/blob/761f2b857392833b92927a9898daad12b9582905/branches/02-starlink.md
+
+Too harsh. The 81-byte seal on the native subnetwork. Ask treats "worth exploring" on the launch page as operationally thin because the license can still stop the flight. The brief's second question was what is worth examining when nothing is on fire, and the third was what still moves after the company switch. The page answers both, then says the vehicle does not fly. What already does the hash job is KIP-21 section 2.1. The native lane id is 0x00 plus 19 zero bytes, and lane_id is tx.subnetwork_id. A seal on that lane is already in the accepted sequence. https://github.com/kaspanet/kips/blob/master/kip-0021.md (master, read this session, not a tag). The file hash sits at payload bytes 17..49. In the covenant, OpTxPayloadSubstr (0xb8) checks that slice, and the tag's test treats the end index as exclusive. https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/opcodes/mod.rs#L1025 The relay floor for getting those bytes included is the mass rate above, not a hashrate series. This pass did not measure the mass of one SealEscrow spend, so it does not turn the rate into a sompi total.
+
+Where the brief was smoothed. Point 1 says the operational switch that can stop the work remains the license and the company. The brief asked where a hash stays ordered, where a covenant stays closed, and where a KAS payment stays settled after a compelled vendor switches off. The license stops the flight. It does not delete an already accepted payload. Grading the seal by whether the rocket still flies replaces those three questions with one operations question. The three-section template is the brief. It is how a weak fit stays visible.
+
+Gap list:
+
+1. Ask's Round 1 says the 100_000 figure is not in v2.1.0. The tag uses it as sompi per kilogram of mass. Ask missed the unit. code/README.md had already called that constant a 0.001 KAS floor, so Build missed the wording first. https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/check_transaction_standard.rs#L92-L97
+
+2. Ask states the transient limit as 1_000_000. The struct field is transient mass, the block comment says 250 KB, and the factor in the tag is 4. https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/params.rs#L617-L626
+
+3. The Starlink beam is still SpaceX's switch on a page this attack did not use. https://github.com/STP-KAS/pow-rail/blob/761f2b857392833b92927a9898daad12b9582905/branches/02-starlink.md
+
+4. The covenant checks length, magic, version byte 0x01, and the 32-byte document. It does not check the branch byte or the kind byte. The alone finding's "checks that hash" line does not say this, and Round 1 does not either. https://github.com/STP-KAS/pow-rail/blob/761f2b857392833b92927a9898daad12b9582905/code/covenant/seal_escrow.sil
+
+Hashrate concentration is not carried. RAILS.md says a majority of hashrate can stop the blocks. Neither that page nor this pass cites a pool measurement. https://github.com/STP-KAS/pow-rail/blob/761f2b857392833b92927a9898daad12b9582905/RAILS.md
+
 #### Round 2 (Ask continues)
 
 #### Round 3
