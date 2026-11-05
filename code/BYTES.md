@@ -110,17 +110,17 @@ The builder docs show `payload` as a field of `accountsSend`:
 
 <https://docs.kaspa.org/integrate/transaction-payload>
 
-That page also says a standard transaction is capped at mass `100_000`, and that a payload-dominated transaction then fits about 25 KB because transient mass is serialized size times 4. The factor of 4 is in the v2.1.0 tag. The symbol `100_000` as a standard-transaction mass cap was not found in that tag.
+That page also says a standard transaction is capped at mass `100_000`, and that a payload-dominated transaction then fits about 25 KB because transient mass is serialized size times 4. The factor of 4 is in the v2.1.0 tag. `MAXIMUM_STANDARD_TRANSACTION_MASS = 100_000` is in the wallet tree, [`wallet/core/src/tx/mass.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/wallet/core/src/tx/mass.rs#L26-L28). It is not in `check_transaction_standard.rs`. The comment says a transaction over that mass is not standard and will not be relayed or considered for mining. It is a wallet standardness ceiling. The block transient limit is a different number, 1_000_000.
 
 What the tag does contain:
 
 - `TRANSIENT_BYTE_TO_MASS_FACTOR = 4` in [`constants.rs` lines 28–31](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/constants.rs#L28-L31). The comment above it still says a block mass of 500_000 limits the body to 125_000 bytes, citing KIP-13.
 - Mainnet `block_mass_limits` in [`params.rs` line 626](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/params.rs#L617-L626) is compute 500_000, storage 500_000, transient 1_000_000. The comment on the signature-script limit says the transient footprint of a block is 250 KB. 1_000_000 / 4 = 250_000. The 125_000 sentence and the 250 KB sentence are both in the tag. The struct that mainnet uses is the 1_000_000 transient limit.
 - `calc_non_contextual_masses` sets `transient_mass = size * TRANSIENT_BYTE_TO_MASS_FACTOR` ([`mass/mod.rs` line 367](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/mass/mod.rs#L340-L367)). Compute mass is a different sum: size times `mass_per_tx_byte` (mainnet value 1), plus script-public-key bytes times 10, plus either sigop mass or, for version 1, compute-budget mass.
-- `DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE = 100_000` in [`mining/src/mempool/config.rs` line 20](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/config.rs#L17-L20). `SOMPI_PER_KASPA` is 100_000_000, so this constant is 0.001 KAS. It is a fee floor in the mempool config. It is not a mass cap. Miners can still prefer a higher fee.
+- `DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE = 100_000` in [`mining/src/mempool/config.rs` line 20](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/config.rs#L17-L20). The comment says sompi per kilogram of mass, which is 100 sompi per gram. The same wording is in the wallet copy at [`mass.rs` lines 17–20](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/wallet/core/src/tx/mass.rs#L17-L20). The fee is mass times 100_000, divided by 1000. When that product is 0, the code substitutes 100_000 sompi. That branch is the zero-mass case. The constant is not a flat floor of 0.001 KAS, and it is not a mass cap. Miners can still prefer a higher fee. 1000 sompi, the figure `seal_escrow.sil` names, is that product at 10 grams.
 - Standardness in `check_transaction_standard.rs` rejects non-standard scripts and P2SH inputs with more than `MAX_STANDARD_P2SH_SIG_OPS` (15). It does not mention a 100_000 mass cap.
 
-An 81-byte payload is far inside the transient limit the mainnet struct names. That is the claim this crate makes. It does not claim the docs-site 25 KB figure is a consensus constant, because that constant was not in the tag.
+An 81-byte payload is far inside the transient limit the mainnet struct names. That is the claim this crate makes. It does not claim the docs-site 25 KB figure is a consensus constant. The 100_000 mass symbol in the tag is the wallet standardness ceiling above, not that docs sentence.
 
 This repository does not wrap a wallet and does not take a secret. A wallet that already speaks to a node can place the 81 bytes in the payload field the docs describe. Pay with a QR code, a `kaspa:` URI, or a pasted txid.
 
@@ -137,7 +137,7 @@ Section 2.1, read from master on 5 November 2026:
 
 `user_lane_id` implements that check and nothing else. It does not submit the transaction. SilverScript v1.0.0 types `OpTxSubnetId` as `byte[20]` (`silverscript-lang/tests/compiler_tests.rs` in that tag). The node field is `Transaction::subnetwork_id`.
 
-Mainnet lane limits in the tag ([`config/constants.rs` lines 97–100](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/constants.rs#L93-L100)): 50 lanes per block, 1_000_000_000 gas per lane. The comment says that at 10 blocks a second this allows a worst case of 500 lane-tip updates a second. [Kaspa Explained](https://kaspaexplained.com/kaspa-tps-explained) describes the same two numbers as the cap on user-lane churn and on gas per lane. The constant, not the article, is the pin.
+Mainnet lane limits in the tag ([`config/constants.rs` lines 97–100](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/constants.rs#L93-L100)): 50 lanes per block, 1_000_000_000 gas per lane. The comment says that at 10 blocks a second this allows a worst case of 500 lane-tip updates a second. The constant is the pin. An earlier citation of `kaspaexplained.com/kaspa-tps-explained` for these two numbers was reported moved. This pass does not use that page for the limits.
 
 A seal on the native subnetwork is already ordered. Every accepted transaction sits in the lane of its subnetwork id, and the header commits to those lane tips. A separate user lane is for a prover who should follow one program and not the rest of the DAG. The KIP's goal is prover cost proportional to that lane's activity. A factory, a constellation, and a charger do not each need a lane on day one. They need a lane when someone is actually proving that lane.
 
@@ -145,7 +145,7 @@ A seal on the native subnetwork is already ordered. Every accepted transaction s
 
 ## The covenant
 
-[`covenant/seal_escrow.sil`](covenant/seal_escrow.sil) locks KAS, not a dollar and not a token. The spend releases the input amount, minus a fee the script names, to the buyer or the seller, and only if the spending transaction's payload is an 81-byte seal of the document hash the covenant was constructed with.
+[`covenant/seal_escrow.sil`](covenant/seal_escrow.sil) locks KAS, not a dollar and not a token. The spend releases the input amount, minus a fee the script names, to the buyer or the seller, and only if the spending transaction's payload is an 81-byte seal of the document hash the covenant was constructed with. It is a single-input example that trusts the arbiter. It checks `tx.outputs[0]` only, does not count outputs, and has no timeout. Release has no execution test here.
 
 The introspection opcodes are in the v2.1.0 node: `OpTxPayloadLen` (`0xc4`) and `OpTxPayloadSubstr` (`0xb8`). The older example `announcement.sil` in the SilverScript tag still has a comment that says the payload field is a TODO. The compiler in that same tag already lowers `OpTxPayloadLen` and `OpTxPayloadSubstr`. The escrow follows the opcodes, not the TODO.
 
@@ -163,12 +163,14 @@ Kasplex is not this. The [Kaspa wiki page](https://wiki.kaspa.org/en/Kasplex_KRC
 
 The tag enum in [`zk_precompiles/tags.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/zk_precompiles/tags.rs) has two variants:
 
-| Tag | Name | Script-unit cost in the tag file |
-| --- | --- | --- |
-| `0x20` | Groth16 | `1000 * 140` |
-| `0x21` | RISC0-Succinct | `1000 * 250` |
+| Tag | Name | `Gram` literal in `cost()` | Script units returned |
+| --- | --- | --- | --- |
+| `0x20` | Groth16 | `1000 * 140` | 14_000_000 |
+| `0x21` | RISC0-Succinct | `1000 * 250` | 25_000_000 |
 
-Any other byte is `ZkIntegrityError::UnknownTag`. The file's tests expect a block's compute-mass limit to hold 3 Groth16 verifications or 2 succinct verifications. KIP-16's text names the same two tags and says the opcode dispatches to predefined programs. It is not a general computer.
+`cost()` is documented as a script-unit price and its return type is `ScriptUnits`. The match arm is a `Gram` literal. [`SCRIPT_UNITS_PER_GRAM`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/mass/units.rs) is 100, and `From<Gram> for ScriptUnits` multiplies by that ([`tags.rs` lines 25–38](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/crypto/txscript/src/zk_precompiles/tags.rs#L25-L38)). The `Gram` literal is not the script-unit figure.
+
+Any other byte is `ZkIntegrityError::UnknownTag`. The file's tests expect a block's compute-mass limit to hold 3 Groth16 verifications or 2 succinct verifications. Those tests convert back with `u64::from(tag.cost()) / SCRIPT_UNITS_PER_GRAM` when they talk about compute-mass capacity. That division is a different line from the script-unit figure above. KIP-16's text names the same two tags and says the opcode dispatches to predefined programs. It is not a general computer.
 
 A proof checks a statement that was actually proved: a program identity and a public output, in the shape that precompile expects. It does not observe a rocket, a car, a grid, or a training run by itself. [Kaspa Explained](https://kaspaexplained.com/toccata-explained) says the same limit in plainer words. The opcode is the source.
 

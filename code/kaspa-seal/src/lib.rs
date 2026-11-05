@@ -1,4 +1,4 @@
-//! Encoder for an 80-byte document seal, and the payload digest Kaspa version-1
+//! Encoder for an 81-byte document seal, and the payload digest Kaspa version-1
 //! transaction ids commit to.
 //!
 //! Experimental. Not advice. Not Kaspa core. Not a node and not a wallet.

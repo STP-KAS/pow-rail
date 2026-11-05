@@ -1,4 +1,4 @@
-//! Fixed 80-byte seal carried in `Transaction::payload`.
+//! Fixed 81-byte seal carried in `Transaction::payload`.
 //!
 //! Layout, version 1. The magic is 13 bytes (`pow-rail/seal`), not 12.
 //!

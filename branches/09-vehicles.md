@@ -14,7 +14,7 @@ Tesla sells cars, driver-assistance and supervised self-driving software, and is
 
 ## 2. Worth exploring
 
-**OTA release seals.** When a software build is published, seal the hash of the release notes and the hash of the image Tesla already lets owners verify. Owners, insurers, and a safety agency can show which build was offered on which date even if the download server later serves something else or goes dark in a region. The car still trusts Tesla's signature. The chain is the public clock, not the root of trust.
+**OTA release seals.** When a software build is published, seal the hash of the release notes and, if the owner is given an image hash, that hash. This page does not claim that Tesla already lets owners verify an image. Owners, insurers, and a safety agency can show which digest was ordered, to the extent it was broadcast, even if the download server later serves something else or goes dark in a region. The car still trusts Tesla's signature. The chain is the public clock, not the root of trust.
 
 **Fare and incident receipts, without traces.** For a robotaxi trip, seal a digest of a receipt the rider already holds: time bucket, price, vehicle id the rider was shown, outcome. Leave the GPS trace off-chain. A city and a fleet can disagree about a policy and still agree which receipt was issued. A covenant in KAS can hold a deposit for a party who wants that. A dollar invoice remains a dollar invoice.
 
@@ -24,7 +24,7 @@ Do not design a proof that tries to unlock FSD, immobilizers, or paid upgrades. 
 
 ## 3. While miners mine
 
-The release digest remains if Tesla's update host is blocked in a country or the cloud account is suspended. A receipt digest remains if the fleet database is ordered wiped, to the extent the digest was broadcast before the order. Miners do not know the owner's name.
+A release digest that was broadcast can be shown while a default node still has the block at or after its pruning point, and after that from a kept copy, if Tesla's update host is blocked in a country or the cloud account is suspended. A receipt digest remains in that same sense if the fleet database is ordered wiped, to the extent the digest was broadcast before the order. It does not remain on every node forever. Miners do not know the owner's name.
 
 The car does not keep receiving Tesla's live services. Autopilot and FSD behavior stays whatever the installed build does, under Tesla's keys and under the road rules of the place the car is. A chain cannot legally or technically re-enable a feature the manufacturer has stopped signing.
 

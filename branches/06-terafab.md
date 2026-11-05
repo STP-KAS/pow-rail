@@ -1,6 +1,6 @@
 # Terafab
 
-Terafab is the chip fab project described in 2026 as a build by SpaceX and Tesla, with xAI in the same story and Intel named as a process partner. Texas officials announced a Grimes County first phase on the order of $16.8 billion. Musk has said the companies will build and run the fab. Volume production has been described as a 2028 aspiration with wide error bars. There is no Terafab GitHub.
+Terafab is the chip fab project described in 2026 as a build by SpaceX and Tesla, with xAI in the same story. Public reporting, not linked on this page, names Intel as a process partner, a Grimes County first phase on the order of $16.8 billion, and a 2028 volume-production aspiration with wide error bars. This page does not treat those figures as verified. Musk has said the companies will build and run the fab. There is no Terafab GitHub.
 
 A fab's real system of record is a manufacturing execution system inside the building. Process recipes, yields, and tool logs are export-controlled or commercially secret. They do not go on a public chain.
 
@@ -16,7 +16,7 @@ Dollar clearing for a project of this size sits in banks. A KAS covenant cannot 
 
 **Lot-traveler hashes and calibration seals.** When a wafer lot, a tool qualification, or a shipment between the companies is accepted, seal the hash of the traveler. Counterparties verify the file against the digest. A later argument about which recipe revision or which calibration was current does not depend on the host of the portal staying friendly.
 
-**One lane for the program.** KIP-21's point is that this stream of seals need not be proved together with every other application on Kaspa. The commitment is live. The fab software is not something Kaspa replaces.
+**One lane for the program.** A user lane is for a prover who will follow that program. This page names none. The native subnetwork already orders a seal. KIP-21's point is that a prover need not prove this stream together with every other application. The commitment is live. The fab software is not something Kaspa replaces.
 
 **No recipes.** The digest is useful because it is public. The document is useful because it is not. Builders who invert that will harm the project.
 

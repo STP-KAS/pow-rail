@@ -24,7 +24,7 @@ KCC-20 Final is a layout for a fungible covenant. A battery is not fungible in t
 
 ## 3. While miners mine
 
-A passport digest and a serial digest stay readable in countries where the vendor site is blocked, for anyone who can reach any Kaspa node. No passport company can freeze the digest. No ministry can edit it without producing a later, different transaction that everyone can see.
+A passport digest that was broadcast can be shown, while the block is still inside a default node's pruning window, by anyone who can reach such a node. After that window, showing it takes a kept copy of the transaction and a lane witness, or a node that kept the history. No passport company can rewrite an already accepted transaction into a different digest. A later transaction is a later digest.
 
 The manufacturer can still be ordered to stop shipping, to recall, or to hand over the underlying file. The rail does not hide the file and does not complete a crossing that customs refused.
 
@@ -50,6 +50,6 @@ A serial at ship time is the same call. A service center recomputes the hash. It
 
 [KCC-20](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) was Final. Its title is a fungible token covenant. A serialised pack is one object. Representing it as a fungible balance would make two packs interchangeable, which is the failure mode a passport exists to prevent. [Kasplex](https://wiki.kaspa.org/en/Kasplex_KRC_20) is a third-party data-insertion protocol, indexer, and API, and KRC-20 is that project's token convention. The [wiki FAQ](https://wiki.kaspa.org/faq) treats it as outside the core team. This encoder does not produce a KRC-20 body.
 
-A lawful supplier and a buyer who both want KAS can point [`seal_escrow.sil`](../code/covenant/seal_escrow.sil) at the packing-list hash. A sanction or an export denial is not a missing opcode. Miners including the transaction do not clear the shipment. Customs and the company's compliance duty are unchanged.
+A lawful supplier and a buyer who both want KAS can point [`seal_escrow.sil`](../code/covenant/seal_escrow.sil) at the packing-list hash. That file is a single-input example that trusts the arbiter. It checks `tx.outputs[0]` only and has no timeout. A sanction or an export denial is not a missing opcode. Miners including the transaction do not clear the shipment. Customs and the company's compliance duty are unchanged.
 
 The mass story, including the tag's own disagreement between a 125_000-byte comment and a 250 KB mainnet transient limit, is written down in [the code notes](../code/BYTES.md) so this page does not invent a third number.

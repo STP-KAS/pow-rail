@@ -20,7 +20,10 @@ pragma silverscript ^0.1.0;
 //
 // The 1000 sompi fee is the figure in the upstream example. It is not the
 // mempool relay constant. That constant, in v2.1.0 mining/src/mempool/config.rs,
-// is 100_000 sompi.
+// is 100_000 sompi per kilogram of mass (100 sompi per gram). The fee is
+// mass * 100_000 / 1000. 1000 sompi is that product at 10 grams.
+// This file checks tx.outputs[0] only. It does not count outputs and it
+// has no timeout. It is a single-input example that trusts the arbiter.
 
 contract SealEscrow(byte[32] arbiter, pubkey buyer, pubkey seller, byte[32] document) {
     entry release(pubkey pk, sig s) {

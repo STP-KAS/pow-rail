@@ -105,3 +105,7 @@ The office sentence stays. The product sentence says there is no vendor and no c
 `prompts/ask.md` is ordered as the prompt, then the finding, then the closed-round corrections. The claims stay Ask's, at commit `ef75596`. `prompts/build.md` says its commit table stops at the blank findings forms. Later Build commits are in this log. The challenge filenames stay `challenge-ask-build.md` and `challenge-bot-build.md`, because the name leads with who writes first. Ask opened the closed run. Bot opens the next one.
 
 Bot's submit prompt has the same job. The path inside it now says `code/BYTES.md`. Bot was not started.
+
+## 2026-11-05, the Bot-Build conclusion
+
+Three rounds between Bot and Build are on `main`. Build wrote `prompts/challenge-bot-build/conclusion.md` and put the agreed wording on the pages in the same commit. The Easy page now says a default node shows a transaction inside the pruning window, and that a covenant with no refund can freeze the coins that entered it. That key is not an issuer. The relay constant is a mass rate. The example escrow is labeled a single-input script that trusts the arbiter. No timeout was added to the script. No pool share was printed. No transaction was broadcast.

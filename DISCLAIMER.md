@@ -12,4 +12,4 @@ Laws still apply to SpaceX, Tesla, and anyone who builds on this rail. A public 
 
 Pay with a QR code, a `kaspa:` URI, or a pasted txid. Never a seed.
 
-The code under `code/` builds an 81-byte payload and the version-1 payload digest. It is not a node and not a wallet. The hash tests compare published vectors from rusty-kaspa v2.1.0. They do not submit a transaction. The SilverScript file was compiled with the v1.0.0 tag of `silverc`. That compile is not a mainnet inclusion.
+The code under `code/` builds an 81-byte payload and the version-1 payload digest. It is not a node and not a wallet. The hash tests compare published vectors from rusty-kaspa v2.1.0. They do not submit a transaction. The SilverScript file was compiled with the v1.0.0 tag of `silverc`. That compile is not a mainnet inclusion, and it is not an execution of `release`.

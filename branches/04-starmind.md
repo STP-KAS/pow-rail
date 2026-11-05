@@ -1,6 +1,6 @@
 # Starmind
 
-Starmind is the name used in 2026 for a planned orbital compute constellation, distinct from Starlink broadband. Public reporting describes prototypes aimed at 2027 and a much larger build after that. No Starmind software repository was found. Nothing is flying under this note's evidence.
+Starmind is the name used in 2026 for a planned orbital compute constellation, distinct from Starlink broadband. Public reporting, not linked on this page, describes prototypes aimed at 2027 and a much larger build after that. No Starmind software repository was found. Nothing is flying under this note's evidence.
 
 The problems on the critical path are power, heat, radiation, laser links, and launch mass. A terrestrial blockDAG does not run inference in orbit.
 
@@ -16,7 +16,7 @@ None of those exist as an incident log yet. They are the shape of the system bei
 
 **Job receipts without prompts.** A customer and a provider can seal "request id H was accepted" and later "result digest R was published." The prompt and the completion stay off-chain. If a portal in one country is blocked, the receipt that the work was accepted is still on the rail. Delivery of the result still needs a path the customer can reach. The rail is the receipt, not the downlink.
 
-**Lane per program.** [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) already separates application lanes so a proof follows one program's activity. A Starmind receipt stream, if anyone builds it, should not share a proof with a battery-passport stream. The lane mechanism is live. The Starmind program is not.
+**Lane per program.** A user lane is for a prover who will follow that program. This page names none. The native subnetwork already orders a seal. [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) separates lanes so a proof can follow one program's activity. The lane mechanism is live. The Starmind program is not.
 
 vProgs would be the step where the receipt is a proved state transition rather than a bare hash. vProgs has no release. Design the hash now. Wait for a tag before calling it a computer.
 

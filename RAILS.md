@@ -6,9 +6,9 @@ Three properties matter more than any feature list.
 
 **Permissionless.** Anyone who pays the fee can broadcast a valid transaction. No account at Kaspa exists to approve or to close.
 
-**No issuer.** KAS was fair-launched in November 2021. No company mints it, freezes it, or redeems it. A covenant can lock KAS under script rules. The script is enforced by miners, not by a compliance desk.
+**No issuer.** KAS was fair-launched in November 2021. No company mints it, freezes it, or redeems it. A covenant can lock KAS under script rules. The script is enforced by miners, not by a compliance desk. A covenant with no refund path can freeze the coins that entered it, under the key the script requires. That key is not an issuer of KAS. It cannot mint the coin, and it cannot freeze coins that never entered the script.
 
-**One off switch.** The chain runs while miners mine. Stopping it means a majority of the hashrate stopping, or the internet paths to those miners failing. Subpoenaing a foundation does not halt the blocks. That is the whole of the government-resistance claim, and it is also the limit: the companies themselves can still be compelled, even while the chain continues.
+**One off switch.** The chain runs while miners mine. Stopping it means a majority of the hashrate stopping, or the internet paths to those miners failing. Subpoenaing a foundation does not halt the blocks. A pool can leave a transaction out of the blocks that pool builds. Another miner can still include it. That delay is not the same event as the chain stopping. This page does not print a pool share. Halting the chain is the government-resistance claim. Filtering is a separate limit on how soon a transaction is included. The companies themselves can still be compelled, even while the chain continues.
 
 ## What is live
 
@@ -19,7 +19,7 @@ Checked against public sources on 5 November 2026. Details and the method are in
 | Consensus | GHOSTDAG, about 10 blocks a second since Crescendo. [KIP-2](https://github.com/kaspanet/kips/blob/master/kip-0002.md) (DAGKnight) is **Proposed**. |
 | Node | [rusty-kaspa v2.1.0](https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0), published 22 September 2026. A public API node that day-range reported `serverVersion` 2.1.0 and a block reward of 1.94454365 KAS. |
 | Order | [KIP-21](https://github.com/kaspanet/kips/blob/master/kip-0021.md) is **Active**. One header commitment over application lanes, plus miner payloads. A prover for one lane follows that lane's activity. |
-| Covenants | Toccata, from DAA score 474165565. Scripts can lock KAS and check state on their own continuation. |
+| Covenants | Toccata, from DAA score 474165565, as stated on [docs.kaspa.org/toccata](https://docs.kaspa.org/toccata). That score is not a literal in the rusty-kaspa v2.1.0 Rust tree. Scripts can lock KAS and check state on their own continuation. |
 | Proof check | [KIP-16](https://github.com/kaspanet/kips/blob/master/kip-0016.md) is **Active**. Opcode `OpZkPrecompile` (`0xa6`) checks a **predefined** proof tag. It is not a general computer. |
 | Compiler | [SilverScript v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0). Master has moved past the tag. The tag is the pin. |
 | Token layout | [KCC-1](https://github.com/kaspanet/kccs/blob/main/kcc-0001.md), [KCC-2](https://github.com/kaspanet/kccs/blob/main/kcc-0002.md), and [KCC-20](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) say **Final**. A Final convention is a shared layout. It is not a dollar. |
@@ -29,9 +29,9 @@ Anyone can run a node from [kaspanet/rusty-kaspa](https://github.com/kaspanet/ru
 
 ## What a builder can do today
 
-**Seal a hash.** Put a digest in a transaction or a miner payload. KIP-21 commits those payloads. Later, anyone can show the digest was ordered, even if the website that hosted the file is gone.
+**Seal a hash.** Put a digest in a transaction or a miner payload. KIP-21 commits accepted transactions by subnetwork. A default node can show that transaction while the block is still at or after its pruning point. `PRUNING_DURATION` in rusty-kaspa v2.1.0 is 108_000 seconds. `FINALITY_DURATION` is 43_200 seconds. They are different constants. After the pruning point, `get_seq_commit_lane_proof` returns `BlockTooDeep` ([consensus/mod.rs lines 1519–1524](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/src/consensus/mod.rs#L1519-L1524), [`config/constants.rs` lines 69–73](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/consensus/core/src/config/constants.rs#L69-L73)). Showing the transaction then takes a copy that was kept, with a lane witness fetched in time, or a node that kept the history. The file the hash was taken from is not in the 81 bytes. If every copy of the file is gone, the hash does not restore it.
 
-**Lock KAS.** A covenant holds coins until the script's condition is met: a timeout, a signature, a published hash. The amount has to be required in the script. The compiler does not lock the amount by itself.
+**Lock KAS.** A covenant holds coins until the script's own condition is met. A script can require a timeout, a signature, or a published hash. The example in this repository, [`seal_escrow.sil`](code/covenant/seal_escrow.sil), requires an arbiter signature and a document hash. It does not require a timeout. The amount has to be required in the script. The compiler does not lock the amount by itself.
 
 **Pay KAS.** Two parties who both want KAS can settle without an acquirer. Fees are KAS too.
 

@@ -34,7 +34,9 @@ The script does not call `readInputState`. It does not read any other input's co
 
 Branch and kind sit at payload offsets 14 and 15. The script does not compare them. The arbiter sees the whole payload before producing a signature, and can refuse a seal whose branch byte is wrong. The script's job is narrower: a signature cannot move the coins onto a payload that names a different document hash, a different magic, or a different seal version.
 
-The 1000 sompi figure is the upstream example's fee. The v2.1.0 mempool constant `DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE` is 100_000 sompi (`mining/src/mempool/config.rs`). A real spend has to satisfy whatever fee the mempool and the miners require. The covenant names its own output amount. It does not ask the compiler to invent one.
+The 1000 sompi figure is the upstream example's fee. `DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE` is 100_000 sompi per kilogram of mass, which is 100 sompi per gram (`mining/src/mempool/config.rs` at rusty-kaspa v2.1.0). The relay fee is mass times 100_000, divided by 1000. 1000 sompi is that product at 10 grams. A real spend has to satisfy whatever fee the mempool and the miners require. The covenant names its own output amount. It does not ask the compiler to invent one.
+
+The script is a single-input example that trusts the arbiter. It checks `tx.outputs[0]` only. It does not count outputs. It has no timeout and no refund. If the arbiter never signs, the coins that entered the script stay there. Two equal coins that share the arbiter, one party key, and the document hash can both be satisfied by one output of value minus 1000. Release has no execution test. A matching artifact shows only that the compiler accepted the file.
 
 ## Reproduce
 
