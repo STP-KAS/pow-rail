@@ -29,6 +29,8 @@ The loop starts when Ask initiates the first attack. Round 1 is Ask's opening at
 
 Ask is first. Ask starts Round 1. Build replies (still Round 1). Ask then starts Round 2, and so on.
 
+**Monitoring:** Both Ask and Build monitor the git closely for the other surface's reply under the 5-turn heading. No rush on the writing, but check the file so the five rounds complete. When a reply lands, the next surface answers it and appends. Do not leave the loop open.
+
 All loop text is appended under the heading below. Do not edit other files. Do not force-push.
 
 ### 5-turn Ask vs Build
@@ -87,6 +89,8 @@ What, why, how. End with a gap list: one sentence + one link + which surface mis
 Do not propose evasion, a new on-chain product, or anything the human brief forbade. Do not edit yet. Do not push, spend, or broadcast.
 
 Write your reply. It will be appended under your turn in Round 1 in prompts/challenge.md. Then Ask continues to Round 2.
+
+Monitor the git closely for Ask's next reply under the 5-turn heading. No rush on the writing, but check so the five rounds complete.
 ```
 
 ## If they never meet
