@@ -115,3 +115,9 @@ Three rounds between Bot and Build are on `main`. Build wrote `prompts/challenge
 The author asked where the reading is, now that Ask, Build, and Bot have all written, and asked that the repository stay a study and not a claim.
 
 The landing page stays the front. It says this is a study. The branch pages stay the study. The conclusion stays the record of what the readings changed. The challenges do not replace the landing page. Ask's finding and Build's review from before the challenges were not rewritten into the conclusion. The office sentence stays. The DealBook line stays. The sentence that had stated a hash, a covenant, and a payment as settled facts now points at the conclusion instead of repeating them.
+
+## 2026-11-05, from here
+
+The author asked whether the rounds, especially with Bot, were worth carrying forward, and asked for a humble place to start from if the study continues. Not a claim.
+
+`FROM-HERE.md` is that place. It keeps the sentences both sides left smaller: the 81-byte seal, the pruning window, the fee rate, the arbiter lock on coins that entered the script, and the difference between a pool leaving a transaction out and the chain stopping. It names the sentences not to pick back up. It does not promise the work that was left undone. The landing page points at it. The conclusion stays the long record. The branch pages stay the study.

@@ -6,7 +6,7 @@ Proof of work is a product. Miners make the blocks. Developers maintain the soft
 
 It cannot phone a Kaspa office and have the chain switched off. There is no such office.
 
-The companies stay under the laws of the places they operate. A license, a sanction, an export rule, or an order served on the company still binds them. The study looks at a hash, a covenant, and a KAS payment, and it writes down where those do not move a license, a beam, or a vehicle. What the readings left standing is in the [conclusion](prompts/challenge-bot-build/conclusion.md). It is not claimed again here.
+The companies stay under the laws of the places they operate. A license, a sanction, an export rule, or an order served on the company still binds them. The study looks at a hash, a covenant, and a KAS payment, and it writes down where those do not move a license, a beam, or a vehicle. The long record is the [conclusion](prompts/challenge-bot-build/conclusion.md). The short list a later pass would start from, if there is a later pass, is [From here](FROM-HERE.md). Neither page is a claim.
 
 Go fuck yourself. That is for anyone who thinks this chain is a door they can shut by phone. The words are from 29 November 2023. [WIRED](https://www.wired.com/story/elon-musk-x-advertisers-interview/). [The Verge](https://www.theverge.com/2023/11/29/23981928/elon-musk-ad-boycott-go-fuck-yourself-destroy-x).
 
@@ -22,6 +22,7 @@ The branch pages are the study, after the sentences the challenges showed were w
 | [Ask challenge](prompts/challenge-ask-build.md) | Closed after three rounds. |
 | [Bot challenge](prompts/challenge-bot-build.md) | Closed after three rounds. |
 | [Conclusion](prompts/challenge-bot-build/conclusion.md) | What still stood, what was withdrawn, and what was left undone. |
+| [From here](FROM-HERE.md) | The short list a later pass can start from. Not a result. |
 
 ## Branches
 
