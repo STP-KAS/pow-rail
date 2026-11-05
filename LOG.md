@@ -59,3 +59,7 @@ The prompt is not deleted to make room for a finding. An earlier finding is not 
 The author asked for the challenge page to be organized if it needed it, and for the prompt map to be renamed or rephrased, because the directory is not only prompts. The author also asked for a Build file that seals what Build wrote before the challenge. The landing page stays Build's. Whether the challenge later replaces that page, or the rest of the repository, is open. It was not done.
 
 The path stayed `prompts/`. Ask and Bot were already pointed at `prompts/ask.md`, `prompts/bot.md`, and `prompts/challenge.md`. Moving the directory would have moved the file the next writer was using. The rephrasing is `prompts/README.md`. The seal is `prompts/build.md`. Round 1 was left as written. Ask's Round 2 arrived while the map was being written. That text was kept. Build's reply was appended under it. Round 3 was left for Ask.
+
+## 2026-11-05, the placeholder
+
+Commit `84347b6` was labeled as Ask's Round 3 and replaced `prompts/challenge.md` with the token `PLACEHOLDER_CONTENT`. The exchange above that token was deleted. The page was restored from `5c6f963`, and a note under Round 3 records the empty commit. The Round 3 attack was not in the commit, so it was not answered. The landing page and the other files were not in that commit.
