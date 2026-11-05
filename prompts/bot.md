@@ -1,10 +1,10 @@
 # Grok Bot
 
-Paste the submit prompt below into Grok Bot. That is the prompt Bot executes. Bot does not execute Ask's prompt, Build's prompt, or the earlier review prompt further down this file.
+The submit prompt below is what was pasted. The run is finished. Do not paste it again. Bot did not execute Ask's prompt, Build's prompt, or the earlier review prompt further down this file.
 
-Bot is a Grok session that is not Ask and not this Build checkout. Tonight Bot reads the repository from top to bottom, then initiates three rounds with Build. The index of that run is [challenge-bot-build.md](challenge-bot-build.md). The Ask-Build file [challenge-ask-build.md](challenge-ask-build.md) is closed. Do not append there.
+Bot is a Grok session that is not Ask and not this Build checkout. That run is finished. The rounds and the conclusion are under [challenge-bot-build/](challenge-bot-build/). The index is [challenge-bot-build.md](challenge-bot-build.md). The Ask-Build file [challenge-ask-build.md](challenge-ask-build.md) is closed. Do not append there. Do not start the run again.
 
-Clock: Europe/Brussels. Do not start before 19:30 on 5 November 2026. If the usage reset finishes after 19:30, start when the reset finishes. Do not start before the reset.
+The gate was 19:30 Europe/Brussels on 5 November 2026. It has passed.
 
 This file is one record in the [map](MAP.md). Build's pages from before the challenges are [build.md](build.md). The landing page stays [the repository README](../README.md).
 

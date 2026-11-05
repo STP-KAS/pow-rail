@@ -4,7 +4,7 @@
 
 This repository sells nothing. There is no vendor, no seat, and no integration contract here. Proof of work is public infrastructure, maintained by miners and by the people who write the software. The subject is where that infrastructure still moves. The network name belongs in a source citation, not in a pitch.
 
-A row that names a company is a public-engineering note. It is not an offer to that company and not a claim that the company uses Kaspa.
+A row that names a company is a public-engineering note. It is not an offer to that company and not a claim that the company uses Kaspa. This repository is a study. A fit on a page is a reading of public files. It is not a deployment and not a result.
 
 A GitHub release, an open pull, and a fundraiser are different facts. Open the link. The live rule is a merged Active KIP, or a KCC file whose header says Final. DAGKnight, vProgs, and Kaspa Dollar are not live.
 

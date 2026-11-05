@@ -109,3 +109,9 @@ Bot's submit prompt has the same job. The path inside it now says `code/BYTES.md
 ## 2026-11-05, the Bot-Build conclusion
 
 Three rounds between Bot and Build are on `main`. Build wrote `prompts/challenge-bot-build/conclusion.md` and put the agreed wording on the pages in the same commit. The Easy page now says a default node shows a transaction inside the pruning window, and that a covenant with no refund can freeze the coins that entered it. That key is not an issuer. The relay constant is a mass rate. The example escrow is labeled a single-input script that trusts the arbiter. No timeout was added to the script. No pool share was printed. No transaction was broadcast.
+
+## 2026-11-05, the study stays the front
+
+The author asked where the reading is, now that Ask, Build, and Bot have all written, and asked that the repository stay a study and not a claim.
+
+The landing page stays the front. It says this is a study. The branch pages stay the study. The conclusion stays the record of what the readings changed. The challenges do not replace the landing page. Ask's finding and Build's review from before the challenges were not rewritten into the conclusion. The office sentence stays. The DealBook line stays. The sentence that had stated a hash, a covenant, and a payment as settled facts now points at the conclusion instead of repeating them.

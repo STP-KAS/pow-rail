@@ -1,22 +1,27 @@
 # Not for sale
 
-Proof of work is a product. Miners make the blocks. Developers maintain the software. There is no vendor and no contract. Anyone may use the infrastructure. Nothing in this repository is for sale. A person or a company decides whether Kaspa is worth using. The pages below are branches of tools that can be sequenced on Kaspa, each for its own reason.
+This repository is a study. It is a reading of proof of work next to public engineering at SpaceX, Tesla, and the companies around them. It does not claim that any of those companies uses this. A note on a page is not a trial and not a result.
+
+Proof of work is a product. Miners make the blocks. Developers maintain the software. There is no vendor and no contract. Anyone may use the infrastructure. Nothing in this repository is for sale. A person or a company decides whether that use has value. The pages below are notes on tools that can be sequenced, each for its own reason.
 
 It cannot phone a Kaspa office and have the chain switched off. There is no such office.
 
-The companies stay under the laws of the places they operate. A license, a sanction, an export rule, or an order served on the company still binds them. What has no issuer who can freeze it is a hash kept in order, a covenant kept closed, and a KAS payment kept settled.
+The companies stay under the laws of the places they operate. A license, a sanction, an export rule, or an order served on the company still binds them. The study looks at a hash, a covenant, and a KAS payment, and it writes down where those do not move a license, a beam, or a vehicle. What the readings left standing is in the [conclusion](prompts/challenge-bot-build/conclusion.md). It is not claimed again here.
 
 Go fuck yourself. That is for anyone who thinks this chain is a door they can shut by phone. The words are from 29 November 2023. [WIRED](https://www.wired.com/story/elon-musk-x-advertisers-interview/). [The Verge](https://www.theverge.com/2023/11/29/23981928/elon-musk-ad-boycott-go-fuck-yourself-destroy-x).
 
-## Reviews
+## Where the reading is
+
+The branch pages are the study, after the sentences the challenges showed were wrong. Ask's finding stays Ask's, from before those corrections. Build's review is what Build wrote before either challenge. Bot's file is the prompt that was pasted. Bot's reading is the round files. Both challenges are closed. They do not replace this page.
 
 | Record | What it is |
 | --- | --- |
-| [Ask's review](prompts/ask.md) | Ask's own finding. What held, what failed, and what is missing. |
-| [Bot's review](prompts/bot.md) | The prompt to paste into Bot. Bot writes the finding. |
+| [Ask's review](prompts/ask.md) | Ask's finding. The closed rounds corrected it. The finding was not rewritten. |
+| [Bot's review](prompts/bot.md) | The prompt. The run is finished. |
 | [Build's review](prompts/build.md) | What Build wrote before the challenges. |
-| [Ask challenge](prompts/challenge-ask-build.md) | Ask opened it. Three rounds with Build. Closed. |
-| [Bot challenge](prompts/challenge-bot-build.md) | Bot opens it. Three rounds with Build, then a conclusion. |
+| [Ask challenge](prompts/challenge-ask-build.md) | Closed after three rounds. |
+| [Bot challenge](prompts/challenge-bot-build.md) | Closed after three rounds. |
+| [Conclusion](prompts/challenge-bot-build/conclusion.md) | What still stood, what was withdrawn, and what was left undone. |
 
 ## Branches
 

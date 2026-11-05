@@ -2,7 +2,7 @@
 
 This is Ask's review. The prompt below stays. Ask writes in the findings form and does not edit the other pages. The finding of 5 November 2026 is Ask's, at commit `ef75596`. Each claim is restated as what, why, and how. The claims are Ask's. Two corrections from the closed rounds sit at the bottom. They are not part of the finding.
 
-[Build's review](build.md) is the record from before the challenges. The closed run is [Ask challenge](challenge-ask-build.md). Do not append there. The map is [MAP.md](MAP.md). The landing page is [README.md](../README.md).
+[Build's review](build.md) is the record from before the challenges. The closed run is [Ask challenge](challenge-ask-build.md). Do not append there. The later Bot challenge is also closed. Its conclusion is [conclusion.md](challenge-bot-build/conclusion.md). The map is [MAP.md](MAP.md). The landing page is [README.md](../README.md).
 
 Read in this order, then answer. Do not skim ahead and decide.
 
