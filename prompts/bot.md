@@ -14,8 +14,12 @@ This file is one record in the [surface map](README.md). Build's pre-challenge p
 You are Grok Bot. Execute this prompt only. Do not execute the Ask prompt, the Build prompt, or the earlier review prompt in prompts/bot.md.
 
 Repository: https://github.com/STP-KAS/pow-rail
-Write in: prompts/challenge-bot.md
-Do not write in prompts/challenge.md. That run is closed.
+Write a new file for each round. Do not edit prompts/challenge-bot.md. Do not write in prompts/challenge.md. That run is closed.
+Round 1: prompts/challenge-bot/round-1-bot.md
+Round 2: prompts/challenge-bot/round-2-bot.md
+Round 3: prompts/challenge-bot/round-3-bot.md
+The conclusion, if you write it: prompts/challenge-bot/conclusion.md
+Build's replies are round-1-build.md, round-2-build.md, and round-3-build.md in that same directory.
 
 Clock. Europe/Brussels, 5 November 2026. Do not start before 19:30. If your usage reset has not finished at 19:30, start when it finishes. Do not start before the reset. Do not wait for 20:00 as a second gate. 19:30 is the gate. 20:00 is the same night.
 
@@ -43,13 +47,14 @@ Boundaries:
 - Do not post, reply, quote-post, or send a message, except the git commit that appends your round.
 - Do not spend, donate, or broadcast.
 - Do not ask for a seed, a key, or a wallet file.
-- The only edit tonight is an append in prompts/challenge-bot.md. Do not edit any other file. Do not replace the file. Do not put a placeholder, the word test, or a one-line pointer where the page was. Append your round under the heading, commit, and push to main. Do not force-push. If the write fails, stop and say so. Do not retry by shrinking the file to a token.
+- The only edit tonight is one new file, the round named above. Do not edit any other file. Do not replace an existing file. Do not put a placeholder, the word test, or a one-line pointer where a page was. Create the new file, commit it, and push to main. Do not force-push. If the write fails, stop and say so. Do not retry by shrinking a file to a token.
+- Do not spend. Do not broadcast. A TN10 attempt already failed and is written under "Before Round 1, from Build" in prompts/challenge-bot.md. Attack that note if it is wrong. Do not drain a wallet to prove it.
 
 Initiate Round 1 only after the read. The attack is on the repository and on the closed Ask-Build record. What, why, how, and a link you opened, for every point you keep or kill.
 
-Then watch prompts/challenge-bot.md. When Build's reply is under your round, write the next round the same way. Three rounds. You write Round 1, Round 2, and Round 3. Build replies under each. After Build's reply to Round 3, stop the attacks. One of you writes the conclusion under the Conclusion heading. What, why, how. Conclusions. Recommendations. You may write it, or leave it for Build if Build's reply already says it will take the conclusion. Do not write a fourth round.
+Then watch the directory prompts/challenge-bot/. When Build's reply file for your round is on main, write the next round the same way. Three rounds. You write round-1-bot.md, round-2-bot.md, and round-3-bot.md. Build writes the matching build files. After round-3-build.md, stop the attacks. One of you writes conclusion.md. What, why, how. Conclusions. Recommendations. You may write it, or leave it for Build if Build's reply says it will take the conclusion. Do not write a fourth round.
 
-A chat answer that never lands in prompts/challenge-bot.md is not the round.
+A chat answer that never lands in its own file is not the round.
 ```
 
 ## Earlier review prompt
