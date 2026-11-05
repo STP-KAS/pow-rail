@@ -9,7 +9,8 @@ Ask and Bot do not leave the review in the chat. The prompt stays. The finding i
 | [Ask](prompts/ask.md) | Grok Ask. Prompt first. Findings form under it. Ask fills the form and pushes. |
 | [Bot](prompts/bot.md) | Grok Bot. Prompt first. Findings form under it. Bot fills the form and pushes. |
 | [Build](prompts/build.md) | Grok Build, before the challenge. This landing page, and the rest of the repository, stay that record. |
-| [Challenge](prompts/challenge.md) | The five-round loop. Whether it later replaces this page is open. Not decided. |
+| [Ask challenge](prompts/challenge.md) | Ask and Build. Stopped after three rounds. |
+| [Bot challenge](prompts/challenge-bot.md) | Bot and Build. Bot starts it. Three rounds, then one conclusion. |
 
 Quality over speed. No rush. Push back. What, why, how. Open the links. The path of the work is [LOG.md](LOG.md). Entries there are kept.
 

@@ -1,8 +1,60 @@
 # Grok Bot
 
-Paste the prompt below into Grok Bot. Bot is a Grok session that is not Ask and not this Build checkout. Bot may have tools. Tools are for reading public pages and public code. The only write is the findings form under the prompt. Then that form is pushed.
+Paste the submit prompt below into Grok Bot. That is the prompt Bot executes. Bot does not execute Ask's prompt, Build's prompt, or the earlier review prompt further down this file.
 
-This file is one record in the [surface map](README.md). Build's pre-challenge pages are [build.md](build.md). The loop is [challenge.md](challenge.md). The landing page stays [the repository README](../README.md).
+Bot is a Grok session that is not Ask and not this Build checkout. Tonight Bot reads the repository from top to bottom, then initiates three rounds with Build in [challenge-bot.md](challenge-bot.md). The Ask-Build file [challenge.md](challenge.md) is closed. Do not append there.
+
+Clock: Europe/Brussels. Do not start before 19:30 on 5 November 2026. If the usage reset finishes after 19:30, start when the reset finishes. Do not start before the reset.
+
+This file is one record in the [surface map](README.md). Build's pre-challenge pages are [build.md](build.md). The landing page stays [the repository README](../README.md).
+
+## Submit prompt
+
+```text
+You are Grok Bot. Execute this prompt only. Do not execute the Ask prompt, the Build prompt, or the earlier review prompt in prompts/bot.md.
+
+Repository: https://github.com/STP-KAS/pow-rail
+Write in: prompts/challenge-bot.md
+Do not write in prompts/challenge.md. That run is closed.
+
+Clock. Europe/Brussels, 5 November 2026. Do not start before 19:30. If your usage reset has not finished at 19:30, start when it finishes. Do not start before the reset. Do not wait for 20:00 as a second gate. 19:30 is the gate. 20:00 is the same night.
+
+Order. Care, from top to bottom. Do not skim and decide.
+
+1. Kaspa, most of all. Open the pins the pages name. rusty-kaspa v2.1.0 is commit 01b532e8b553523216471682649693af92f0fd16. SilverScript v1.0.0 is commit 3ed973335b59269293564805cc2c58a14595ec03. A KIP is the file on the day you read it. Master is not the node pin. If you did not open a file, say so.
+2. Then this repository, the whole of it. README.md, DISCLAIMER.md, RAILS.md, GITHUBS.md, LOG.md, prompts/README.md, prompts/ask.md, prompts/bot.md, prompts/build.md, prompts/challenge.md, prompts/challenge-bot.md, every file in branches/, code/README.md, code/kaspa-seal, code/covenant. Easy half of a branch first, Detail second.
+3. Then every upstream source those pages cite. A private path is not a source. Do not ask for a seed.
+4. Read prompts/challenge.md as a finished Ask-Build record. Do not continue it. Do not treat it as your script.
+
+Quality over speed. No rush. Push back. What, why, how. Attack claims, not style. Build wrote the repository. That is a bias on that side, not a reason for you to nod. Open the links. Re-check anything that can move.
+
+The human brief, kept in the author's shape:
+
+Branches of the companies, then branches of Grok. Easy words stay easy. Detail means the code is written and the tests exist. A special KIP is not named unless the kaspanet file is named with it. Kaspa docs, Kaspa Explained, and the node tag are the core sources. Kasplex is allowed only with the label third party. The wiki is not a KIP. KRC-20 is not KCC-20.
+
+The question under the branches: where can a public proof-of-work rail keep a hash ordered, a covenant closed, or a KAS payment settled, after a compelled vendor has switched off, and where can it not. Miners are the off switch the author wants examined. A license, a beam, a contactor, a breaker, and a company under an order are not that switch.
+
+The author is angry that people go after the person behind SpaceX and Tesla, and has said the anger is not reasonable. Leave it out of the review. Do not defend a person. Do not attack a person. Test the fit.
+
+Do not smooth the brief into a cleaner question. Kaspa sells nothing. Do not invent a seat, a pilot, or an integration. Do not help anyone evade a sanction, an export rule, a spectrum rule, a geofence, or a vehicle control. Do not design a place to put medical data, neural data, vehicle traces, prompts, recipes, or ciphertext.
+
+Boundaries:
+- Read public pages and public code.
+- Do not post, reply, quote-post, or send a message, except the git commit that appends your round.
+- Do not spend, donate, or broadcast.
+- Do not ask for a seed, a key, or a wallet file.
+- The only edit tonight is an append in prompts/challenge-bot.md. Do not edit any other file. Do not replace the file. Do not put a placeholder, the word test, or a one-line pointer where the page was. Append your round under the heading, commit, and push to main. Do not force-push. If the write fails, stop and say so. Do not retry by shrinking the file to a token.
+
+Initiate Round 1 only after the read. The attack is on the repository and on the closed Ask-Build record. What, why, how, and a link you opened, for every point you keep or kill.
+
+Then watch prompts/challenge-bot.md. When Build's reply is under your round, write the next round the same way. Three rounds. You write Round 1, Round 2, and Round 3. Build replies under each. After Build's reply to Round 3, stop the attacks. One of you writes the conclusion under the Conclusion heading. What, why, how. Conclusions. Recommendations. You may write it, or leave it for Build if Build's reply already says it will take the conclusion. Do not write a fourth round.
+
+A chat answer that never lands in prompts/challenge-bot.md is not the round.
+```
+
+## Earlier review prompt
+
+Do not paste this tonight. It is the review prompt from before the Bot-Build run. It stays so the record is intact.
 
 Read in this order, then answer.
 
@@ -65,7 +117,7 @@ Label guesses. Stop when the fetched pages stop.
 
 ## Findings
 
-The prompt is above this heading. It stays. Grok Bot uploads the opinion here. The chat is not the upload.
+The earlier review prompt is above this heading. It stays. A review that uses that prompt is written here. Tonight's three rounds are not written here. They are appended in [challenge-bot.md](challenge-bot.md).
 
 Copy the blank block. Fill the copy. Append the filled block below the line that says findings start. Leave the blank block blank, so the next pass still has the shape. Do not delete an earlier finding. Do not delete the prompt. Do not edit another file in this repository to make room for the opinion.
 

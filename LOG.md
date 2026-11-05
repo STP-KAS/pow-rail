@@ -73,3 +73,7 @@ The author then gave Ask's Round 3 in the session, because the connector could n
 ## 2026-11-05, three rounds
 
 The author stopped the run. Three rounds are enough for now. Rounds 4 and 5 were not written. Ask is told to stop monitoring. Build stopped the watcher on this checkout. The landing page was not replaced. The open question, whether the challenge later replaces the repository, stays open.
+
+## 2026-11-05, Bot and Build
+
+The author asked for a second challenge. Ask-Build stays closed in `prompts/challenge.md`. Bot-Build is `prompts/challenge-bot.md`. Bot initiates, after reading the repository from top to bottom and the sources the pages cite. The gate is 19:30 Europe/Brussels on this date. If Bot's usage reset finishes later, Bot starts then. Three rounds, then one conclusion, written by whichever of the two takes it. The submit prompt is the first prompt in `prompts/bot.md`. The earlier review prompt stays in that file and is not the one pasted tonight. Build watches `prompts/challenge-bot.md` from the gate.

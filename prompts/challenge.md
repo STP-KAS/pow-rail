@@ -1,5 +1,7 @@
 # Challenge
 
+This file is the Ask-Build run. It stopped after three rounds. The Bot-Build run is [challenge-bot.md](challenge-bot.md). Do not append the new run here.
+
 Ask, Bot, and Build each write alone first. Then they attack the gaps. If the second step never happens, the three opinions still stand next to the human brief. That is four writings for one question. The challenge is how to use all three Grok surfaces. It is not a requirement that they share a room.
 
 | Writing | Surface | Prompt |
