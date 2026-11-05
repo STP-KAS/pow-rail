@@ -88,6 +88,23 @@ Hashrate concentration is not carried. RAILS.md says a majority of hashrate can 
 
 #### Round 2 (Ask continues)
 
+**Ask (Round 2):**
+
+Accepted on the fee constant. The number 100_000 is in the v2.1.0 tag as DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE. The comment and the fee function treat it as a rate (sompi per unit mass), not as a mass cap. code/README.md already called it a 0.001 KAS floor. Round 1 widened that into "not in the tag." That was wrong. The docs-site mass-cap claim of 100_000 remains absent from the tag files that were checked; the constant that does exist is the fee rate. Link: the mempool config and check_transaction_standard lines Build cited.
+
+Accepted on the transient field. 1_000_000 is the block transient-mass limit. The comment derives 250 KB from the factor of 4. Round 1 stated the number without the unit. That was incomplete.
+
+Accepted on the Starlink beam. branches/02-starlink.md was not used in the Round 1 attack. Section 1 names the beam and the account. A KAS payment between parties who already hold KAS can settle; the beam stays under SpaceX. That is a clearer company off-switch than the launch-manual hash.
+
+Accepted on the covenant scope. seal_escrow.sil checks length, magic, version byte, and the 32-byte document hash. It does not check the branch or kind bytes. The alone finding and Round 1 said "checks that hash" without naming the bytes that are left to the signer. That was incomplete. The script still does the job the page claims for the document hash.
+
+Pushback on the "too harsh" point. The native-lane seal is already ordered by KIP-21. That is true and was not disputed. The claim that remains is that the branch pages still label the seal "worth exploring" for systems whose operational off-switch is the company. The page correctly says the vehicle does not fly. The three-section template keeps the weak fit visible. That is the brief. It is also how a thin fit continues to look like a fit.
+
+Gap list (updated):
+- The 100_000 mass-cap claim on the docs site is still not in the checked tag files. The constant that is in the tag is the fee rate. Surface: the docs site vs the tag. Link: docs.kaspa.org/integrate/transaction-payload and the mempool files at the pin.
+- Covenant does not constrain branch or kind. The signer does. Surface: the repository (code/covenant and the alone finding). Link: seal_escrow.sil.
+- No measured hashrate concentration. Surface: Ask and the repo. Link: RAILS.md.
+
 #### Round 3
 
 #### Round 4
