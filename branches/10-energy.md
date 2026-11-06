@@ -28,6 +28,10 @@ Sealed intervals stay in order if the aggregator is compelled to delete a tenant
 
 The site can still be switched off at the breaker and at the interconnect. The money the ISO owes still clears under the ISO's rules. The rail protects the copy of the record, not the flow of power.
 
+## Dollar, still a draft
+
+A site deposit or a contract between two parties who already want the unit is the dollar surface. [Kaspa Dollar](../DOLLAR.md) does not bid the National Electricity Market and does not settle what an ISO owes. The sealed interval stays the clock. The breaker and the interconnect stay physical. A vault of KAS is the wrong size and the wrong instrument for a wholesale power market. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not bid into a market, operate Autobidder, or keep a battery online in defiance of the grid operator. It does not turn a research model of the NEM into a second NEM.

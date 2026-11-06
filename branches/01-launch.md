@@ -24,6 +24,10 @@ A sealed digest stays ordered if the webcast host, the status site, or a foreign
 
 The license does not stay. The vehicle does not fly because a miner included a hash. A government order served on SpaceX still binds SpaceX. The rail binds only the bytes that were already validly broadcast.
 
+## Dollar, still a draft
+
+A supplier invoice priced in dollars is the surface [Kaspa Dollar](../DOLLAR.md) is aimed at. The draft unit would be what that invoice is denominated in, if both sides want it, with KAS locked in a vault at the ratios on that page. The seal of the note or the packing list stays the 81-byte clock. The escrow on this page locks KAS against an arbiter and a hash. The dollar vault locks KAS in order to mint the unit. A supplier who redeems receives KAS, not a bank deposit. The license and the vehicle do not move either way. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not store guidance software, ITAR packages, or range-safety keys. It does not replace a flight termination system. It does not pay a supplier who does not want KAS.

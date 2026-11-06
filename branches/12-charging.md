@@ -22,6 +22,10 @@ A finished KAS payment is not a chargeback, and no card scheme can freeze it. A 
 
 The stall can still refuse the session. The operator can still open the breaker. A sanction or a license condition that binds the operator still binds the operator. The rail is the settlement and the receipt, after two parties have chosen it.
 
+## Dollar, still a draft
+
+The session deposit is the clearest dollar surface in the set. A driver thinks in dollars. [Kaspa Dollar](../DOLLAR.md) is the draft of that unit, so the stall and the driver need not both hold a raw KAS balance. The receipt hash stays the clock. The contactor stays in the stall. The escrow on this page still locks KAS, not the draft unit. Membership and idle-fee policy stay Tesla's where the stall is Tesla's. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not energize a cable, replace Plug&Charge certificates, or let a driver skip payment. It does not move Tesla's membership ledger onto a public chain.

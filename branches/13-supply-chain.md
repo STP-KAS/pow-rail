@@ -28,6 +28,10 @@ A passport digest that was broadcast can be shown, while the block is still insi
 
 The manufacturer can still be ordered to stop shipping, to recall, or to hand over the underlying file. The rail does not hide the file and does not complete a crossing that customs refused.
 
+## Dollar, still a draft
+
+The payment in the gap, where a lawful supplier cannot get a wire, is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would let that payment be denominated in the draft unit instead of only in KAS, with the packing-list hash still the passport. The pack does not become a fungible token. A sanction or an export denial is still not a missing opcode. Redeeming the unit returns KAS. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not replace a regulatory database, certify a mineral as conflict-free, or clear a sanctioned counterparty. It makes a hash hard to quietly withdraw.

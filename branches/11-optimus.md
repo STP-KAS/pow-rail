@@ -24,6 +24,10 @@ The image digest and the incident digest remain if the robotics tenant is closed
 
 The robot still obeys the software it is running and the company that signs updates. A pause order served on Tesla still pauses the service Tesla operates.
 
+## Dollar, still a draft
+
+A lease, a task bounty, or a deposit between a factory and a vendor is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would denominate that bounty in a unit with no bank key. The robot's balance and its cameras stay local. A public chain is the wrong place for a command to a machine that can hurt someone, whether the unit is KAS or the draft dollar. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not balance a robot, store camera rolls, or create a permissionless command channel for a machine that can hurt people.

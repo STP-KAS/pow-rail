@@ -22,6 +22,10 @@ An unclassified digest, if one was broadcast, stays ordered with no vendor to de
 
 Starshield's service does not. Its resilience is spacecraft, spectrum, and a contract. Those have owners. Proof of work does not make a government constellation permissionless, and it should not.
 
+## Dollar, still a draft
+
+Classified tasking does not get a public unit. [Kaspa Dollar](../DOLLAR.md) does not change that. The only surface is an unclassified commercial invoice, if one exists and both sides want the draft unit instead of a bank dollar. A government customer can still be ordered, and the constellation still answers its operator. A public vault is a poor place for a program name that was not already public. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not carry classified traffic, keys, or tasking. It does not give a state a chain it can halt, and it does not give an outsider a chain that can retask the satellites.

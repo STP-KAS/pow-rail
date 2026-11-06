@@ -26,6 +26,10 @@ A published weight hash and a job receipt keep their order if a ground website i
 
 The satellite still needs a license, a launch, and a radio. A government that can compel SpaceX can still order the operator to stop radiating or to stop accepting customers. The chain continues. The service is the company's.
 
+## Dollar, still a draft
+
+A job priced by the hour is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would let a customer and a provider name that price in a unit with no bank key, and the receipt hash would stay the clock. The prompt, the weights, and the downlink stay where they are. Redeeming the unit returns KAS. The design does not run inference, and it does not book a satellite. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not train models, cool chips in vacuum, or move bits over inter-satellite lasers. It does not put customer prompts on a public ledger.

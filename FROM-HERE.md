@@ -34,4 +34,4 @@ A timeout was not added to the example. Adding one without an execution test of 
 
 The pins, the line numbers, and the list of what was not re-run are in the [conclusion](prompts/challenge-bot-build/conclusion.md). The rail is [RAILS.md](RAILS.md). The script is [seal_escrow.sil](code/covenant/seal_escrow.sil).
 
-The landing page now has a second part, a reading of the Kaspa Dollar design opened on 6 November 2026. Ask and Bot did not review that page. It is not one of the sentences above. A later pass does not treat the reference ticker as a unit this script already locks. The whitepaper was not on the site. The design is not a coin.
+The landing page and the branch pages now carry a draft reading of Kaspa Dollar, written out in [DOLLAR.md](DOLLAR.md). Ask and Bot did not review that page. It is not one of the sentences above. A later pass does not treat the reference ticker as a unit this script already locks. The whitepaper was not on the site. The design is not a coin. The vault in that draft is not `seal_escrow.sil`.

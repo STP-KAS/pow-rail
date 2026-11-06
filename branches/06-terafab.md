@@ -26,6 +26,10 @@ KCC-20 being Final means a fungible covenant has a written layout. It does not c
 
 A qualification seal survives a falling-out between the partners and survives an order that closes one partner's cloud tenant. No company on the cap table can edit a mined digest. A government can still seize the building, hold the tools, and compel each company. The history of hashes already published remains, which is sometimes exactly the record a partner or an insurer needs, and sometimes a record the parties should not have made. Choose the hashes with that in mind.
 
+## Dollar, still a draft
+
+A tool-acceptance bonus or a small milestone between the companies is the only dollar surface that fits. [Kaspa Dollar](../DOLLAR.md) is overcollateralized KAS, not a warehouse for a phase-one budget. The figures named on this page, and not linked here, are the wrong size for a vault. The traveler hash stays the clock. Recipes stay off the chain. An export license is not a redemption. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not run the process tools, store the recipe, move $16.8 billion, or substitute for an export license.

@@ -128,6 +128,12 @@ The author asked for an audit of the Ask and Bot rounds, for the landing page to
 
 The closed rounds were left as they were. What holds stayed narrow. The dollar reading is new and is labeled as not signed by those rounds. The roadmap's name for the lead is Alexander Safstrom. The design's own ratios, oracle window, and 2027 dates are restated as the page's, not as a live coin. No address is repeated. No one is asked to send KAS. DAGKnight stays Proposed. It is not the mechanism the dollar page uses to post a price.
 
+## 2026-11-06, the draft on every branch
+
+The author asked to go further into the dollar and to put it on the branches, to acknowledge that it is still a draft, and to take Nakamoto consensus as the driver. The author used the word cyberpunk for that driver. The pages use it once, as that plain sense, and then say the property.
+
+`DOLLAR.md` is the longer reading: vault ratios, the three stages of a fall, the median of miner votes, the gap between half the votes and half the hashrate, the proof tag the draft does not name, and the membership rule the roadmap names and does not specify. Each branch has a short section, "Dollar, still a draft," naming only the dollar surface of that company. The seal stays the clock. The dollar vault is not `seal_escrow.sil`. A fab budget, a grid market, a beam, a vehicle command, and a medical file stay refused. No one is asked to send KAS.
+
 ## 2026-11-05, Bot's page
 
 The author asked to take the prompts off `prompts/bot.md`. The challenge is finished. The point lists were hard to use, and the separate review was not needed.

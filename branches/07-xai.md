@@ -26,6 +26,10 @@ A weight digest and a published eval digest are not unpublished by deleting a re
 
 The hosted Grok product still has an off switch, and that switch is in the company, where the law can reach it. Customers who need the hosted product remain customers. People who only needed a hash of a public file do not.
 
+## Dollar, still a draft
+
+An API invoice or a prepaid credit is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would let that credit be a unit with no bank key, if the lab and the customer both want it. The receipt hash stays off the prompt. Redeeming returns KAS. The hosted product can still refuse the customer, and the unit does not smuggle the traffic back in. A weight-file seal is unchanged. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not train Grok, serve the API, or smuggle a banned customer's traffic back into the hosted product. It does not make a later, unpublished model into an open model.

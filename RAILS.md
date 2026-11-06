@@ -48,7 +48,7 @@ Do not tell an operator these are switches they can flip.
 | Kaspa Dollar | A published design and a fundraiser, not a coin and not a KIP. Mechanism: [how it works](https://kaspadollar.com/how-it-works), read 6 November 2026. That page says the whitepaper, with proofs, is still to come before the fundraiser ends. The [roadmap](https://kaspadollar.com/docs) names Alexander Safstrom and aims at a May 2027 testnet and a September 2027 mainnet. Code was not in this repository's pins. This page does not ask anyone to send KAS. |
 | 100 blocks a second | Not an activation. |
 
-If DAGKnight lands, clients can accept a seal sooner, tracking real delay instead of a fixed parameter. If vProgs lands, a lane can anchor a proved state machine, not only a hash. If a dollar with no issuer ever lands, the unit in a covenant can aim at one dollar. None of that changes the off switch. The off switch remains the miners. None of that flies a rocket, energizes a coil, or turns a phased array.
+If DAGKnight lands, clients can accept a seal sooner, tracking real delay instead of a fixed parameter. If vProgs lands, a lane can anchor a proved state machine, not only a hash. If a dollar with no issuer ever lands, the unit in a covenant can aim at one dollar. The draft of that unit is [DOLLAR.md](DOLLAR.md). None of that changes the off switch. The off switch remains the miners. None of that flies a rocket, energizes a coil, or turns a phased array.
 
 ## What the rail will not do
 

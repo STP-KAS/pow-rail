@@ -28,6 +28,14 @@ Public code is [boringcompany/app](https://github.com/boringcompany/app), last p
 
 A supplier, a city, a university, or an owner can use the same three questions without a relationship to these companies. The node is public. The fee is KAS. No one in this repository sells the seat.
 
+## Dollar, still a draft
+
+Neuralink has no dollar surface that this study will touch. A bounty, a data market, or a firmware unlock paid in [Kaspa Dollar](../DOLLAR.md) would be a reason to move medical material toward a public chain. That is the harm the rest of this page refuses. A hash of an already-public release note stays optional and stays a hash.
+
+The Boring Company is the ordinary construction case. An inspection pack can be sealed. A milestone between a contractor and a city can be denominated in the draft unit if both sides want it. The permit does not move. The machine does not dig because a vault minted.
+
+The design is a draft. It is not a coin yet. The same three limits apply to anyone else using the public node: the unit is not a bank dollar, the file is not in the 81 bytes, and the fee is still KAS.
+
 ## Detail
 
 Neuralink's public firmware note, if one exists and is already public, is the same call as any other software version.

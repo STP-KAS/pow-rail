@@ -28,6 +28,10 @@ A release digest that was broadcast can be shown while a default node still has 
 
 The car does not keep receiving Tesla's live services. Autopilot and FSD behavior stays whatever the installed build does, under Tesla's keys and under the road rules of the place the car is. A chain cannot legally or technically re-enable a feature the manufacturer has stopped signing.
 
+## Dollar, still a draft
+
+A robotaxi fare, a deposit, or a service invoice is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would name that fare in a unit with no bank key, and the receipt hash would stay the public clock. The car still trusts Tesla's signature. The unit does not unlock FSD, open a door, or store a trace. Redeeming returns KAS. The design is a draft. It is not a coin yet.
+
 ## What this rail does not do
 
 It does not drive, steer, or authenticate a door command. It does not store dashcam video or location history. It does not jailbreak a vehicle. [vehicle-command](https://github.com/teslamotors/vehicle-command) already solved command authentication without miners.
