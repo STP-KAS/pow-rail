@@ -122,6 +122,12 @@ The author asked whether the rounds, especially with Bot, were worth carrying fo
 
 `FROM-HERE.md` is that place. It keeps the sentences both sides left smaller: the 81-byte seal, the pruning window, the fee rate, the arbiter lock on coins that entered the script, and the difference between a pool leaving a transaction out and the chain stopping. It names the sentences not to pick back up. It does not promise the work that was left undone. The landing page points at it. The conclusion stays the long record. The branch pages stay the study.
 
+## 2026-11-06, two parts
+
+The author asked for an audit of the Ask and Bot rounds, for the landing page to say what, why, and how, and for two parts: one without a stablecoin, and one with the Kaspa Dollar design. The link given was the roadmap. The mechanism is the how-it-works page. The whitepaper was not on the site. The page says it is still to come, with proofs, before the fundraiser ends.
+
+The closed rounds were left as they were. What holds stayed narrow. The dollar reading is new and is labeled as not signed by those rounds. The roadmap's name for the lead is Alexander Safstrom. The design's own ratios, oracle window, and 2027 dates are restated as the page's, not as a live coin. No address is repeated. No one is asked to send KAS. DAGKnight stays Proposed. It is not the mechanism the dollar page uses to post a price.
+
 ## 2026-11-05, Bot's page
 
 The author asked to take the prompts off `prompts/bot.md`. The challenge is finished. The point lists were hard to use, and the separate review was not needed.

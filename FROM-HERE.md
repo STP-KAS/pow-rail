@@ -33,3 +33,5 @@ The local encoder tests, when they were last run, were hash tests. They were not
 A timeout was not added to the example. Adding one without an execution test of `release` would be another unverified sentence. No pool share was printed. The Toccata DAA score stays a docs link, not a literal copied out of the v2.1.0 Rust tree. None of these is a promise that a later pass will do them.
 
 The pins, the line numbers, and the list of what was not re-run are in the [conclusion](prompts/challenge-bot-build/conclusion.md). The rail is [RAILS.md](RAILS.md). The script is [seal_escrow.sil](code/covenant/seal_escrow.sil).
+
+The landing page now has a second part, a reading of the Kaspa Dollar design opened on 6 November 2026. Ask and Bot did not review that page. It is not one of the sentences above. A later pass does not treat the reference ticker as a unit this script already locks. The whitepaper was not on the site. The design is not a coin.
