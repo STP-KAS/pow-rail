@@ -40,6 +40,14 @@ The 81-byte seal remains the clock for a file a verifier can see. The draft unit
 
 A supplier who wants dollars and does not want KAS is not automatically served. Redeeming the unit returns KAS. Selling that KAS for a bank dollar needs a market and a bank on the other side of the sale. The draft removes the issuer of the unit. It does not remove the price of KAS, and it does not remove the bank from the last step into a bank account.
 
+## The fee path, when the stable lands
+
+This path is not open while the draft is only a page. When the unit exists and both sides hold it, a transfer of that unit is an ordinary transaction on the base layer. The relay rule in rusty-kaspa v2.1.0 is a mass rate, not a cut of the amount: `DEFAULT_MINIMUM_RELAY_TRANSACTION_FEE` is 100 sompi per gram, which is mass times 100_000 sompi, divided by 1000 ([`mining/src/mempool/config.rs`](https://github.com/kaspanet/rusty-kaspa/blob/01b532e8b553523216471682649693af92f0fd16/mining/src/mempool/config.rs#L17-L20)). One thousand sompi, 0.00001 KAS, is that product at 10 grams. A one-dollar transfer and a large invoice pay the fee of their mass, not a percentage of the face value. Miners can still prefer a higher fee. A clumsy split of outputs can make storage mass the part that matters. The rate does not become a percentage because the unit is named in dollars.
+
+That is the fee a card scheme is built to charge: a slice of the payment. This page does not print a merchant rate, because the schemes publish their own and they change. The shape is enough. The Kaspa fee does not grow when the invoice does.
+
+It is not a claim against every other rail. The X Money page says a transfer to someone on X is free. A free in-app transfer is not the fee this path undercuts. The path undercuts the card and the wire, for two people who already hold the unit and do not need the bank in the middle of that transfer. Getting into the unit, and getting back out to a bank account, can still cost whatever the vault, the market, and the bank charge. The how-it-works page also names an oracle fee in KAS, paid by liquidators, with the miner band marked TBD. That fee is not the transfer fee.
+
 ## What it does not become
 
 It does not keep a license, a beam, a contactor, a vehicle command, or a permit. It does not clear a sanction or an export denial. It does not warehouse a fab. It does not bid a national grid. It does not carry medical images, prompts, or vehicle traces. It is not USDT and not USDC. Those have an issuer. DAGKnight is not the oracle. KIP-2 is Proposed and is not in v2.1.0. If it lands, a client can treat a block as ordered on a measured delay. The price in this draft is a coinbase vote plus a proof against the lane commitment, which the rail page already marks Active.

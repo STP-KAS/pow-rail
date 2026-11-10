@@ -140,6 +140,12 @@ The author asked to put X payment into the exercise and to look at the whole X s
 
 The X page now splits the sphere: speech, ranking and notes, ads, chat, hosted Grok, and X Money. The product page money.x.com was read on this date. It describes a dollar balance for select adults in the United States, X Payments LLC as not a bank, deposits at Cross River Bank, and a Visa card. That balance is the company rail. A KAS tip beside the handle is the rail this study already had. The Kaspa Dollar draft stays beside both, and it is still a draft. A September report about creator payouts was not checked against a help article. A 25 October 2026 line from Musk about a one-dollar like was not on the product page. No one is asked to open an X Money account or to send KAS.
 
+## 2026-11-10, the fee path when the stable lands
+
+The author asked to include the path of lower transaction fees on Kaspa, and said that path is for when the stable lands.
+
+The relay rule already on the pages is a mass rate, 100 sompi per gram, not a cut of the amount. `DOLLAR.md` now says that rate is the transfer fee once the draft unit exists. It does not undercut a transfer the X Money page already calls free. It is the contrast with a card or a wire. Minting, redemption, the oracle fee, and the last step into a bank account are not that transfer fee. The unit is still a draft.
+
 ## 2026-11-05, Bot's page
 
 The author asked to take the prompts off `prompts/bot.md`. The challenge is finished. The point lists were hard to use, and the separate review was not needed.
