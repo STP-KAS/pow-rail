@@ -28,7 +28,7 @@ The hosted Grok product still has an off switch, and that switch is in the compa
 
 ## Dollar, still a draft
 
-An API invoice or a prepaid credit is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would let that credit be a unit with no bank key, if the lab and the customer both want it. The receipt hash stays off the prompt. Redeeming returns KAS. The hosted product can still refuse the customer, and the unit does not smuggle the traffic back in. A weight-file seal is unchanged. The design is a draft. It is not a coin yet.
+An API invoice or a prepaid credit is the dollar surface. Payments inside the X app, including X Money, are on the [X page](08-x.md), not this one. [Kaspa Dollar](../DOLLAR.md) would let that credit be a unit with no bank key, if the lab and the customer both want it. The receipt hash stays off the prompt. Redeeming returns KAS. The hosted product can still refuse the customer, and the unit does not smuggle the traffic back in. A weight-file seal is unchanged. The design is a draft. It is not a coin yet.
 
 ## What this rail does not do
 

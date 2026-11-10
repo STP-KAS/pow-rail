@@ -9,10 +9,12 @@ Company code and lookalike orgs, as listed on 5 November 2026. A new repo in a r
 | [SpaceExplorationTechnologies](https://github.com/SpaceExplorationTechnologies) | Blog `spacex.com`, created 2014. Holds the Starlink Wi-Fi GPL tree, `enterprise-api`, and forks of u-boot, linux, linuxptp, sssd. | 6 |
 | [teslamotors](https://github.com/teslamotors) | "Tesla, Inc.", blog `tesla.com`. Vehicle command, fleet telemetry, TTPoE, vendor kernels, energy-adjacent models. | 67 |
 | [xai-org](https://github.com/xai-org) | Displayed as SpaceXSI, blog `x.ai`. Grok-1, the current For You code, API SDKs, grok-build. | 12 |
-| [twitter](https://github.com/twitter) | "X (fka Twitter)", blog `opensource.x.com`. Community Notes is still maintained. The older recommendation drop lives here. | 102 |
+| [twitter](https://github.com/twitter) | "X (fka Twitter)", blog `opensource.x.com`. Community Notes is still maintained. The older recommendation drop lives here. X Money is not a repo in this org. | 102 |
 | [xdevplatform](https://github.com/xdevplatform) | X developer samples. A few are current (`xurl`, `chat-xdk`, `docs`). | 117 |
 | [neuralink](https://github.com/neuralink) | Separate medical-device company. Four repos. See [adjacent](branches/15-adjacent.md). | 4 |
 | [boringcompany](https://github.com/boringcompany) | One app, last push 2019. | 1 |
+
+X Money, read at [money.x.com](https://money.x.com) on 10 November 2026, is a product page, not a repository in the orgs above. The page says X Payments LLC is not an FDIC-insured bank and that deposit accounts are held at Cross River Bank. The payment exercise is on the [X branch](branches/08-x.md).
 
 SpaceX has no large flight-software org. Falcon, Dragon, and Starship guidance are not in the six-repo org. Terafab and Starmind had no software org on this date.
 

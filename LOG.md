@@ -134,6 +134,12 @@ The author asked to go further into the dollar and to put it on the branches, to
 
 `DOLLAR.md` is the longer reading: vault ratios, the three stages of a fall, the median of miner votes, the gap between half the votes and half the hashrate, the proof tag the draft does not name, and the membership rule the roadmap names and does not specify. Each branch has a short section, "Dollar, still a draft," naming only the dollar surface of that company. The seal stays the clock. The dollar vault is not `seal_escrow.sil`. A fab budget, a grid market, a beam, a vehicle command, and a medical file stay refused. No one is asked to send KAS.
 
+## 2026-11-10, X Money in the exercise
+
+The author asked to put X payment into the exercise and to look at the whole X sphere.
+
+The X page now splits the sphere: speech, ranking and notes, ads, chat, hosted Grok, and X Money. The product page money.x.com was read on this date. It describes a dollar balance for select adults in the United States, X Payments LLC as not a bank, deposits at Cross River Bank, and a Visa card. That balance is the company rail. A KAS tip beside the handle is the rail this study already had. The Kaspa Dollar draft stays beside both, and it is still a draft. A September report about creator payouts was not checked against a help article. A 25 October 2026 line from Musk about a one-dollar like was not on the product page. No one is asked to open an X Money account or to send KAS.
+
 ## 2026-11-05, Bot's page
 
 The author asked to take the prompts off `prompts/bot.md`. The challenge is finished. The point lists were hard to use, and the separate review was not needed.

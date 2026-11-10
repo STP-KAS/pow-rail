@@ -69,7 +69,7 @@ The branch pages are the study, after the sentences the challenges showed were w
 | Starbase and factories | [branches/05-starbase.md](branches/05-starbase.md) |
 | Terafab | [branches/06-terafab.md](branches/06-terafab.md) |
 | xAI and Grok | [branches/07-xai.md](branches/07-xai.md) |
-| X, the platform | [branches/08-x.md](branches/08-x.md) |
+| X, the platform and X Money | [branches/08-x.md](branches/08-x.md) |
 | Tesla vehicles, FSD, robotaxi | [branches/09-vehicles.md](branches/09-vehicles.md) |
 | Tesla energy | [branches/10-energy.md](branches/10-energy.md) |
 | Optimus | [branches/11-optimus.md](branches/11-optimus.md) |
