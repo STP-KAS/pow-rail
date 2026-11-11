@@ -28,7 +28,7 @@ Classified tasking does not get a public unit. [Kaspa Dollar](../DOLLAR.md) does
 
 ## Space watts
 
-No lens of that post supports this branch. The customer wants an operator who can be directed. Tasking stays off the rail. The reading is in [WATTS.md](../WATTS.md).
+No lens of that post supports this branch. The customer wants an operator who can be directed. Tasking stays off the rail. The reading is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

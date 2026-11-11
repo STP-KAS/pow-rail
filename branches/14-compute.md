@@ -32,7 +32,7 @@ A cluster reservation or a published-job bounty is the dollar surface. [Kaspa Do
 
 ## Space watts
 
-Powering compute at night is this branch. A published system card or a published power claim can be sealed. The training run and the power contract stay in the building. Space solar for that compute is the Starmind problem, not a Kaspa efficiency feature. The grid is in [WATTS.md](../WATTS.md).
+Powering compute at night is this branch. A published system card or a published power claim can be sealed. The training run and the power contract stay in the building. Space solar for that compute is the Starmind problem, not a Kaspa efficiency feature. The grid is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

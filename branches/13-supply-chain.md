@@ -34,7 +34,7 @@ The payment in the gap, where a lawful supplier cannot get a wire, is the dollar
 
 ## Space watts
 
-The batteries in the post are cells and a record. A packing list the parties are already allowed to show can be sealed. The seal does not make the cell and does not close the winter gap. The reading is in [WATTS.md](../WATTS.md).
+The batteries in the post are cells and a record. A packing list the parties are already allowed to show can be sealed. The seal does not make the cell and does not close the winter gap. The reading is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

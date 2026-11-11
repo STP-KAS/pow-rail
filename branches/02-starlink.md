@@ -34,7 +34,7 @@ The card bill is the dollar surface. [Kaspa Dollar](../DOLLAR.md) is a draft of 
 
 ## Space watts
 
-A node behind a terminal that is already up is the passenger that fits: short delay, enough bandwidth. The radio and the cell stay SpaceX's. A Starlink satellite is not a Kaspa node unless that software is actually running. The reading is [WATTS.md](../WATTS.md).
+A node behind a terminal that is already up is the passenger that fits: short delay, enough bandwidth. The radio and the cell stay SpaceX's. A Starlink satellite is not a Kaspa node unless that software is actually running. The reading is [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

@@ -30,7 +30,7 @@ A supplier invoice priced in dollars is the surface [Kaspa Dollar](../DOLLAR.md)
 
 ## Space watts
 
-A public telemetry note can be sealed before flight. A ship that stays up can carry a pre-synced node. A booster flight of minutes cannot usefully carry the miner. The longer reading is [WATTS.md](../WATTS.md). The license, the range, and the vehicle stay where they are.
+A public telemetry note can be sealed before flight. A ship that stays up can carry a pre-synced node. A booster flight of minutes does not get a node. The longer reading is [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md). The license, the range, and the vehicle stay where they are.
 
 ## What this rail does not do
 

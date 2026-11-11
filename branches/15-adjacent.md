@@ -38,7 +38,7 @@ The design is a draft. It is not a coin yet. The same three limits apply to anyo
 
 ## Space watts
 
-No feature of the rail supports the 11 November 2026 post on these two companies. Neuralink stays off the chain. A tunnel inspection pack can be sealed for the reasons already on this page, which are not space watts. The reading is in [WATTS.md](../WATTS.md).
+No feature of the rail supports the 11 November 2026 post on these two companies. Neuralink stays off the chain. A tunnel inspection pack can be sealed for the reasons already on this page, which are not space watts. The reading is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## Detail
 

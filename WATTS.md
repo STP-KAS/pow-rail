@@ -32,11 +32,11 @@ None of those move a watt, store a night, or reject heat in vacuum. The post is 
 
 **Nodes in space.** Anyone can run a node. Orbit does not change the consensus rules. A node in space still needs a radio, a license, and a computer that survives the environment. It verifies. It does not generate the 100 GW. This repository has no orbital node, and nothing in it was flown.
 
-**Miners in space.** A fleet of miners in orbit is not a feature this study recommends. The chain already buys its security on the ground, and one pool can delay a transaction without stopping the chain. This page does not print a pool share. One node and one small miner, riding on a vehicle that is already going, is a different question. It is the next section.
+**Miners in space.** A miner was a thought. It is withdrawn. The chain already buys its security on the ground. One pool can delay a transaction without stopping the chain. This page does not print a pool share. The object worth placing is a node, and only where it is the best tool. That test is [NODE.md](NODE.md).
 
 ## One node and one miner, along for the ride
 
-The question is not a second Kaspa network in orbit, and it is not extra hashrate. It is whether one verifying node and one small miner, carried on hardware that is already being launched for Starmind, Starlink, or a Starship flight, would be useful to the people who fly that hardware. Nothing in this repository is for sale. SpaceX is not asked to fly it. This is a reading of the fit.
+The miner half below is kept as the thought that was checked and dropped. [NODE.md](NODE.md) is the page that replaces it. The question is not a second Kaspa network in orbit, and it is not extra hashrate. It is whether one verifying node and one small miner, carried on hardware that is already being launched for Starmind, Starlink, or a Starship flight, would be useful to the people who fly that hardware. Nothing in this repository is for sale. SpaceX is not asked to fly it. This is a reading of the fit.
 
 ### What "does not weigh much" actually is
 
@@ -138,4 +138,4 @@ Each line uses only the live pieces above. The branch page stays the longer read
 
 ## What this page does not do
 
-It does not recommend a fleet of miners in orbit. One passenger node, and one small miner used as a heat load, are explored above and were not flown. It does not ask anyone to send KAS. It does not treat the post as a proof that 100 GW in space equals 800 GW on Earth. It does not move a license, a beam, a contactor, or a power contract.
+It does not recommend a miner in orbit. The miner thought is withdrawn. A node, only where it is the best tool, is [NODE.md](NODE.md). It does not ask anyone to send KAS. It does not treat the post as a proof that 100 GW in space equals 800 GW on Earth. It does not move a license, a beam, a contactor, or a power contract.

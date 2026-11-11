@@ -30,7 +30,7 @@ A lease, a task bounty, or a deposit between a factory and a vendor is the dolla
 
 ## Space watts
 
-No lens of that post adds a fit. A robot does not generate the watts, and its logs stay off the chain. The reading is in [WATTS.md](../WATTS.md).
+No lens of that post adds a fit. A robot does not generate the watts, and its logs stay off the chain. The reading is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

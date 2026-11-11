@@ -34,7 +34,7 @@ A site deposit or a contract between two parties who already want the unit is th
 
 ## Space watts
 
-This is the ground half of the 11 November 2026 post: solar that needs batteries, and winter that needs another plant. The interesting feature is the interval seal this page already describes. The seal does not push a megawatt and does not replace the battery. Miners in space are not recommended. The seven lenses are in [WATTS.md](../WATTS.md).
+This is the ground half of the 11 November 2026 post: solar that needs batteries, and winter that needs another plant. The interesting feature is the interval seal this page already describes. The seal does not push a megawatt and does not replace the battery. Miners in space are not recommended. The seven lenses are in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

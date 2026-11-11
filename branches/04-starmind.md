@@ -32,7 +32,7 @@ A job priced by the hour is the dollar surface. [Kaspa Dollar](../DOLLAR.md) wou
 
 ## Space watts
 
-This is the branch the 11 November 2026 post sits next to. A verifying node can ride the power and the link. A small miner is a steady heat load for a radiator the mission is already trying to prove, not extra hashrate, and not the customer's job. Kaspa does not supply the watts. The full reading is [WATTS.md](../WATTS.md).
+This is the branch the 11 November 2026 post sits next to. A verifying node can ride the power and the link if one is the reader. The miner was a thought and is not needed. Kaspa does not supply the watts. The full reading is [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

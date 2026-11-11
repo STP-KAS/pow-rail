@@ -34,7 +34,7 @@ A robotaxi fare, a deposit, or a service invoice is the dollar surface. [Kaspa D
 
 ## Space watts
 
-A published fleet energy figure can be sealed if it is already public. The car still trusts the key in the vehicle. The rail does not store the night energy the post describes. The reading is in [WATTS.md](../WATTS.md).
+A published fleet energy figure can be sealed if it is already public. The car still trusts the key in the vehicle. The rail does not store the night energy the post describes. The reading is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

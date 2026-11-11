@@ -28,7 +28,7 @@ The session deposit is the clearest dollar surface in the set. A driver thinks i
 
 ## Space watts
 
-A session receipt can be sealed. The contactor stays in the stall. Night charging is the battery problem named in the post, and the rail does not store the kilowatt-hour. The reading is in [WATTS.md](../WATTS.md).
+A session receipt can be sealed. The contactor stays in the stall. Night charging is the battery problem named in the post, and the rail does not store the kilowatt-hour. The reading is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

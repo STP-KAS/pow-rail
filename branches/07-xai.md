@@ -32,7 +32,7 @@ An API invoice or a prepaid credit is the dollar surface. Payments inside the X 
 
 ## Space watts
 
-The night and winter power in the post is a ground-cluster problem. A published system card or a published power statement can be sealed. The API account remains a company switch. The cluster does not keep training. The grid is in [WATTS.md](../WATTS.md).
+The night and winter power in the post is a ground-cluster problem. A published system card or a published power statement can be sealed. The API account remains a company switch. The cluster does not keep training. The grid is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

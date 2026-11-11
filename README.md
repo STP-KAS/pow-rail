@@ -78,7 +78,7 @@ The branch pages are the study, after the sentences the challenges showed were w
 | Dojo, training, on-site compute | [branches/14-compute.md](branches/14-compute.md) |
 | Neuralink and The Boring Company | [branches/15-adjacent.md](branches/15-adjacent.md) |
 
-[Bytes](code/BYTES.md). [Rail](RAILS.md). [Dollar](DOLLAR.md). [Space watts](WATTS.md). [Companies](GITHUBS.md). [Map](prompts/MAP.md). [Path](LOG.md).
+[Bytes](code/BYTES.md). [Rail](RAILS.md). [Dollar](DOLLAR.md). [Space watts](WATTS.md). [Node](NODE.md). [Companies](GITHUBS.md). [Map](prompts/MAP.md). [Path](LOG.md).
 
 **Pass date:** 5 November 2026 for the pins and the closed rounds. 6 November 2026 for the Kaspa Dollar pages named above. 11 November 2026 for the space-watts post. All three go stale. Check the link before repeating a status word.
 

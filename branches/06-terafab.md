@@ -32,7 +32,7 @@ A tool-acceptance bonus or a small milestone between the companies is the only d
 
 ## Space watts
 
-A public acceptance record can be sealed. Recipes stay off the chain. The eight-to-one sentence is not a process recipe, and this page does not treat it as a verified fab figure. The reading is in [WATTS.md](../WATTS.md).
+A public acceptance record can be sealed. Recipes stay off the chain. The eight-to-one sentence is not a process recipe, and this page does not treat it as a verified fab figure. The reading is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 

@@ -32,7 +32,7 @@ The small supplier payment is the dollar surface. Where both sides want a dollar
 
 ## Space watts
 
-An inspection record the parties already keep can be sealed, if the factory is building hardware for either architecture. The chain does not weld or test a radiator. The post is in [WATTS.md](../WATTS.md).
+An inspection record the parties already keep can be sealed, if the factory is building hardware for either architecture. The chain does not weld or test a radiator. The post is in [WATTS.md](../WATTS.md). Whether a node is the best tool on this branch is [NODE.md](../NODE.md).
 
 ## What this rail does not do
 
