@@ -32,7 +32,7 @@ A job priced by the hour is the dollar surface. [Kaspa Dollar](../DOLLAR.md) wou
 
 ## Space watts
 
-This is the branch the 11 November 2026 post sits next to. Power in orbit and batteries on the ground are different because of night and winter. Kaspa does not supply either watt and does not reject the heat. A published power budget can be sealed if it is already fit to publish. A miner in that orbit would add heat, which this page already treats as a critical-path problem. The full grid is in [WATTS.md](../WATTS.md).
+This is the branch the 11 November 2026 post sits next to. A verifying node can ride the power and the link. A small miner is a steady heat load for a radiator the mission is already trying to prove, not extra hashrate, and not the customer's job. Kaspa does not supply the watts. The full reading is [WATTS.md](../WATTS.md).
 
 ## What this rail does not do
 

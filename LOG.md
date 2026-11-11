@@ -157,3 +157,9 @@ The page now points at the three rounds and the conclusion. The paste prompt, th
 The author asked to file Elon Musk's post of this date, the one that says 100 GW in space is roughly equal to 800 GW on Earth, and to ask whether a Kaspa feature is interesting on any branch. The lenses asked for were financial, security, transparency, efficiency, durability, nodes in space, and miners in space.
 
 `WATTS.md` quotes the post and does not remeasure it. Each of the fifteen branch pages has a short section. The interesting use that survives is a seal of a figure that was already fit to publish, and a KAS payment where both sides want KAS. The rail does not move a watt. Nodes in space are not in this repository. Miners in space are not recommended. No one is asked to send KAS.
+
+## 2026-11-11, one passenger
+
+The author asked again about one node and one miner, not a fleet. Ship them with Starmind, Starlink, Starship, or a booster, because the mass is small. The heat is the point of the space power problem, not a reason to fill orbit with hashrate. Look at the Moon, a station, and the links those vehicles already have. Keep the dollar draft in view. Look at SilverScript, Argent, vProgs, and covenants. The question is whether SpaceX can benefit. Nothing is for sale.
+
+`WATTS.md` now separates the fleet from the passenger. The node guide's minimum is cited. A small miner is treated as a heat load of about a hundred watts and about a millionth of a public hashrate estimate, not as security. Vacuum does not carry the heat. A tenth-second block interval makes low orbit plausible and the Moon late. A booster flight of minutes does not fit the miner. Argent and vProgs still showed no release. The covenant stays the ground escrow. The dollar stays a draft. No one is asked to send KAS. Nothing was flown.

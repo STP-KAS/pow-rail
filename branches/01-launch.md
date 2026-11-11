@@ -30,7 +30,7 @@ A supplier invoice priced in dollars is the surface [Kaspa Dollar](../DOLLAR.md)
 
 ## Space watts
 
-A public telemetry note can be sealed. That is the transparency use. The 11 November 2026 post on space watts and ground batteries is filed in [WATTS.md](../WATTS.md). The license, the range, and the vehicle stay where they are. A rocket is not a Kaspa node, and a miner in orbit is not a feature this study recommends.
+A public telemetry note can be sealed before flight. A ship that stays up can carry a pre-synced node. A booster flight of minutes cannot usefully carry the miner. The longer reading is [WATTS.md](../WATTS.md). The license, the range, and the vehicle stay where they are.
 
 ## What this rail does not do
 
