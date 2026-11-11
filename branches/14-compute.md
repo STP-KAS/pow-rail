@@ -30,6 +30,10 @@ There is still no company to call to have the old digest removed. That is the pr
 
 A cluster reservation or a published-job bounty is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would denominate that reservation in a unit with no bank key. The training run, the fabric, and the power contract stay where they are. A system card that was already published can still be sealed. Customer data cannot. The draft does not smuggle a restricted accelerator, and it does not pay the utility for the hall. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+Powering compute at night is this branch. A published system card or a published power claim can be sealed. The training run and the power contract stay in the building. Space solar for that compute is the Starmind problem, not a Kaspa efficiency feature. The grid is in [WATTS.md](../WATTS.md).
+
 ## What this rail does not do
 
 It does not replace Dojo, TTPoE, or a data-center power contract. It does not smuggle restricted accelerators. It does not prove that a private training run matches a public card, unless a real proof system for that statement exists and the publisher runs it. The live piece is the seal of the card they chose to publish.

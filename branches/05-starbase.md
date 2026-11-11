@@ -30,6 +30,10 @@ The factory can still be fined, permitted, or closed. The rail does not employ t
 
 The small supplier payment is the dollar surface. Where both sides want a dollar unit and not a raw KAS balance, [Kaspa Dollar](../DOLLAR.md) is the draft of that unit, collateral still KAS, vault still not this page's escrow. The inspection hash stays 81 bytes. Drawings stay off the chain. A purchase order in a bank stays in that bank until the draft is code and the parties choose it. The design does not move the crate. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+An inspection record the parties already keep can be sealed, if the factory is building hardware for either architecture. The chain does not weld or test a radiator. The post is in [WATTS.md](../WATTS.md).
+
 ## What this rail does not do
 
 It does not move the crate, stamp the passport of an employee, or store drawings that are export-controlled. Hash in, file stays home.

@@ -36,6 +36,10 @@ The Boring Company is the ordinary construction case. An inspection pack can be 
 
 The design is a draft. It is not a coin yet. The same three limits apply to anyone else using the public node: the unit is not a bank dollar, the file is not in the 81 bytes, and the fee is still KAS.
 
+## Space watts
+
+No feature of the rail supports the 11 November 2026 post on these two companies. Neuralink stays off the chain. A tunnel inspection pack can be sealed for the reasons already on this page, which are not space watts. The reading is in [WATTS.md](../WATTS.md).
+
 ## Detail
 
 Neuralink's public firmware note, if one exists and is already public, is the same call as any other software version.

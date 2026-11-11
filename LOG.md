@@ -151,3 +151,9 @@ The relay rule already on the pages is a mass rate, 100 sompi per gram, not a cu
 The author asked to take the prompts off `prompts/bot.md`. The challenge is finished. The point lists were hard to use, and the separate review was not needed.
 
 The page now points at the three rounds and the conclusion. The paste prompt, the earlier review prompt, and the blank findings form are off the page. The text remains in the history of that file. The landing page, the map, and Build's review no longer call that page a prompt.
+
+## 2026-11-11, space watts
+
+The author asked to file Elon Musk's post of this date, the one that says 100 GW in space is roughly equal to 800 GW on Earth, and to ask whether a Kaspa feature is interesting on any branch. The lenses asked for were financial, security, transparency, efficiency, durability, nodes in space, and miners in space.
+
+`WATTS.md` quotes the post and does not remeasure it. Each of the fifteen branch pages has a short section. The interesting use that survives is a seal of a figure that was already fit to publish, and a KAS payment where both sides want KAS. The rail does not move a watt. Nodes in space are not in this repository. Miners in space are not recommended. No one is asked to send KAS.

@@ -32,6 +32,10 @@ The car does not keep receiving Tesla's live services. Autopilot and FSD behavio
 
 A robotaxi fare, a deposit, or a service invoice is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would name that fare in a unit with no bank key, and the receipt hash would stay the public clock. The car still trusts Tesla's signature. The unit does not unlock FSD, open a door, or store a trace. Redeeming returns KAS. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+A published fleet energy figure can be sealed if it is already public. The car still trusts the key in the vehicle. The rail does not store the night energy the post describes. The reading is in [WATTS.md](../WATTS.md).
+
 ## What this rail does not do
 
 It does not drive, steer, or authenticate a door command. It does not store dashcam video or location history. It does not jailbreak a vehicle. [vehicle-command](https://github.com/teslamotors/vehicle-command) already solved command authentication without miners.

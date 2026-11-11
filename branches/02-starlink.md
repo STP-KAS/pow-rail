@@ -32,6 +32,10 @@ The phased array does not. If SpaceX or a regulator turns a cell off, the chain 
 
 The card bill is the dollar surface. [Kaspa Dollar](../DOLLAR.md) is a draft of a unit with no bank key, minted against KAS. A subscriber and SpaceX could, if both wanted it, settle that bill in the unit in a place where the card rail is the thing that got frozen. The radio entitlement stays SpaceX's. Paying the unit does not keep the cell on, and it does not defeat a geofence. Subscriber locations and card numbers stay off the payload. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+A published capacity note can be sealed. The radio and the cell stay SpaceX's. A Starlink satellite is not a Kaspa node because it is in space. The post and the seven lenses are in [WATTS.md](../WATTS.md).
+
 ## What this rail does not do
 
 It does not bypass geofencing, account suspension, or an export hold on a terminal. It does not put subscriber traffic, locations, or payment card numbers on a public ledger. The GPL router code does not need a consensus protocol.

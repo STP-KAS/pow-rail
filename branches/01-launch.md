@@ -28,6 +28,10 @@ The license does not stay. The vehicle does not fly because a miner included a h
 
 A supplier invoice priced in dollars is the surface [Kaspa Dollar](../DOLLAR.md) is aimed at. The draft unit would be what that invoice is denominated in, if both sides want it, with KAS locked in a vault at the ratios on that page. The seal of the note or the packing list stays the 81-byte clock. The escrow on this page locks KAS against an arbiter and a hash. The dollar vault locks KAS in order to mint the unit. A supplier who redeems receives KAS, not a bank deposit. The license and the vehicle do not move either way. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+A public telemetry note can be sealed. That is the transparency use. The 11 November 2026 post on space watts and ground batteries is filed in [WATTS.md](../WATTS.md). The license, the range, and the vehicle stay where they are. A rocket is not a Kaspa node, and a miner in orbit is not a feature this study recommends.
+
 ## What this rail does not do
 
 It does not store guidance software, ITAR packages, or range-safety keys. It does not replace a flight termination system. It does not pay a supplier who does not want KAS.

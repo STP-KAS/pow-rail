@@ -30,6 +30,10 @@ The satellite still needs a license, a launch, and a radio. A government that ca
 
 A job priced by the hour is the dollar surface. [Kaspa Dollar](../DOLLAR.md) would let a customer and a provider name that price in a unit with no bank key, and the receipt hash would stay the clock. The prompt, the weights, and the downlink stay where they are. Redeeming the unit returns KAS. The design does not run inference, and it does not book a satellite. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+This is the branch the 11 November 2026 post sits next to. Power in orbit and batteries on the ground are different because of night and winter. Kaspa does not supply either watt and does not reject the heat. A published power budget can be sealed if it is already fit to publish. A miner in that orbit would add heat, which this page already treats as a critical-path problem. The full grid is in [WATTS.md](../WATTS.md).
+
 ## What this rail does not do
 
 It does not train models, cool chips in vacuum, or move bits over inter-satellite lasers. It does not put customer prompts on a public ledger.

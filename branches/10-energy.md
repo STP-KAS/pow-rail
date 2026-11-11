@@ -32,6 +32,10 @@ The site can still be switched off at the breaker and at the interconnect. The m
 
 A site deposit or a contract between two parties who already want the unit is the dollar surface. [Kaspa Dollar](../DOLLAR.md) does not bid the National Electricity Market and does not settle what an ISO owes. The sealed interval stays the clock. The breaker and the interconnect stay physical. A vault of KAS is the wrong size and the wrong instrument for a wholesale power market. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+This is the ground half of the 11 November 2026 post: solar that needs batteries, and winter that needs another plant. The interesting feature is the interval seal this page already describes. The seal does not push a megawatt and does not replace the battery. Miners in space are not recommended. The seven lenses are in [WATTS.md](../WATTS.md).
+
 ## What this rail does not do
 
 It does not bid into a market, operate Autobidder, or keep a battery online in defiance of the grid operator. It does not turn a research model of the NEM into a second NEM.

@@ -30,6 +30,10 @@ A qualification seal survives a falling-out between the partners and survives an
 
 A tool-acceptance bonus or a small milestone between the companies is the only dollar surface that fits. [Kaspa Dollar](../DOLLAR.md) is overcollateralized KAS, not a warehouse for a phase-one budget. The figures named on this page, and not linked here, are the wrong size for a vault. The traveler hash stays the clock. Recipes stay off the chain. An export license is not a redemption. The design is a draft. It is not a coin yet.
 
+## Space watts
+
+A public acceptance record can be sealed. Recipes stay off the chain. The eight-to-one sentence is not a process recipe, and this page does not treat it as a verified fab figure. The reading is in [WATTS.md](../WATTS.md).
+
 ## What this rail does not do
 
 It does not run the process tools, store the recipe, move $16.8 billion, or substitute for an export license.
