@@ -10,7 +10,7 @@ Press in November 2026 describes Tesla as Nasdaq `TSLA` and Space Exploration Te
 
 ## The lenses
 
-**Security.** The node checks that a hash was ordered and that a script was satisfied. It does not authenticate a vehicle command, a beam, a contactor, or a dispatch instruction. Those keep the keys they already have.
+**Security.** The node checks that a hash was ordered and that a script was satisfied. It does not authenticate a vehicle command, a beam, a contactor, or a dispatch instruction. Those keep the keys they already have. A customer who wants that check on their own premises runs the node behind their own firewall, on mainnet. The section "Firewall, testnet, mainnet" is that placement.
 
 **Efficiency.** The chain is fast so one seal lands in a fraction of a second. It is not an invitation to stream sensors. One transaction per published note, or per interval the parties already store, is the efficient use. A sample every millisecond is the expensive one, and it does not fit the block.
 
@@ -181,6 +181,18 @@ A KAS covenant is a fifth job only when both sides want KAS. The example is [`se
 
 **How.** The Starbase call, on a pack the parties already store. The permit stays with the city.
 
+## Firewall, testnet, mainnet
+
+A customer can follow the chain without mining. That is the whole of the security option. The node sits on their side of the firewall. It opens outbound connections to mainnet peers and does not invite the internet in. The file stays on their disk. The 81-byte seal is the only thing that becomes public, and only when they choose to broadcast it. This is reasonable for every job this page already calls a fit. It does not require a second chain.
+
+**Mainnet is the record.** The public miners are there. A seal on mainnet is what a later reader can check, inside the pruning window, on any node that kept the transaction. The fee is real KAS, at the mass rate. Use it when the file was already fit to publish and the parties want that order. Do not put a secret in the payload. The firewall hides the file and the disk. It does not hide a transaction after it is broadcast. The hash, the branch byte, and the kind byte are then on the public chain.
+
+**Testnet is the dry run.** It is reasonable for proving that the encoder bytes match, and for learning the wallet errors, and then stopping. This repository already has that note. A local TN10 node at server version 2.1.0 built an 81-byte seal and did not return a txid. No transaction was broadcast. Testnet can be reset. It has no lasting public weight. It is not the archive a supplier, a recycler, or a launch note should rely on. The Kaspa Dollar draft names its own testnet in May 2027. That is a different project and it is not this seal.
+
+**A chain the customer floats is not reasonable.** A private fork, a firewalled network with no path to mainnet, or a chain whose only miners are the customer's, is a database with extra steps. Outsiders cannot check it without the customer's permission, which is the opposite of the permissionless lens. It has no public hashrate, so it has no censorship resistance of the kind this study means. If the security need is that nobody outside may learn that a document exists, do not seal it. Keep the file inside. Kaspa cannot be the public clock and a private network at the same time.
+
+**Coming and going has a limit.** A node that follows the tip only when the customer turns it on can check a fresh seal. A default node that has been off longer than the pruning window, 108_000 seconds in v2.1.0, cannot produce the old proof from its own data. The call returns `BlockTooDeep`. An archival node, or a witness saved while the block was still available, is the way to keep the older check. That is a disk choice. It is not a second network.
+
 ## What this page does not do
 
-It does not send a miner. It does not put every branch on Kaspa. It does not estimate a saving for `TSLA` or `SPCX`. It does not fly a node. It does not ask anyone to send KAS.
+It does not send a miner. It does not put every branch on Kaspa. It does not estimate a saving for `TSLA` or `SPCX`. It does not fly a node. It does not start a node, and it does not broadcast. It does not ask anyone to send KAS.

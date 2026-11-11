@@ -169,3 +169,9 @@ The author asked again about one node and one miner, not a fleet. Ship them with
 The author set the miner aside. It had been a thought. The node is the piece to place, in space or wherever it is useful. Each branch gets what, why, and how. The lenses are security, efficiency, transparency, permissionless use, censorship resistance, free to use, and economics. Tesla and SpaceX are treated as public companies because that is how the author put the cost question. Press that week was quoting `TSLA` and `SPCX`. This page does not take a price.
 
 The test is the best tool, not a reason to sequence everything on Kaspa. `NODE.md` names four jobs where the node wins, and it names the tool that stays everywhere else. A ground node next to the reader is the cheap placement. A space node is a reader on a vehicle that already has broadband. One seal per published note or per stored interval. Not per sensor. No saving is priced. No one is asked to send KAS.
+
+## 2026-11-11, firewall and mainnet
+
+The author asked whether, for security, a customer can follow the chain on their own, firewalled, and whether testnet or mainnet is the reasonable network.
+
+`NODE.md` says the customer runs a mainnet node behind their firewall, outbound only, and does not mine. The file stays on disk. The seal is public only after it is broadcast. Testnet stays the dry run. The TN10 note still has no txid. A private chain the customer floats is not the public clock, so it is not the reasonable choice. No node was started. Nothing was broadcast.
